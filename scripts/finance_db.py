@@ -20,8 +20,42 @@ from typing import Optional, List, Dict, Any
 DB_PATH = Path(__file__).parent.parent / "data" / "finance.db"
 
 
+def ensure_database_exists():
+    """Verifica se o banco existe, se não cria dados demo para Streamlit Cloud."""
+    if not DB_PATH.exists():
+        # Import demo data generator
+        import sys
+        sys.path.insert(0, str(Path(__file__).parent.parent / "data"))
+        try:
+            from demo_data import create_demo_database
+            create_demo_database(str(DB_PATH))
+            print("Demo database created for Streamlit Cloud deployment")
+        except ImportError:
+            # Create minimal structure if demo_data not available
+            DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+            conn = sqlite3.connect(DB_PATH)
+            conn.executescript("""
+                CREATE TABLE IF NOT EXISTS categories (
+                    id INTEGER PRIMARY KEY, name TEXT UNIQUE, budget_monthly REAL DEFAULT 0, is_essential INTEGER DEFAULT 0
+                );
+                CREATE TABLE IF NOT EXISTS transactions (
+                    id INTEGER PRIMARY KEY, date TEXT, description TEXT, amount REAL, category_id INTEGER, source TEXT DEFAULT 'manual'
+                );
+                CREATE TABLE IF NOT EXISTS installments (
+                    id INTEGER PRIMARY KEY, description TEXT, total_amount REAL, installment_amount REAL,
+                    total_installments INTEGER, current_installment INTEGER DEFAULT 1, start_date TEXT, end_date TEXT,
+                    category_id INTEGER, status TEXT DEFAULT 'active'
+                );
+                CREATE TABLE IF NOT EXISTS monthly_budgets (
+                    id INTEGER PRIMARY KEY, year INTEGER, month INTEGER, category_id INTEGER, budget_amount REAL
+                );
+            """)
+            conn.close()
+
+
 def get_connection():
     """Retorna conexao com o banco."""
+    ensure_database_exists()
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
