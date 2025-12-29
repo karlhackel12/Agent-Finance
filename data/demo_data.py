@@ -126,12 +126,35 @@ def create_demo_database(db_path: str = "data/finance.db"):
         transactions
     )
 
-    # Insert demo installments
+    # Insert real installments data
     installments = [
-        ('Móveis Planejados (Demo)', 95000, 9500, 10, 2, '2025-12-01', '2026-10-01', cat_map['casa']),
-        ('Mesa e Cadeiras (Demo)', 16000, 1600, 10, 1, '2026-01-01', '2026-10-01', cat_map['casa']),
-        ('iPhone 15 (Demo)', 6000, 500, 12, 4, '2025-09-01', '2026-08-01', cat_map['compras']),
-        ('TV Samsung (Demo)', 3600, 300, 12, 6, '2025-07-01', '2026-06-01', cat_map['compras']),
+        # Grandes - Obra/Móveis
+        ('MOVEIS PLANEJADOS', 95000, 9500, 10, 2, '2025-12-01', '2026-10-01', cat_map['casa']),
+        ('MESA E CADEIRAS', 16000, 1600, 10, 1, '2026-01-01', '2026-10-01', cat_map['casa']),
+        ('ELETRODOMESTICOS', 15000, 2500, 6, 0, '2026-09-01', '2027-02-01', cat_map['casa']),
+        # Saúde
+        ('DROGARIAS PACHECO', 5540, 1846.72, 3, 2, '2025-12-01', '2026-02-01', cat_map['saude']),
+        ('DROGARIA MODERNA', 476, 237.94, 2, 1, '2026-01-01', '2026-02-01', cat_map['saude']),
+        # Compras
+        ('AMAZON MARKETPLACE', 8352, 835.2, 10, 3, '2025-11-01', '2026-08-01', cat_map['compras']),
+        ('AREDES', 5363, 670.36, 8, 7, '2025-07-01', '2026-02-01', cat_map['compras']),
+        ('MAGALU', 4482, 448.25, 10, 1, '2026-01-01', '2026-10-01', cat_map['compras']),
+        ('ALFATEC COMERCIO', 8689, 413.76, 21, 16, '2024-10-01', '2026-06-01', cat_map['compras']),
+        ('VINDI BROIL', 3590, 359.01, 10, 3, '2025-11-01', '2026-08-01', cat_map['compras']),
+        ('SHOPEE FIDCO', 2322, 193.47, 12, 3, '2025-11-01', '2026-10-01', cat_map['compras']),
+        ('LOVABLE', 614, 153.43, 4, 3, '2025-11-01', '2026-02-01', cat_map['compras']),
+        ('MACOPIL', 639, 127.81, 5, 1, '2026-01-01', '2026-05-01', cat_map['compras']),
+        ('SHOPEE MEUPUXADOR', 588, 117.56, 5, 1, '2026-01-01', '2026-05-01', cat_map['compras']),
+        ('MARIA LUIZA', 410, 102.5, 4, 3, '2025-11-01', '2026-02-01', cat_map['compras']),
+        ('OTIQUE', 850, 85, 10, 8, '2025-06-01', '2026-03-01', cat_map['compras']),
+        # Casa
+        ('CASA CHIESSE 2X', 1098, 549, 2, 1, '2026-01-01', '2026-02-01', cat_map['casa']),
+        ('CASA CHIESSE 5X', 815, 163.07, 5, 1, '2026-01-01', '2026-05-01', cat_map['casa']),
+        ('FIRE VERBO', 440, 220, 2, 1, '2026-01-01', '2026-02-01', cat_map['casa']),
+        ('TAVUS', 362, 72.36, 5, 1, '2026-01-01', '2026-05-01', cat_map['compras']),
+        ('FLOWITH.IO', 305, 61.05, 5, 1, '2026-01-01', '2026-05-01', cat_map['assinaturas']),
+        # Assinaturas
+        ('OPENAI CHATGPT', 1309, 109.09, 12, 3, '2025-11-01', '2026-10-01', cat_map['assinaturas']),
     ]
 
     cursor.executemany(
