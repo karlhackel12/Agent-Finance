@@ -1,0 +1,81 @@
+{
+  "year": 2026,
+  "month": 1,
+  "categories": [
+    {
+      "category": "alimentacao",
+      "icon": "🍔",
+      "budget": 4000.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "transporte",
+      "icon": "🚗",
+      "budget": 1000.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "saude",
+      "icon": "🏥",
+      "budget": 1000.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "assinaturas",
+      "icon": "💻",
+      "budget": 3000.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "compras",
+      "icon": "🛒",
+      "budget": 3000.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "lazer",
+      "icon": "🎮",
+      "budget": 1500.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "educacao",
+      "icon": "📚",
+      "budget": 500.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "casa",
+      "icon": "🏠",
+      "budget": 2000.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "taxas",
+      "icon": "📝",
+      "budget": 500.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    }
+  ],
+  "total_spent": 0,
+  "total_budget": 16500.0,
+  "savings_rate": 100.0
+}

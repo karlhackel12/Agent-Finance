@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Database (contains personal financial data)
+data/*.db
+data/*.db-journal
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Streamlit
+.streamlit/
+
+# Obsidian (optional - uncomment if you want to exclude)
+# .obsidian/
+
+# Excel temp files
+~$*.xlsx
+
+# Credentials and secrets
+.env
+*.pem
+*.key
+credentials.json
+token.json
+
+# Jupyter
+.ipynb_checkpoints/
