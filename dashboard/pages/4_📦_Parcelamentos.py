@@ -147,7 +147,7 @@ st.dataframe(
     df_filtered.style.format({
         'Valor Mensal': 'R$ {:,.0f}',
         'Progresso': '{:.0%}'
-    }).background_gradient(subset=['Progresso'], cmap='RdYlGn'),
+    }),
     use_container_width=True,
     hide_index=True,
     height=400
