@@ -21,8 +21,29 @@ DB_PATH = Path(__file__).parent.parent / "data" / "finance.db"
 
 
 def ensure_database_exists():
-    """Verifica se o banco existe, se não cria dados demo para Streamlit Cloud."""
+    """Verifica se o banco existe com schema correto, se não cria dados demo."""
+    need_create = False
+
     if not DB_PATH.exists():
+        need_create = True
+    else:
+        # Check if schema is correct (has icon and type columns)
+        try:
+            conn = sqlite3.connect(DB_PATH)
+            cursor = conn.cursor()
+            cursor.execute("SELECT icon FROM categories LIMIT 1")
+            cursor.execute("SELECT type FROM transactions LIMIT 1")
+            conn.close()
+        except sqlite3.OperationalError:
+            # Schema is wrong, delete and recreate
+            conn.close()
+            import os
+            os.remove(DB_PATH)
+            need_create = True
+            print("Old database schema detected, recreating...")
+
+    if need_create:
+        DB_PATH.parent.mkdir(parents=True, exist_ok=True)
         # Import demo data generator
         import sys
         sys.path.insert(0, str(Path(__file__).parent.parent / "data"))
@@ -30,9 +51,9 @@ def ensure_database_exists():
             from demo_data import create_demo_database
             create_demo_database(str(DB_PATH))
             print("Demo database created for Streamlit Cloud deployment")
-        except ImportError:
-            # Create minimal structure if demo_data not available
-            DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+        except Exception as e:
+            print(f"Error importing demo_data: {e}")
+            # Create minimal structure with correct schema
             conn = sqlite3.connect(DB_PATH)
             conn.executescript("""
                 CREATE TABLE IF NOT EXISTS categories (
@@ -49,8 +70,13 @@ def ensure_database_exists():
                 CREATE TABLE IF NOT EXISTS monthly_budgets (
                     id INTEGER PRIMARY KEY, year INTEGER, month INTEGER, category_id INTEGER, budget_amount REAL
                 );
+                INSERT INTO categories (name, icon, budget_monthly, is_essential) VALUES
+                    ('alimentacao', '🍽️', 4000, 1), ('compras', '🛒', 3500, 0), ('casa', '🏠', 2000, 1),
+                    ('transporte', '🚗', 1500, 1), ('saude', '💊', 1500, 1), ('assinaturas', '📱', 2011, 0),
+                    ('lazer', '🎮', 1500, 0), ('educacao', '📚', 1500, 0), ('taxas', '🏦', 1000, 0);
             """)
             conn.close()
+            print("Minimal database created with correct schema")
 
 
 def get_connection():
