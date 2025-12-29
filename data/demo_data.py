@@ -26,6 +26,7 @@ def create_demo_database(db_path: str = "data/finance.db"):
         CREATE TABLE IF NOT EXISTS categories (
             id INTEGER PRIMARY KEY,
             name TEXT UNIQUE NOT NULL,
+            icon TEXT DEFAULT '📦',
             budget_monthly REAL DEFAULT 0,
             is_essential INTEGER DEFAULT 0
         );
@@ -36,6 +37,7 @@ def create_demo_database(db_path: str = "data/finance.db"):
             description TEXT NOT NULL,
             amount REAL NOT NULL,
             category_id INTEGER,
+            type TEXT DEFAULT 'expense',
             source TEXT DEFAULT 'manual',
             FOREIGN KEY (category_id) REFERENCES categories(id)
         );
@@ -65,21 +67,21 @@ def create_demo_database(db_path: str = "data/finance.db"):
         );
     """)
 
-    # Insert demo categories
+    # Insert demo categories with icons
     categories = [
-        ('alimentacao', 4000, 1),
-        ('compras', 3500, 0),
-        ('casa', 2000, 1),
-        ('transporte', 1500, 1),
-        ('saude', 1500, 1),
-        ('assinaturas', 2011, 0),
-        ('lazer', 1500, 0),
-        ('educacao', 1500, 0),
-        ('taxas', 1000, 0),
+        ('alimentacao', '🍽️', 4000, 1),
+        ('compras', '🛒', 3500, 0),
+        ('casa', '🏠', 2000, 1),
+        ('transporte', '🚗', 1500, 1),
+        ('saude', '💊', 1500, 1),
+        ('assinaturas', '📱', 2011, 0),
+        ('lazer', '🎮', 1500, 0),
+        ('educacao', '📚', 1500, 0),
+        ('taxas', '🏦', 1000, 0),
     ]
 
     cursor.executemany(
-        "INSERT INTO categories (name, budget_monthly, is_essential) VALUES (?, ?, ?)",
+        "INSERT INTO categories (name, icon, budget_monthly, is_essential) VALUES (?, ?, ?, ?)",
         categories
     )
 

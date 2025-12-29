@@ -36,10 +36,10 @@ def ensure_database_exists():
             conn = sqlite3.connect(DB_PATH)
             conn.executescript("""
                 CREATE TABLE IF NOT EXISTS categories (
-                    id INTEGER PRIMARY KEY, name TEXT UNIQUE, budget_monthly REAL DEFAULT 0, is_essential INTEGER DEFAULT 0
+                    id INTEGER PRIMARY KEY, name TEXT UNIQUE, icon TEXT DEFAULT '📦', budget_monthly REAL DEFAULT 0, is_essential INTEGER DEFAULT 0
                 );
                 CREATE TABLE IF NOT EXISTS transactions (
-                    id INTEGER PRIMARY KEY, date TEXT, description TEXT, amount REAL, category_id INTEGER, source TEXT DEFAULT 'manual'
+                    id INTEGER PRIMARY KEY, date TEXT, description TEXT, amount REAL, category_id INTEGER, type TEXT DEFAULT 'expense', source TEXT DEFAULT 'manual'
                 );
                 CREATE TABLE IF NOT EXISTS installments (
                     id INTEGER PRIMARY KEY, description TEXT, total_amount REAL, installment_amount REAL,
