@@ -68,16 +68,18 @@ def create_demo_database(db_path: str = "data/finance.db"):
     """)
 
     # Insert demo categories with icons
+    # Valores atualizados em 2025-12-29
     categories = [
         ('alimentacao', '🍽️', 4000, 1),
         ('compras', '🛒', 3500, 0),
         ('casa', '🏠', 2000, 1),
-        ('transporte', '🚗', 1500, 1),
-        ('saude', '💊', 1500, 1),
-        ('assinaturas', '📱', 2011, 0),
+        ('transporte', '🚗', 4200, 1),   # Movida 3200 + Combustível 1000
+        ('saude', '💊', 3800, 1),         # Plano 1300 + Tratamento 2500
+        ('assinaturas', '📱', 1300, 0),
         ('lazer', '🎮', 1500, 0),
-        ('educacao', '📚', 1500, 0),
-        ('taxas', '🏦', 1000, 0),
+        ('educacao', '📚', 400, 0),
+        ('taxas', '🏦', 300, 0),
+        ('esportes', '🎾', 1500, 0),      # Tênis (PIX Thiago Mariotti)
     ]
 
     cursor.executemany(
@@ -131,8 +133,9 @@ def create_demo_database(db_path: str = "data/finance.db"):
         # Grandes - Obra/Móveis
         ('MOVEIS PLANEJADOS', 95000, 9500, 10, 2, '2025-12-01', '2026-10-01', cat_map['casa']),
         ('MESA E CADEIRAS', 16000, 1600, 10, 1, '2026-01-01', '2026-10-01', cat_map['casa']),
-        ('ELETRODOMESTICOS', 15000, 2500, 6, 0, '2026-09-01', '2027-02-01', cat_map['casa']),
+        ('ELETRODOMESTICOS', 15000, 2500, 6, 0, '2026-04-01', '2026-09-01', cat_map['casa']),
         # Saúde
+        ('TRATAMENTO EMAGRECIMENTO', 25000, 2500, 10, 1, '2026-01-01', '2026-10-01', cat_map['saude']),
         ('DROGARIAS PACHECO', 5540, 1846.72, 3, 2, '2025-12-01', '2026-02-01', cat_map['saude']),
         ('DROGARIA MODERNA', 476, 237.94, 2, 1, '2026-01-01', '2026-02-01', cat_map['saude']),
         # Compras
