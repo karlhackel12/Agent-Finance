@@ -69,6 +69,11 @@ CATEGORY_KEYWORDS = {
         "iof", "taxa", "tarifa", "anuidade", "seguro", "juros",
         "multa", "cartorio", "despachante", "detran",
     ],
+    "esportes": [
+        "thiago mariotti", "tenis", "quadra", "raquete",
+        "esporte", "academia esport", "clube esport", "aula tenis",
+        "beach tennis", "padel", "squash",
+    ],
 }
 
 

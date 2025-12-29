@@ -26,7 +26,7 @@ CATEGORIES = [
 
 # Compromissos fixos mensais
 FIXED_COMMITMENTS = [
-    ("Financiamento Imovel", 7500, "moradia", "2045-12-31"),
+    ("Financiamento Imovel", 7500, "moradia", "2030-10-31"),  # 58 meses
     ("Assinatura Carro", 3200, "transporte", None),
     ("Contas Casa", 3000, "casa", None),
     ("Plano de Saude", 1300, "saude", None),

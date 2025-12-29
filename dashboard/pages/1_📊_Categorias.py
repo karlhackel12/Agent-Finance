@@ -132,7 +132,7 @@ st.dataframe(
         'Gasto': 'R$ {:,.0f}',
         'Disponível': 'R$ {:,.0f}',
         'Utilização': '{:.0%}'
-    }).background_gradient(subset=['Utilização'], cmap='RdYlGn_r'),
+    }),
     use_container_width=True,
     hide_index=True,
     height=400
