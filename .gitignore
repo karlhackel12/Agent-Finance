@@ -34,8 +34,8 @@ Thumbs.db
 *.temp
 /tmp/
 
-# Streamlit
-.streamlit/
+# Streamlit secrets (keep config.toml)
+.streamlit/secrets.toml
 
 # Obsidian (optional - uncomment if you want to exclude)
 # .obsidian/
