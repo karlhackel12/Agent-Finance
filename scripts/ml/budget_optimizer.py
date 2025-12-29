@@ -13,6 +13,15 @@ from dataclasses import dataclass
 
 DB_PATH = Path(__file__).parent.parent.parent / "data" / "finance.db"
 
+# Import finance_db to ensure database exists with correct schema
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent))
+try:
+    from finance_db import ensure_database_exists
+    ensure_database_exists()
+except ImportError:
+    pass
+
 
 @dataclass
 class BudgetRecommendation:
