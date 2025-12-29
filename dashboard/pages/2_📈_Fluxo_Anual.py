@@ -21,9 +21,10 @@ st.title("📈 Fluxo de Caixa Anual 2026")
 
 # Constants
 RECEITA = 55000
-VARIAVEIS_PROJ = 16500
+VARIAVEIS_PROJ = 22500  # Budget atualizado 2025-12-29
+FINANCIAMENTO = 7500    # Empréstimo obra (58 meses até Out/2030)
 
-# Obra projections per month
+# Obra projections per month (móveis/construção, NÃO é o empréstimo)
 OBRA_PROJ = {
     1: 9590, 2: 6250, 3: 7333, 4: 7333, 5: 7333, 6: 19083,
     7: 7084, 8: 7084, 9: 7000, 10: 7000, 11: 5850, 12: 0
@@ -65,15 +66,17 @@ for m in range(1, 13):
     var_real = summary.get('total_spent', 0) if m == 1 else 0
     parc_real = 9500 if m == 1 else 0  # Only first installment paid
     obra_real = 0
+    financ_real = FINANCIAMENTO if m == 1 else 0  # Assume pago
 
-    saida_proj = VARIAVEIS_PROJ + monthly_inst[m] + OBRA_PROJ[m]
-    saida_real = var_real + parc_real + obra_real if m == 1 else 0
+    saida_proj = VARIAVEIS_PROJ + monthly_inst[m] + OBRA_PROJ[m] + FINANCIAMENTO
+    saida_real = var_real + parc_real + obra_real + financ_real if m == 1 else 0
     poup_proj = RECEITA - saida_proj
     poup_real = RECEITA - saida_real if m == 1 else 0
 
     data.append({
         'Mês': months[m-1],
         'Receita': RECEITA,
+        'Financiam (P)': FINANCIAMENTO,
         'Variáveis (P)': VARIAVEIS_PROJ,
         'Variáveis (R)': var_real,
         'Parcelam (P)': monthly_inst[m],
@@ -110,6 +113,7 @@ st.markdown("---")
 st.markdown("### Composição Mensal de Gastos")
 
 fig = go.Figure()
+fig.add_trace(go.Bar(name='Financiamento', x=df['Mês'], y=df['Financiam (P)'], marker_color='#9b59b6'))
 fig.add_trace(go.Bar(name='Variáveis', x=df['Mês'], y=df['Variáveis (P)'], marker_color='#3498db'))
 fig.add_trace(go.Bar(name='Parcelamentos', x=df['Mês'], y=df['Parcelam (P)'], marker_color='#e74c3c'))
 fig.add_trace(go.Bar(name='Obra', x=df['Mês'], y=df['Obra (P)'], marker_color='#f39c12'))
@@ -145,12 +149,13 @@ st.markdown("---")
 st.markdown("### Dados Mensais Detalhados")
 
 # Format and display
-display_cols = ['Mês', 'Receita', 'Variáveis (P)', 'Variáveis (R)',
+display_cols = ['Mês', 'Receita', 'Financiam (P)', 'Variáveis (P)', 'Variáveis (R)',
                 'Parcelam (P)', 'Parcelam (R)', 'Obra (P)', 'Poupança (P)', 'Poupança (R)']
 
 st.dataframe(
     df[display_cols].style.format({
         'Receita': 'R$ {:,.0f}',
+        'Financiam (P)': 'R$ {:,.0f}',
         'Variáveis (P)': 'R$ {:,.0f}',
         'Variáveis (R)': 'R$ {:,.0f}',
         'Parcelam (P)': 'R$ {:,.0f}',
@@ -165,16 +170,18 @@ st.dataframe(
 
 # Totals
 st.markdown("### Totais Anuais")
-totals = df[['Receita', 'Variáveis (P)', 'Parcelam (P)', 'Obra (P)', 'Poupança (P)']].sum()
+totals = df[['Receita', 'Financiam (P)', 'Variáveis (P)', 'Parcelam (P)', 'Obra (P)', 'Poupança (P)']].sum()
 
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
     st.metric("Receita", f"R$ {totals['Receita']:,.0f}")
 with col2:
-    st.metric("Variáveis", f"R$ {totals['Variáveis (P)']:,.0f}")
+    st.metric("Financiam", f"R$ {totals['Financiam (P)']:,.0f}")
 with col3:
-    st.metric("Parcelamentos", f"R$ {totals['Parcelam (P)']:,.0f}")
+    st.metric("Variáveis", f"R$ {totals['Variáveis (P)']:,.0f}")
 with col4:
-    st.metric("Obra", f"R$ {totals['Obra (P)']:,.0f}")
+    st.metric("Parcelamentos", f"R$ {totals['Parcelam (P)']:,.0f}")
 with col5:
+    st.metric("Obra", f"R$ {totals['Obra (P)']:,.0f}")
+with col6:
     st.metric("Poupança", f"R$ {totals['Poupança (P)']:,.0f}")
