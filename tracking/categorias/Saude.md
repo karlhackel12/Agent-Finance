@@ -2,12 +2,12 @@
 tipo: categoria
 nome: saude
 icon: 🏥
-budget_mensal: 1500.0
+budget_mensal: 3800.0
 ---
 
 # 🏥 Saude
 
-## Budget Mensal: R$ 1,500
+## Budget Mensal: R$ 3,800
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 1500.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 1,500 | - | - |
-| Fevereiro | - | R$ 1,500 | - | - |
-| Marco | - | R$ 1,500 | - | - |
-| Abril | - | R$ 1,500 | - | - |
-| Maio | - | R$ 1,500 | - | - |
-| Junho | - | R$ 1,500 | - | - |
-| Julho | - | R$ 1,500 | - | - |
-| Agosto | - | R$ 1,500 | - | - |
-| Setembro | - | R$ 1,500 | - | - |
-| Outubro | - | R$ 1,500 | - | - |
-| Novembro | - | R$ 1,500 | - | - |
-| Dezembro | - | R$ 1,500 | - | - |
+| Janeiro | - | R$ 3,800 | - | - |
+| Fevereiro | - | R$ 3,800 | - | - |
+| Marco | - | R$ 3,800 | - | - |
+| Abril | - | R$ 3,800 | - | - |
+| Maio | - | R$ 3,800 | - | - |
+| Junho | - | R$ 3,800 | - | - |
+| Julho | R$ 418 | R$ 3,800 | 11% | OK |
+| Agosto | R$ 646 | R$ 3,800 | 17% | OK |
+| Setembro | R$ 700 | R$ 3,800 | 18% | OK |
+| Outubro | R$ 696 | R$ 3,800 | 18% | OK |
+| Novembro | R$ 488 | R$ 3,800 | 13% | OK |
+| Dezembro | R$ 567 | R$ 3,800 | 15% | OK |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 1500.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 0 |
-| Budget Anual | R$ 18,000 |
-| Media Mensal | R$ 0 |
-| % Utilizado | 0% |
+| Total Gasto | R$ 3,516 |
+| Budget Anual | R$ 45,600 |
+| Media Mensal | R$ 586 |
+| % Utilizado | 8% |
 
 ---
 

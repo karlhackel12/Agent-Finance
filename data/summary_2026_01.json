@@ -13,7 +13,7 @@
     {
       "category": "transporte",
       "icon": "🚗",
-      "budget": 1000.0,
+      "budget": 4200.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -21,7 +21,7 @@
     {
       "category": "saude",
       "icon": "🏥",
-      "budget": 1000.0,
+      "budget": 3800.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -29,7 +29,7 @@
     {
       "category": "assinaturas",
       "icon": "💻",
-      "budget": 3000.0,
+      "budget": 1300.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -37,7 +37,7 @@
     {
       "category": "compras",
       "icon": "🛒",
-      "budget": 3000.0,
+      "budget": 3500.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -53,7 +53,7 @@
     {
       "category": "educacao",
       "icon": "📚",
-      "budget": 500.0,
+      "budget": 400.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -69,13 +69,21 @@
     {
       "category": "taxas",
       "icon": "📝",
-      "budget": 500.0,
+      "budget": 300.0,
+      "total": 0,
+      "percent": 0.0,
+      "status": "ok"
+    },
+    {
+      "category": "esportes",
+      "icon": "🎾",
+      "budget": 1500.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
     }
   ],
   "total_spent": 0,
-  "total_budget": 16500.0,
+  "total_budget": 22500.0,
   "savings_rate": 100.0
 }

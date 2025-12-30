@@ -2,12 +2,12 @@
 tipo: categoria
 nome: taxas
 icon: 📝
-budget_mensal: 500.0
+budget_mensal: 300.0
 ---
 
 # 📝 Taxas
 
-## Budget Mensal: R$ 500
+## Budget Mensal: R$ 300
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 500.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 500 | - | - |
-| Fevereiro | - | R$ 500 | - | - |
-| Marco | - | R$ 500 | - | - |
-| Abril | - | R$ 500 | - | - |
-| Maio | - | R$ 500 | - | - |
-| Junho | - | R$ 500 | - | - |
-| Julho | - | R$ 500 | - | - |
-| Agosto | - | R$ 500 | - | - |
-| Setembro | - | R$ 500 | - | - |
-| Outubro | - | R$ 500 | - | - |
-| Novembro | - | R$ 500 | - | - |
-| Dezembro | - | R$ 500 | - | - |
+| Janeiro | - | R$ 300 | - | - |
+| Fevereiro | - | R$ 300 | - | - |
+| Marco | - | R$ 300 | - | - |
+| Abril | - | R$ 300 | - | - |
+| Maio | - | R$ 300 | - | - |
+| Junho | - | R$ 300 | - | - |
+| Julho | - | R$ 300 | - | - |
+| Agosto | - | R$ 300 | - | - |
+| Setembro | - | R$ 300 | - | - |
+| Outubro | - | R$ 300 | - | - |
+| Novembro | - | R$ 300 | - | - |
+| Dezembro | - | R$ 300 | - | - |
 
 ---
 
@@ -35,7 +35,7 @@ budget_mensal: 500.0
 | Metrica | Valor |
 |---------|-------|
 | Total Gasto | R$ 0 |
-| Budget Anual | R$ 6,000 |
+| Budget Anual | R$ 3,600 |
 | Media Mensal | R$ 0 |
 | % Utilizado | 0% |
 

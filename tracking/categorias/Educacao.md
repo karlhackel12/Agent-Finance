@@ -2,12 +2,12 @@
 tipo: categoria
 nome: educacao
 icon: 📚
-budget_mensal: 500.0
+budget_mensal: 400.0
 ---
 
 # 📚 Educacao
 
-## Budget Mensal: R$ 500
+## Budget Mensal: R$ 400
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 500.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 500 | - | - |
-| Fevereiro | - | R$ 500 | - | - |
-| Marco | - | R$ 500 | - | - |
-| Abril | - | R$ 500 | - | - |
-| Maio | - | R$ 500 | - | - |
-| Junho | - | R$ 500 | - | - |
-| Julho | - | R$ 500 | - | - |
-| Agosto | - | R$ 500 | - | - |
-| Setembro | - | R$ 500 | - | - |
-| Outubro | - | R$ 500 | - | - |
-| Novembro | - | R$ 500 | - | - |
-| Dezembro | - | R$ 500 | - | - |
+| Janeiro | - | R$ 400 | - | - |
+| Fevereiro | - | R$ 400 | - | - |
+| Marco | - | R$ 400 | - | - |
+| Abril | - | R$ 400 | - | - |
+| Maio | - | R$ 400 | - | - |
+| Junho | - | R$ 400 | - | - |
+| Julho | - | R$ 400 | - | - |
+| Agosto | - | R$ 400 | - | - |
+| Setembro | - | R$ 400 | - | - |
+| Outubro | - | R$ 400 | - | - |
+| Novembro | R$ 2 | R$ 400 | 0% | OK |
+| Dezembro | R$ 40 | R$ 400 | 10% | OK |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 500.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 0 |
-| Budget Anual | R$ 6,000 |
-| Media Mensal | R$ 0 |
-| % Utilizado | 0% |
+| Total Gasto | R$ 42 |
+| Budget Anual | R$ 4,800 |
+| Media Mensal | R$ 21 |
+| % Utilizado | 1% |
 
 ---
 

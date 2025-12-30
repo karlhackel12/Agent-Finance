@@ -5,7 +5,7 @@ mes: 1
 mes_nome: Janeiro
 total_gasto: 0
 total_transacoes: 0
-atualizado: 2025-12-28 08:42
+atualizado: 2025-12-29 00:54
 ---
 
 # Janeiro 2026 - Detalhamento

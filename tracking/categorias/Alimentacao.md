@@ -2,12 +2,12 @@
 tipo: categoria
 nome: alimentacao
 icon: 🍔
-budget_mensal: 3500.0
+budget_mensal: 4000.0
 ---
 
 # 🍔 Alimentacao
 
-## Budget Mensal: R$ 3,500
+## Budget Mensal: R$ 4,000
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 3500.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 3,500 | - | - |
-| Fevereiro | - | R$ 3,500 | - | - |
-| Marco | - | R$ 3,500 | - | - |
-| Abril | - | R$ 3,500 | - | - |
-| Maio | - | R$ 3,500 | - | - |
-| Junho | - | R$ 3,500 | - | - |
-| Julho | - | R$ 3,500 | - | - |
-| Agosto | - | R$ 3,500 | - | - |
-| Setembro | - | R$ 3,500 | - | - |
-| Outubro | - | R$ 3,500 | - | - |
-| Novembro | - | R$ 3,500 | - | - |
-| Dezembro | - | R$ 3,500 | - | - |
+| Janeiro | - | R$ 4,000 | - | - |
+| Fevereiro | - | R$ 4,000 | - | - |
+| Marco | - | R$ 4,000 | - | - |
+| Abril | - | R$ 4,000 | - | - |
+| Maio | - | R$ 4,000 | - | - |
+| Junho | R$ 530 | R$ 4,000 | 13% | OK |
+| Julho | R$ 3,299 | R$ 4,000 | 82% | OK |
+| Agosto | R$ 3,148 | R$ 4,000 | 79% | OK |
+| Setembro | R$ 4,875 | R$ 4,000 | 122% | Critico |
+| Outubro | R$ 4,896 | R$ 4,000 | 122% | Critico |
+| Novembro | R$ 3,551 | R$ 4,000 | 89% | OK |
+| Dezembro | R$ 5,049 | R$ 4,000 | 126% | Critico |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 3500.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 0 |
-| Budget Anual | R$ 42,000 |
-| Media Mensal | R$ 0 |
-| % Utilizado | 0% |
+| Total Gasto | R$ 25,349 |
+| Budget Anual | R$ 48,000 |
+| Media Mensal | R$ 3,621 |
+| % Utilizado | 53% |
 
 ---
 

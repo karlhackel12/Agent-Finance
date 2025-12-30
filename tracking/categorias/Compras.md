@@ -2,12 +2,12 @@
 tipo: categoria
 nome: compras
 icon: 🛒
-budget_mensal: 5000.0
+budget_mensal: 3500.0
 ---
 
 # 🛒 Compras
 
-## Budget Mensal: R$ 5,000
+## Budget Mensal: R$ 3,500
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 5000.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 5,000 | - | - |
-| Fevereiro | - | R$ 5,000 | - | - |
-| Marco | - | R$ 5,000 | - | - |
-| Abril | - | R$ 5,000 | - | - |
-| Maio | - | R$ 5,000 | - | - |
-| Junho | - | R$ 5,000 | - | - |
-| Julho | - | R$ 5,000 | - | - |
-| Agosto | - | R$ 5,000 | - | - |
-| Setembro | - | R$ 5,000 | - | - |
-| Outubro | - | R$ 5,000 | - | - |
-| Novembro | - | R$ 5,000 | - | - |
-| Dezembro | - | R$ 5,000 | - | - |
+| Janeiro | - | R$ 3,500 | - | - |
+| Fevereiro | - | R$ 3,500 | - | - |
+| Marco | - | R$ 3,500 | - | - |
+| Abril | - | R$ 3,500 | - | - |
+| Maio | - | R$ 3,500 | - | - |
+| Junho | R$ 78 | R$ 3,500 | 2% | OK |
+| Julho | R$ 2,628 | R$ 3,500 | 75% | OK |
+| Agosto | R$ 4,955 | R$ 3,500 | 142% | Critico |
+| Setembro | R$ 2,256 | R$ 3,500 | 64% | OK |
+| Outubro | R$ 3,803 | R$ 3,500 | 109% | Atencao |
+| Novembro | R$ 2,534 | R$ 3,500 | 72% | OK |
+| Dezembro | R$ 8,210 | R$ 3,500 | 235% | Critico |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 5000.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 0 |
-| Budget Anual | R$ 60,000 |
-| Media Mensal | R$ 0 |
-| % Utilizado | 0% |
+| Total Gasto | R$ 24,466 |
+| Budget Anual | R$ 42,000 |
+| Media Mensal | R$ 3,495 |
+| % Utilizado | 58% |
 
 ---
 
