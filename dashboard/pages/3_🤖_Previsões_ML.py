@@ -94,7 +94,7 @@ with tab1:
                 'Confiança': '{:.0%}',
                 'Mínimo': 'R$ {:,.0f}',
                 'Máximo': 'R$ {:,.0f}'
-            }).background_gradient(subset=['Confiança'], cmap='RdYlGn'),
+            }),
             use_container_width=True,
             hide_index=True
         )
