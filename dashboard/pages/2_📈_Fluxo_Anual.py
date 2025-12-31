@@ -21,8 +21,11 @@ st.title("📈 Fluxo de Caixa Anual 2026")
 
 # Constants
 RECEITA = 55000
-VARIAVEIS_PROJ = 22500  # Budget atualizado 2025-12-29
-FINANCIAMENTO = 7500    # Empréstimo obra (58 meses até Out/2030)
+VARIAVEIS_PROJ = 17800  # Budget variáveis (sem obra) - atualizado 2025-12-30
+FINANCIAMENTO = 7500    # Empréstimo imobiliário (58 meses até Out/2030)
+
+# Categorias excluídas do cálculo de variáveis (obra é separada)
+EXCLUDED_CATEGORIES = ['obra', 'esportes']
 
 # Obra projections per month (móveis/construção, NÃO é o empréstimo)
 OBRA_PROJ = {
@@ -61,17 +64,21 @@ months = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", 
 
 data = []
 for m in range(1, 13):
-    # Get real data (only January has data for now)
+    # Get real data
     summary = get_monthly_summary(2026, m)
-    var_real = summary.get('total_spent', 0) if m == 1 else 0
-    parc_real = 9500 if m == 1 else 0  # Only first installment paid
-    obra_real = 0
+
+    # Separar variáveis de obra
+    cats = summary.get('categories', [])
+    var_real = sum(c.get('total', 0) for c in cats if c.get('category') not in EXCLUDED_CATEGORIES)
+    obra_real = sum(c.get('total', 0) for c in cats if c.get('category') == 'obra')
+
+    parc_real = 0  # Parcelamentos já estão em var_real/obra_real
     financ_real = FINANCIAMENTO if m == 1 else 0  # Assume pago
 
     saida_proj = VARIAVEIS_PROJ + monthly_inst[m] + OBRA_PROJ[m] + FINANCIAMENTO
-    saida_real = var_real + parc_real + obra_real + financ_real if m == 1 else 0
+    saida_real = var_real + obra_real + financ_real
     poup_proj = RECEITA - saida_proj
-    poup_real = RECEITA - saida_real if m == 1 else 0
+    poup_real = RECEITA - saida_real if (var_real > 0 or obra_real > 0) else 0
 
     data.append({
         'Mês': months[m-1],
@@ -115,7 +122,6 @@ st.markdown("### Composição Mensal de Gastos")
 fig = go.Figure()
 fig.add_trace(go.Bar(name='Financiamento', x=df['Mês'], y=df['Financiam (P)'], marker_color='#9b59b6'))
 fig.add_trace(go.Bar(name='Variáveis', x=df['Mês'], y=df['Variáveis (P)'], marker_color='#3498db'))
-fig.add_trace(go.Bar(name='Parcelamentos', x=df['Mês'], y=df['Parcelam (P)'], marker_color='#e74c3c'))
 fig.add_trace(go.Bar(name='Obra', x=df['Mês'], y=df['Obra (P)'], marker_color='#f39c12'))
 fig.update_layout(barmode='stack', height=400)
 st.plotly_chart(fig, use_container_width=True)
@@ -150,7 +156,7 @@ st.markdown("### Dados Mensais Detalhados")
 
 # Format and display
 display_cols = ['Mês', 'Receita', 'Financiam (P)', 'Variáveis (P)', 'Variáveis (R)',
-                'Parcelam (P)', 'Parcelam (R)', 'Obra (P)', 'Poupança (P)', 'Poupança (R)']
+                'Obra (P)', 'Obra (R)', 'Poupança (P)', 'Poupança (R)']
 
 st.dataframe(
     df[display_cols].style.format({
@@ -158,9 +164,8 @@ st.dataframe(
         'Financiam (P)': 'R$ {:,.0f}',
         'Variáveis (P)': 'R$ {:,.0f}',
         'Variáveis (R)': 'R$ {:,.0f}',
-        'Parcelam (P)': 'R$ {:,.0f}',
-        'Parcelam (R)': 'R$ {:,.0f}',
         'Obra (P)': 'R$ {:,.0f}',
+        'Obra (R)': 'R$ {:,.0f}',
         'Poupança (P)': 'R$ {:,.0f}',
         'Poupança (R)': 'R$ {:,.0f}'
     }),
@@ -170,9 +175,9 @@ st.dataframe(
 
 # Totals
 st.markdown("### Totais Anuais")
-totals = df[['Receita', 'Financiam (P)', 'Variáveis (P)', 'Parcelam (P)', 'Obra (P)', 'Poupança (P)']].sum()
+totals = df[['Receita', 'Financiam (P)', 'Variáveis (P)', 'Obra (P)', 'Poupança (P)']].sum()
 
-col1, col2, col3, col4, col5, col6 = st.columns(6)
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
     st.metric("Receita", f"R$ {totals['Receita']:,.0f}")
 with col2:
@@ -180,8 +185,6 @@ with col2:
 with col3:
     st.metric("Variáveis", f"R$ {totals['Variáveis (P)']:,.0f}")
 with col4:
-    st.metric("Parcelamentos", f"R$ {totals['Parcelam (P)']:,.0f}")
-with col5:
     st.metric("Obra", f"R$ {totals['Obra (P)']:,.0f}")
-with col6:
+with col5:
     st.metric("Poupança", f"R$ {totals['Poupança (P)']:,.0f}")
