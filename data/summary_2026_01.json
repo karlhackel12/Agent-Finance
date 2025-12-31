@@ -3,12 +3,12 @@
   "month": 1,
   "categories": [
     {
-      "category": "casa",
-      "icon": "🏠",
-      "budget": 500.0,
-      "total": 12830.24,
-      "percent": 2566.0,
-      "status": "critical"
+      "category": "obra",
+      "icon": "🏗️",
+      "budget": 0.0,
+      "total": 11100.0,
+      "percent": 0,
+      "status": "ok"
     },
     {
       "category": "saude",
@@ -25,6 +25,14 @@
       "total": 2110.7400000000002,
       "percent": 84.4,
       "status": "ok"
+    },
+    {
+      "category": "casa",
+      "icon": "🏠",
+      "budget": 500.0,
+      "total": 1730.24,
+      "percent": 346.0,
+      "status": "critical"
     },
     {
       "category": "assinaturas",

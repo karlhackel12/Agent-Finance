@@ -365,7 +365,7 @@ budget_mensal: {budget}
 | Total Gasto | R$ {total_spent:,.0f} |
 | Budget Anual | R$ {budget_annual:,.0f} |
 | Media Mensal | R$ {total_spent / max(1, len([m for m in yearly_data if m['total'] > 0])):,.0f} |
-| % Utilizado | {total_spent / budget_annual * 100:.0f}% |
+| % Utilizado | {(total_spent / budget_annual * 100) if budget_annual > 0 else 0:.0f}% |
 
 ---
 

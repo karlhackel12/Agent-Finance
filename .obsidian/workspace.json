@@ -185,6 +185,7 @@
   },
   "active": "5de3e8899b9ea8d1",
   "lastOpenFiles": [
+    "tracking/categorias/Obra.md",
     "scripts/import_bb_history.py",
     "data/bb_history_2025.txt",
     "tracking/categorias/Esportes.md",
@@ -196,7 +197,6 @@
     "dashboard/pages/2_📈_Fluxo_Anual.py",
     "dashboard/pages/1_📊_Categorias.py",
     "dashboard/app.py",
-    "dashboard/pages",
     "tracking/Dashboard-Mensal.md",
     "tracking/Visao-Anual-2026.md",
     "tracking/_Templates/Template-Categoria.md",

@@ -5,7 +5,7 @@ mes: 1
 mes_nome: Janeiro
 total_gasto: 20365.58
 total_transacoes: 22
-atualizado: 2025-12-30 22:06
+atualizado: 2025-12-31 11:09
 ---
 
 # Janeiro 2026 - Detalhamento
@@ -25,17 +25,12 @@ atualizado: 2025-12-30 22:06
 
 ## Gastos por Categoria
 
-### 🏠 Casa
+### 🏗️ Obra
 
-**Budget**: R$ 500 | **Gasto**: R$ 12,830 | **Status**: CRITICAL
+**Budget**: R$ 0 | **Gasto**: R$ 11,100 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
-| 2026-01-10 | FIRE VERBO 1/2 | R$ 220.00 |
-| 2026-01-10 | CASA CHIESSE 2X 1/2 | R$ 549.00 |
-| 2026-01-10 | AREDES 7/8 | R$ 670.36 |
-| 2026-01-10 | CASA CHIESSE 5X 1/5 | R$ 163.07 |
-| 2026-01-10 | MACOPIL 1/5 | R$ 127.81 |
 | 2026-01-10 | MOVEIS PLANEJADOS 2/10 | R$ 9,500.00 |
 | 2026-01-10 | MESA E CADEIRAS 1/10 | R$ 1,600.00 |
 
@@ -62,6 +57,18 @@ atualizado: 2025-12-30 22:06
 | 2026-01-10 | AMAZON MARKETPLACE 3/10 | R$ 835.20 |
 | 2026-01-10 | SHOPEE FIDCO 3/12 | R$ 193.47 |
 | 2026-01-10 | MAGALU 1/10 | R$ 448.25 |
+
+### 🏠 Casa
+
+**Budget**: R$ 500 | **Gasto**: R$ 1,730 | **Status**: CRITICAL
+
+| Data | Descricao | Valor |
+|------|-----------|-------|
+| 2026-01-10 | FIRE VERBO 1/2 | R$ 220.00 |
+| 2026-01-10 | CASA CHIESSE 2X 1/2 | R$ 549.00 |
+| 2026-01-10 | AREDES 7/8 | R$ 670.36 |
+| 2026-01-10 | CASA CHIESSE 5X 1/5 | R$ 163.07 |
+| 2026-01-10 | MACOPIL 1/5 | R$ 127.81 |
 
 ### 💻 Assinaturas
 
@@ -97,8 +104,8 @@ atualizado: 2025-12-30 22:06
 | 2026-01-10 | ALFATEC COMERCIO 16/21 | compras | R$ 413.76 |
 | 2026-01-10 | AMAZON MARKETPLACE 3/10 | compras | R$ 835.20 |
 | 2026-01-10 | VINDI BROIL 3/10 | assinaturas | R$ 359.01 |
-| 2026-01-10 | MOVEIS PLANEJADOS 2/10 | casa | R$ 9,500.00 |
-| 2026-01-10 | MESA E CADEIRAS 1/10 | casa | R$ 1,600.00 |
+| 2026-01-10 | MOVEIS PLANEJADOS 2/10 | obra | R$ 9,500.00 |
+| 2026-01-10 | MESA E CADEIRAS 1/10 | obra | R$ 1,600.00 |
 | 2026-01-10 | OPENAI CHATGPT 3/12 | assinaturas | R$ 109.09 |
 | 2026-01-10 | SHOPEE FIDCO 3/12 | compras | R$ 193.47 |
 | 2026-01-10 | MAGALU 1/10 | compras | R$ 448.25 |

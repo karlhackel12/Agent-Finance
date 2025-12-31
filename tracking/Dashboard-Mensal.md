@@ -2,7 +2,7 @@
 tipo: dashboard
 ano: 2026
 mes: 1
-atualizado: 2025-12-30 22:06
+atualizado: 2025-12-31 11:09
 ---
 
 # Dashboard Financeiro 2026
@@ -33,9 +33,10 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
-| 🏠 Casa | R$ 12,830 | R$ 500 | 2566% | Critico |
+| 🏗️ Obra | R$ 11,100 | R$ 0 | 0% | OK |
 | 🏥 Saude | R$ 4,670 | R$ 2,000 | 234% | Critico |
 | 🛒 Compras | R$ 2,111 | R$ 2,500 | 84% | OK |
+| 🏠 Casa | R$ 1,730 | R$ 500 | 346% | Critico |
 | 💻 Assinaturas | R$ 755 | R$ 3,500 | 22% | OK |
 | 🍔 Alimentacao | R$ 0 | R$ 3,500 | 0% | OK |
 | 🚗 Transporte | R$ 0 | R$ 4,000 | 0% | OK |
@@ -56,8 +57,8 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 ## Alertas Ativos
 
-- **CRITICO**: 🏠 Casa excedeu R$ 12,330 (2566% do budget)
 - **CRITICO**: 🏥 Saude excedeu R$ 2,670 (234% do budget)
+- **CRITICO**: 🏠 Casa excedeu R$ 1,230 (346% do budget)
 
 ---
 
@@ -90,7 +91,7 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 ## Proximas Acoes
 
-1. [ ] Revisar gastos de Casa
-2. [ ] Revisar gastos de Saude
+1. [ ] Revisar gastos de Saude
+2. [ ] Revisar gastos de Casa
 3. [ ] Sincronizar fatura BB
 4. [ ] Atualizar parcelamentos

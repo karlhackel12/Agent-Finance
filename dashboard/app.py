@@ -90,9 +90,20 @@ summary = get_monthly_summary(selected_year, selected_month)
 categories = get_categories()
 installments = get_active_installments()
 
-# Calculate totals
-total_budget = sum(c.get('budget_monthly', 0) for c in categories)
-total_spent = summary.get('total_spent', 0)
+# Categorias excluídas do cálculo de budget (obra é separada)
+EXCLUDED_CATEGORIES = ['obra', 'esportes']
+
+# Filtrar categorias para cálculo de budget (excluir obra)
+budget_categories = [c for c in categories if c.get('name') not in EXCLUDED_CATEGORIES]
+budget_summary_cats = [c for c in summary.get('categories', []) if c.get('category') not in EXCLUDED_CATEGORIES]
+
+# Calculate totals (excluindo obra)
+total_budget = sum(c.get('budget_monthly', 0) for c in budget_categories)
+total_spent = sum(c.get('total', 0) for c in budget_summary_cats)
+
+# Gastos com obra (separado)
+obra_spent = sum(c.get('total', 0) for c in summary.get('categories', []) if c.get('category') == 'obra')
+
 total_installments = sum(i.get('installment_amount', 0) for i in installments)
 
 # Constants
@@ -102,7 +113,7 @@ OBRA_PROJETADO = 9590 if selected_month == 1 else 0
 # KPIs Row
 st.markdown("### 📈 Resumo do Mês")
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     st.metric(
@@ -114,7 +125,7 @@ with col1:
 with col2:
     delta_var = ((total_spent / total_budget) - 1) * 100 if total_budget > 0 else 0
     st.metric(
-        label="🛒 Gastos Variáveis",
+        label="🛒 Variáveis",
         value=f"R$ {total_spent:,.0f}",
         delta=f"{delta_var:+.0f}% vs budget",
         delta_color="inverse"
@@ -122,13 +133,21 @@ with col2:
 
 with col3:
     st.metric(
+        label="🏗️ Obra",
+        value=f"R$ {obra_spent:,.0f}",
+        delta="Separado"
+    )
+
+with col4:
+    st.metric(
         label="📦 Parcelamentos",
         value=f"R$ {total_installments:,.0f}",
         delta=f"{len(installments)} ativos"
     )
 
-with col4:
-    saida_total = total_spent + total_installments + OBRA_PROJETADO
+with col5:
+    # Poupança exclui obra (já contabilizada separadamente)
+    saida_total = total_spent + obra_spent
     poupanca = RECEITA - saida_total
     poupanca_pct = (poupanca / RECEITA) * 100
     st.metric(
@@ -145,12 +164,12 @@ col_left, col_right = st.columns([2, 1])
 with col_left:
     st.markdown("### 📊 Gastos por Categoria")
 
-    # Category data
+    # Category data (excluindo obra e esportes)
     import plotly.express as px
     import plotly.graph_objects as go
 
     cat_data = []
-    for cat in summary.get('categories', []):
+    for cat in budget_summary_cats:  # Usa lista filtrada (sem obra/esportes)
         cat_data.append({
             'Categoria': cat['category'].title(),
             'Budget': cat['budget'],

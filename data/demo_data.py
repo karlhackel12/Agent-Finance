@@ -72,7 +72,7 @@ def create_demo_database(db_path: str = "data/finance.db"):
     categories = [
         ('alimentacao', '🍽️', 3500, 1),
         ('compras', '🛒', 2500, 0),
-        ('casa', '🏠', 500, 1),           # Reduzido (parcelamentos são separados)
+        ('casa', '🏠', 500, 1),           # Gastos regulares de casa
         ('transporte', '🚗', 4000, 1),    # Movida 3200 + Combustível 800
         ('saude', '💊', 2000, 1),          # Ajustado com base em histórico
         ('assinaturas', '📱', 3500, 0),   # Aumentado (trabalho + pessoal)
@@ -80,6 +80,7 @@ def create_demo_database(db_path: str = "data/finance.db"):
         ('educacao', '📚', 200, 0),
         ('taxas', '🏦', 100, 0),
         ('esportes', '🎾', 1500, 0),      # Tênis (PIX Thiago Mariotti)
+        ('obra', '🏗️', 0, 0),             # Construção/móveis - não conta no budget
     ]
 
     cursor.executemany(
@@ -130,10 +131,10 @@ def create_demo_database(db_path: str = "data/finance.db"):
 
     # Insert real installments data
     installments = [
-        # Grandes - Obra/Móveis
-        ('MOVEIS PLANEJADOS', 95000, 9500, 10, 2, '2025-12-01', '2026-10-01', cat_map['casa']),
-        ('MESA E CADEIRAS', 16000, 1600, 10, 1, '2026-01-01', '2026-10-01', cat_map['casa']),
-        ('ELETRODOMESTICOS', 15000, 2500, 6, 0, '2026-04-01', '2026-09-01', cat_map['casa']),
+        # Grandes - Obra/Móveis (categoria obra - não conta no budget)
+        ('MOVEIS PLANEJADOS', 95000, 9500, 10, 2, '2025-12-01', '2026-10-01', cat_map['obra']),
+        ('MESA E CADEIRAS', 16000, 1600, 10, 1, '2026-01-01', '2026-10-01', cat_map['obra']),
+        ('ELETRODOMESTICOS', 15000, 2500, 6, 0, '2026-04-01', '2026-09-01', cat_map['obra']),
         # Saúde
         ('TRATAMENTO EMAGRECIMENTO', 25000, 2500, 10, 1, '2026-01-01', '2026-10-01', cat_map['saude']),
         ('DROGARIAS PACHECO', 5540, 1846.72, 3, 2, '2025-12-01', '2026-02-01', cat_map['saude']),
