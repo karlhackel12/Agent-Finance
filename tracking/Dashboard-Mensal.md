@@ -2,7 +2,7 @@
 tipo: dashboard
 ano: 2025
 mes: 12
-atualizado: 2025-12-30 21:49
+atualizado: 2025-12-30 21:59
 ---
 
 # Dashboard Financeiro 2025
@@ -25,23 +25,23 @@ WHERE tipo = "kpi" AND ano = 2025 AND mes = 12
 
 | Metrica | Valor | Meta | Status |
 |---------|-------|------|--------|
-| Gastos Variaveis | R$ 31,101 | R$ 22,500 | Acima |
+| Gastos Variaveis | R$ 31,101 | R$ 19,300 | Acima |
 | Taxa Poupanca | 44% | 28% | OK |
-| Categorias Criticas | 4 | 0 | Critico |
+| Categorias Criticas | 3 | 0 | Critico |
 
 ### Gastos por Categoria
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
-| 🏠 Casa | R$ 9,500 | R$ 2,000 | 475% | Critico |
-| 🛒 Compras | R$ 7,882 | R$ 3,500 | 225% | Critico |
-| 🍔 Alimentacao | R$ 5,049 | R$ 4,000 | 126% | Critico |
-| 🚗 Transporte | R$ 3,493 | R$ 4,200 | 83% | OK |
-| 💻 Assinaturas | R$ 2,551 | R$ 1,300 | 196% | Critico |
-| 🏥 Saude | R$ 1,967 | R$ 3,800 | 52% | OK |
+| 🏠 Casa | R$ 9,500 | R$ 500 | 1900% | Critico |
+| 🛒 Compras | R$ 7,882 | R$ 2,500 | 315% | Critico |
+| 🍔 Alimentacao | R$ 5,049 | R$ 3,500 | 144% | Critico |
+| 🚗 Transporte | R$ 3,493 | R$ 4,000 | 87% | OK |
+| 💻 Assinaturas | R$ 2,551 | R$ 3,500 | 73% | OK |
+| 🏥 Saude | R$ 1,967 | R$ 2,000 | 98% | Atencao |
 | 🎮 Lazer | R$ 619 | R$ 1,500 | 41% | OK |
-| 📚 Educacao | R$ 40 | R$ 400 | 10% | OK |
-| 📝 Taxas | R$ 0 | R$ 300 | 0% | OK |
+| 📚 Educacao | R$ 40 | R$ 200 | 20% | OK |
+| 📝 Taxas | R$ 0 | R$ 100 | 0% | OK |
 | 🎾 Esportes | R$ 0 | R$ 1,500 | 0% | OK |
 
 ### Distribuicao 50/30/20
@@ -56,10 +56,10 @@ WHERE tipo = "kpi" AND ano = 2025 AND mes = 12
 
 ## Alertas Ativos
 
-- **CRITICO**: 🏠 Casa excedeu R$ 7,500 (475% do budget)
-- **CRITICO**: 🛒 Compras excedeu R$ 4,382 (225% do budget)
-- **CRITICO**: 🍔 Alimentacao excedeu R$ 1,049 (126% do budget)
-- **CRITICO**: 💻 Assinaturas excedeu R$ 1,251 (196% do budget)
+- **CRITICO**: 🏠 Casa excedeu R$ 9,000 (1900% do budget)
+- **CRITICO**: 🛒 Compras excedeu R$ 5,382 (315% do budget)
+- **CRITICO**: 🍔 Alimentacao excedeu R$ 1,549 (144% do budget)
+- **Atencao**: 🏥 Saude em 98% do budget
 
 ---
 
@@ -95,6 +95,5 @@ WHERE tipo = "kpi" AND ano = 2025 AND mes = 12
 1. [ ] Revisar gastos de Casa
 2. [ ] Revisar gastos de Compras
 3. [ ] Revisar gastos de Alimentacao
-4. [ ] Revisar gastos de Assinaturas
-5. [ ] Sincronizar fatura BB
-6. [ ] Atualizar parcelamentos
+4. [ ] Sincronizar fatura BB
+5. [ ] Atualizar parcelamentos

@@ -2,12 +2,12 @@
 tipo: categoria
 nome: saude
 icon: 🏥
-budget_mensal: 3800.0
+budget_mensal: 2000.0
 ---
 
 # 🏥 Saude
 
-## Budget Mensal: R$ 3,800
+## Budget Mensal: R$ 2,000
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 3800.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 3,800 | - | - |
-| Fevereiro | - | R$ 3,800 | - | - |
-| Marco | - | R$ 3,800 | - | - |
-| Abril | - | R$ 3,800 | - | - |
-| Maio | - | R$ 3,800 | - | - |
-| Junho | - | R$ 3,800 | - | - |
-| Julho | R$ 1,818 | R$ 3,800 | 48% | OK |
-| Agosto | R$ 2,046 | R$ 3,800 | 54% | OK |
-| Setembro | R$ 2,100 | R$ 3,800 | 55% | OK |
-| Outubro | R$ 2,096 | R$ 3,800 | 55% | OK |
-| Novembro | R$ 1,888 | R$ 3,800 | 50% | OK |
-| Dezembro | R$ 1,967 | R$ 3,800 | 52% | OK |
+| Janeiro | - | R$ 2,000 | - | - |
+| Fevereiro | - | R$ 2,000 | - | - |
+| Marco | - | R$ 2,000 | - | - |
+| Abril | - | R$ 2,000 | - | - |
+| Maio | - | R$ 2,000 | - | - |
+| Junho | - | R$ 2,000 | - | - |
+| Julho | R$ 1,818 | R$ 2,000 | 91% | Atencao |
+| Agosto | R$ 2,046 | R$ 2,000 | 102% | Atencao |
+| Setembro | R$ 2,100 | R$ 2,000 | 105% | Atencao |
+| Outubro | R$ 2,096 | R$ 2,000 | 105% | Atencao |
+| Novembro | R$ 1,888 | R$ 2,000 | 94% | Atencao |
+| Dezembro | R$ 1,967 | R$ 2,000 | 98% | Atencao |
 
 ---
 
@@ -35,9 +35,9 @@ budget_mensal: 3800.0
 | Metrica | Valor |
 |---------|-------|
 | Total Gasto | R$ 11,916 |
-| Budget Anual | R$ 45,600 |
+| Budget Anual | R$ 24,000 |
 | Media Mensal | R$ 1,986 |
-| % Utilizado | 26% |
+| % Utilizado | 50% |
 
 ---
 

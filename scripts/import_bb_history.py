@@ -66,6 +66,12 @@ TAX_KEYWORDS = [
     "iof", "juros", "multa", "taxa", "encargo", "anuidade",
 ]
 
+# Lazer/Esportes -> Lazer
+LAZER_KEYWORDS = [
+    "tennis", "tenis", "mariote", "arena sport", "padel", "beach tennis",
+    "academia", "gym", "fitness", "crossfit",
+]
+
 # Transações a ignorar
 IGNORE_PATTERNS = [
     r"PGTO\. CASH",  # Pagamentos de fatura
@@ -141,6 +147,11 @@ def get_system_category(bb_category: str, description: str) -> Optional[str]:
     for keyword in TAX_KEYWORDS:
         if keyword in desc_lower:
             return "taxas"
+
+    # Lazer/Esportes -> Lazer
+    for keyword in LAZER_KEYWORDS:
+        if keyword in desc_lower:
+            return "lazer"
 
     # Usar mapeamento padrão
     return BB_TO_SYSTEM_CATEGORY.get(bb_category.lower())

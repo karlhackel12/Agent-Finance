@@ -2,12 +2,12 @@
 tipo: categoria
 nome: casa
 icon: 🏠
-budget_mensal: 2000.0
+budget_mensal: 500.0
 ---
 
 # 🏠 Casa
 
-## Budget Mensal: R$ 2,000
+## Budget Mensal: R$ 500
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 2000.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 2,000 | - | - |
-| Fevereiro | - | R$ 2,000 | - | - |
-| Marco | - | R$ 2,000 | - | - |
-| Abril | - | R$ 2,000 | - | - |
-| Maio | - | R$ 2,000 | - | - |
-| Junho | R$ 516 | R$ 2,000 | 26% | OK |
-| Julho | R$ 381 | R$ 2,000 | 19% | OK |
-| Agosto | R$ 435 | R$ 2,000 | 22% | OK |
-| Setembro | - | R$ 2,000 | - | - |
-| Outubro | - | R$ 2,000 | - | - |
-| Novembro | - | R$ 2,000 | - | - |
-| Dezembro | R$ 9,500 | R$ 2,000 | 475% | Critico |
+| Janeiro | - | R$ 500 | - | - |
+| Fevereiro | - | R$ 500 | - | - |
+| Marco | - | R$ 500 | - | - |
+| Abril | - | R$ 500 | - | - |
+| Maio | - | R$ 500 | - | - |
+| Junho | R$ 516 | R$ 500 | 103% | Atencao |
+| Julho | R$ 381 | R$ 500 | 76% | OK |
+| Agosto | R$ 435 | R$ 500 | 87% | OK |
+| Setembro | - | R$ 500 | - | - |
+| Outubro | - | R$ 500 | - | - |
+| Novembro | - | R$ 500 | - | - |
+| Dezembro | R$ 9,500 | R$ 500 | 1900% | Critico |
 
 ---
 
@@ -35,9 +35,9 @@ budget_mensal: 2000.0
 | Metrica | Valor |
 |---------|-------|
 | Total Gasto | R$ 10,832 |
-| Budget Anual | R$ 24,000 |
+| Budget Anual | R$ 6,000 |
 | Media Mensal | R$ 2,708 |
-| % Utilizado | 45% |
+| % Utilizado | 181% |
 
 ---
 

@@ -5,7 +5,7 @@ mes: 12
 mes_nome: Dezembro
 total_gasto: 31101.390000000003
 total_transacoes: 121
-atualizado: 2025-12-30 21:49
+atualizado: 2025-12-30 21:59
 ---
 
 # Dezembro 2025 - Detalhamento
@@ -27,7 +27,7 @@ atualizado: 2025-12-30 21:49
 
 ### 🏠 Casa
 
-**Budget**: R$ 2,000 | **Gasto**: R$ 9,500 | **Status**: CRITICAL
+**Budget**: R$ 500 | **Gasto**: R$ 9,500 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -35,7 +35,7 @@ atualizado: 2025-12-30 21:49
 
 ### 🛒 Compras
 
-**Budget**: R$ 3,500 | **Gasto**: R$ 7,882 | **Status**: CRITICAL
+**Budget**: R$ 2,500 | **Gasto**: R$ 7,882 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -54,7 +54,7 @@ atualizado: 2025-12-30 21:49
 
 ### 🍔 Alimentacao
 
-**Budget**: R$ 4,000 | **Gasto**: R$ 5,049 | **Status**: CRITICAL
+**Budget**: R$ 3,500 | **Gasto**: R$ 5,049 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -73,7 +73,7 @@ atualizado: 2025-12-30 21:49
 
 ### 🚗 Transporte
 
-**Budget**: R$ 4,200 | **Gasto**: R$ 3,493 | **Status**: OK
+**Budget**: R$ 4,000 | **Gasto**: R$ 3,493 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -84,7 +84,7 @@ atualizado: 2025-12-30 21:49
 
 ### 💻 Assinaturas
 
-**Budget**: R$ 1,300 | **Gasto**: R$ 2,551 | **Status**: CRITICAL
+**Budget**: R$ 3,500 | **Gasto**: R$ 2,551 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -103,7 +103,7 @@ atualizado: 2025-12-30 21:49
 
 ### 🏥 Saude
 
-**Budget**: R$ 3,800 | **Gasto**: R$ 1,967 | **Status**: OK
+**Budget**: R$ 2,000 | **Gasto**: R$ 1,967 | **Status**: WARNING
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -124,7 +124,7 @@ atualizado: 2025-12-30 21:49
 
 ### 📚 Educacao
 
-**Budget**: R$ 400 | **Gasto**: R$ 40 | **Status**: OK
+**Budget**: R$ 200 | **Gasto**: R$ 40 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
