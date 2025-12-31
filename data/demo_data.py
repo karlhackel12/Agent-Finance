@@ -74,7 +74,7 @@ def create_demo_database(db_path: str = "data/finance.db"):
         ('compras', '🛒', 2500, 0),
         ('casa', '🏠', 500, 1),           # Gastos regulares de casa
         ('transporte', '🚗', 4000, 1),    # Movida 3200 + Combustível 800
-        ('saude', '💊', 2000, 1),          # Ajustado com base em histórico
+        ('saude', '💊', 4000, 1),          # Plano saúde + tratamentos
         ('assinaturas', '📱', 3500, 0),   # Aumentado (trabalho + pessoal)
         ('lazer', '🎮', 1500, 0),
         ('educacao', '📚', 200, 0),
@@ -136,7 +136,6 @@ def create_demo_database(db_path: str = "data/finance.db"):
         ('MESA E CADEIRAS', 16000, 1600, 10, 1, '2026-01-01', '2026-10-01', cat_map['obra']),
         ('ELETRODOMESTICOS', 15000, 2500, 6, 0, '2026-04-01', '2026-09-01', cat_map['obra']),
         # Saúde
-        ('TRATAMENTO EMAGRECIMENTO', 25000, 2500, 10, 1, '2026-01-01', '2026-10-01', cat_map['saude']),
         ('DROGARIAS PACHECO', 5540, 1846.72, 3, 2, '2025-12-01', '2026-02-01', cat_map['saude']),
         ('DROGARIA MODERNA', 476, 237.94, 2, 1, '2026-01-01', '2026-02-01', cat_map['saude']),
         # Compras

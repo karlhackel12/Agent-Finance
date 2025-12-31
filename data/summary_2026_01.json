@@ -13,10 +13,10 @@
     {
       "category": "saude",
       "icon": "🏥",
-      "budget": 2000.0,
-      "total": 4669.66,
-      "percent": 233.5,
-      "status": "critical"
+      "budget": 4000.0,
+      "total": 2169.66,
+      "percent": 54.2,
+      "status": "ok"
     },
     {
       "category": "compras",
@@ -91,7 +91,7 @@
       "status": "ok"
     }
   ],
-  "total_spent": 20365.58,
-  "total_budget": 35800.0,
-  "savings_rate": 63.0
+  "total_spent": 17865.579999999998,
+  "total_budget": 37800.0,
+  "savings_rate": 67.5
 }

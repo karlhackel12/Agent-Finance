@@ -3,9 +3,9 @@ tipo: mensal
 ano: 2026
 mes: 1
 mes_nome: Janeiro
-total_gasto: 20365.58
-total_transacoes: 22
-atualizado: 2025-12-31 11:15
+total_gasto: 17865.579999999998
+total_transacoes: 21
+atualizado: 2025-12-31 11:23
 ---
 
 # Janeiro 2026 - Detalhamento
@@ -18,8 +18,8 @@ atualizado: 2025-12-31 11:15
 | Metrica | Valor |
 |---------|-------|
 | Receita Liquida | R$ 55.000 |
-| Total Variaveis | R$ 20,366 |
-| Taxa Poupanca | 63.0% |
+| Total Variaveis | R$ 17,866 |
+| Taxa Poupanca | 67.5% |
 
 ---
 
@@ -36,14 +36,13 @@ atualizado: 2025-12-31 11:15
 
 ### 🏥 Saude
 
-**Budget**: R$ 2,000 | **Gasto**: R$ 4,670 | **Status**: CRITICAL
+**Budget**: R$ 4,000 | **Gasto**: R$ 2,170 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
 | 2026-01-10 | DROGARIA MODERNA 1/2 | R$ 237.94 |
 | 2026-01-10 | DROGARIAS PACHECO 2/3 | R$ 1,846.72 |
 | 2026-01-10 | OTIQUE 8/10 | R$ 85.00 |
-| 2026-01-10 | TRATAMENTO EMAGRECIMENTO 1/10 | R$ 2,500.00 |
 
 ### 🛒 Compras
 
@@ -84,7 +83,7 @@ atualizado: 2025-12-31 11:15
 
 ---
 
-## Todas as Transacoes (22 registros)
+## Todas as Transacoes (21 registros)
 
 | Data | Descricao | Categoria | Valor |
 |------|-----------|-----------|-------|
@@ -109,4 +108,3 @@ atualizado: 2025-12-31 11:15
 | 2026-01-10 | OPENAI CHATGPT 3/12 | assinaturas | R$ 109.09 |
 | 2026-01-10 | SHOPEE FIDCO 3/12 | compras | R$ 193.47 |
 | 2026-01-10 | MAGALU 1/10 | compras | R$ 448.25 |
-| 2026-01-10 | TRATAMENTO EMAGRECIMENTO  | saude | R$ 2,500.00 |

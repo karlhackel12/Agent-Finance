@@ -2,7 +2,7 @@
 tipo: dashboard
 ano: 2026
 mes: 1
-atualizado: 2025-12-31 11:15
+atualizado: 2025-12-31 11:23
 ---
 
 # Dashboard Financeiro 2026
@@ -25,16 +25,16 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 | Metrica | Valor | Meta | Status |
 |---------|-------|------|--------|
-| Gastos Variaveis | R$ 20,366 | R$ 35,800 | OK |
-| Taxa Poupanca | 63% | 28% | OK |
-| Categorias Criticas | 2 | 0 | Critico |
+| Gastos Variaveis | R$ 17,866 | R$ 37,800 | OK |
+| Taxa Poupanca | 68% | 28% | OK |
+| Categorias Criticas | 1 | 0 | Critico |
 
 ### Gastos por Categoria
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
 | 🏗️ Obra | R$ 11,100 | R$ 16,500 | 67% | OK |
-| 🏥 Saude | R$ 4,670 | R$ 2,000 | 234% | Critico |
+| 🏥 Saude | R$ 2,170 | R$ 4,000 | 54% | OK |
 | 🛒 Compras | R$ 2,111 | R$ 2,500 | 84% | OK |
 | 🏠 Casa | R$ 1,730 | R$ 500 | 346% | Critico |
 | 💻 Assinaturas | R$ 755 | R$ 3,500 | 22% | OK |
@@ -51,13 +51,12 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 |-----------|-------|-------|--------|
 | Necessidades (50%) | R$ 27.500 | *calcular* | - |
 | Desejos (30%) | R$ 16.500 | *calcular* | - |
-| Poupanca (20%) | R$ 11.000 | R$ 34,634 | OK |
+| Poupanca (20%) | R$ 11.000 | R$ 37,134 | OK |
 
 ---
 
 ## Alertas Ativos
 
-- **CRITICO**: 🏥 Saude excedeu R$ 2,670 (234% do budget)
 - **CRITICO**: 🏠 Casa excedeu R$ 1,230 (346% do budget)
 
 ---
@@ -77,7 +76,7 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 | FLOWITH.IO | 1/5 | R$ 61 | 2026-05-01 |
 | TAVUS | 1/5 | R$ 72 | 2026-05-01 |
 
-*... e mais 13 parcelamentos*
+*... e mais 12 parcelamentos*
 
 ---
 
@@ -91,7 +90,6 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 ## Proximas Acoes
 
-1. [ ] Revisar gastos de Saude
-2. [ ] Revisar gastos de Casa
-3. [ ] Sincronizar fatura BB
-4. [ ] Atualizar parcelamentos
+1. [ ] Revisar gastos de Casa
+2. [ ] Sincronizar fatura BB
+3. [ ] Atualizar parcelamentos

@@ -2,12 +2,12 @@
 tipo: categoria
 nome: saude
 icon: 🏥
-budget_mensal: 2000.0
+budget_mensal: 4000.0
 ---
 
 # 🏥 Saude
 
-## Budget Mensal: R$ 2,000
+## Budget Mensal: R$ 4,000
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 2000.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | R$ 4,670 | R$ 2,000 | 234% | Critico |
-| Fevereiro | - | R$ 2,000 | - | - |
-| Marco | - | R$ 2,000 | - | - |
-| Abril | - | R$ 2,000 | - | - |
-| Maio | - | R$ 2,000 | - | - |
-| Junho | - | R$ 2,000 | - | - |
-| Julho | - | R$ 2,000 | - | - |
-| Agosto | - | R$ 2,000 | - | - |
-| Setembro | - | R$ 2,000 | - | - |
-| Outubro | - | R$ 2,000 | - | - |
-| Novembro | - | R$ 2,000 | - | - |
-| Dezembro | - | R$ 2,000 | - | - |
+| Janeiro | R$ 2,170 | R$ 4,000 | 54% | OK |
+| Fevereiro | - | R$ 4,000 | - | - |
+| Marco | - | R$ 4,000 | - | - |
+| Abril | - | R$ 4,000 | - | - |
+| Maio | - | R$ 4,000 | - | - |
+| Junho | - | R$ 4,000 | - | - |
+| Julho | - | R$ 4,000 | - | - |
+| Agosto | - | R$ 4,000 | - | - |
+| Setembro | - | R$ 4,000 | - | - |
+| Outubro | - | R$ 4,000 | - | - |
+| Novembro | - | R$ 4,000 | - | - |
+| Dezembro | - | R$ 4,000 | - | - |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 2000.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 4,670 |
-| Budget Anual | R$ 24,000 |
-| Media Mensal | R$ 4,670 |
-| % Utilizado | 19% |
+| Total Gasto | R$ 2,170 |
+| Budget Anual | R$ 48,000 |
+| Media Mensal | R$ 2,170 |
+| % Utilizado | 5% |
 
 ---
 
