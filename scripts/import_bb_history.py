@@ -38,7 +38,12 @@ SUBSCRIPTION_KEYWORDS = [
     "cluely", "21st.dev", "taplio", "leapfrog", "of london",
     "float labs", "meetsquad", "anything create", "globo premiere",
     "estadao", "amazon prime", "amazon kindle", "google one",
-    "ifood club", "contabilizei", "movida carro", "tavus",
+    "ifood club", "contabilizei", "tavus",
+]
+
+# Transporte (além de combustível)
+TRANSPORT_KEYWORDS = [
+    "movida", "localiza", "unidas", "hertz", "avis", "uber", "99",
 ]
 
 # Combustível -> Transporte
@@ -83,7 +88,12 @@ def get_system_category(bb_category: str, description: str) -> Optional[str]:
     """Mapeia categoria BB para categoria do sistema."""
     desc_lower = description.lower()
 
-    # Verificar assinaturas primeiro
+    # Transporte (carros, locadoras, apps) - verificar antes de assinaturas
+    for keyword in TRANSPORT_KEYWORDS:
+        if keyword in desc_lower:
+            return "transporte"
+
+    # Verificar assinaturas
     for keyword in SUBSCRIPTION_KEYWORDS:
         if keyword in desc_lower:
             return "assinaturas"
