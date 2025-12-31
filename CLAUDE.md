@@ -24,19 +24,24 @@ You are assisting a **Senior Product Manager** working in **nearshoring** (PJ co
 
 ## Expense Categories
 
-When categorizing transactions, use these 9 standard categories:
+When categorizing transactions, use these 11 standard categories:
 
-1. **Alimentacao** - Groceries, restaurants, delivery, coffee (Target: R$ 5,000)
-2. **Transporte** - Fuel, tolls, parking, rides (Target: R$ 1,500)
-3. **Saude** - Pharmacy, appointments, gym, wellness (Target: R$ 1,500)
-4. **Assinaturas/Software** - Streaming, apps, SaaS tools (Target: R$ 1,000)
-5. **Compras Diversas** - Shopping, home items, gifts (Target: R$ 3,000)
-6. **Lazer** - Entertainment, events, travel (Target: R$ 2,500)
-7. **Educacao** - Courses, books, certifications (Target: R$ 500)
-8. **Casa** - Maintenance, repairs, utilities (Target: R$ 3,000)
-9. **Taxas/Servicos** - Bank fees, services, government (Target: R$ 500)
+**Variáveis (incluídas no budget mensal - R$ 19.800/mês):**
+1. **Alimentacao** - Groceries, restaurants, delivery, coffee (Budget: R$ 3,500)
+2. **Transporte** - Movida R$ 3,200 + combustível (Budget: R$ 4,000)
+3. **Saude** - Plano saúde R$ 1,300 + farmácia + tratamentos (Budget: R$ 4,000)
+4. **Assinaturas** - Trabalho + pessoal + SaaS tools (Budget: R$ 3,500)
+5. **Compras** - Shopping, home items, gifts (Budget: R$ 2,500)
+6. **Lazer** - Entertainment, events, travel (Budget: R$ 1,500)
+7. **Educacao** - Courses, books, certifications (Budget: R$ 200)
+8. **Casa** - Maintenance, repairs, utilities regulares (Budget: R$ 500)
+9. **Taxas** - Bank fees, services, government (Budget: R$ 100)
 
-**Important**: Fixed commitments (home loan, car subscription, health insurance) are tracked separately from variable expenses.
+**Excluídas do budget mensal (rastreadas separadamente):**
+10. **Esportes** - Tênis, academia, atividades físicas (Budget: R$ 1,500)
+11. **Obra** - Construção, móveis, eletrodomésticos 2026 (Budget: R$ 16,500/mês médio)
+
+**Important**: Fixed commitments (home loan R$ 7,500) are tracked separately. Obra e Esportes são excluídos do cálculo de variáveis no dashboard.
 
 ## Budget Framework
 

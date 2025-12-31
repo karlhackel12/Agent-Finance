@@ -68,23 +68,23 @@ def create_demo_database(db_path: str = "data/finance.db"):
     """)
 
     # Insert demo categories with icons
-    # Valores atualizados em 2025-12-30 (revisão baseada em 6 meses de dados reais)
+    # Valores atualizados em 2025-12-31 (auditoria completa - ícones alinhados com banco)
     categories = [
-        ('alimentacao', '🍽️', 3500, 1),
-        ('compras', '🛒', 2500, 0),
-        ('casa', '🏠', 500, 1),           # Gastos regulares de casa
-        ('transporte', '🚗', 4000, 1),    # Movida 3200 + Combustível 800
-        ('saude', '💊', 4000, 1),          # Plano saúde + tratamentos
-        ('assinaturas', '📱', 3500, 0),   # Aumentado (trabalho + pessoal)
-        ('lazer', '🎮', 1500, 0),
-        ('educacao', '📚', 200, 0),
-        ('taxas', '🏦', 100, 0),
-        ('esportes', '🎾', 1500, 0),      # Tênis (PIX Thiago Mariotti)
-        ('obra', '🏗️', 16500, 0),          # Construção/móveis - budget médio mensal
+        ('alimentacao', '🍔', 3500),
+        ('compras', '🛒', 2500),
+        ('casa', '🏠', 500),           # Gastos regulares de casa
+        ('transporte', '🚗', 4000),    # Movida 3200 + Combustível 800
+        ('saude', '🏥', 4000),          # Plano saúde + tratamentos
+        ('assinaturas', '💻', 3500),   # Aumentado (trabalho + pessoal)
+        ('lazer', '🎮', 1500),
+        ('educacao', '📚', 200),
+        ('taxas', '📝', 100),
+        ('esportes', '🎾', 1500),      # Tênis (PIX Thiago Mariotti)
+        ('obra', '🏗️', 16500),          # Construção/móveis - budget médio mensal
     ]
 
     cursor.executemany(
-        "INSERT INTO categories (name, icon, budget_monthly, is_essential) VALUES (?, ?, ?, ?)",
+        "INSERT INTO categories (name, icon, budget_monthly) VALUES (?, ?, ?)",
         categories
     )
 

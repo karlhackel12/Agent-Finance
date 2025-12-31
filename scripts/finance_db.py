@@ -53,11 +53,11 @@ def ensure_database_exists():
             print("Demo database created for Streamlit Cloud deployment")
         except Exception as e:
             print(f"Error importing demo_data: {e}")
-            # Create minimal structure with correct schema
+            # Create minimal structure with correct schema (fallback if demo_data fails)
             conn = sqlite3.connect(DB_PATH)
             conn.executescript("""
                 CREATE TABLE IF NOT EXISTS categories (
-                    id INTEGER PRIMARY KEY, name TEXT UNIQUE, icon TEXT DEFAULT '📦', budget_monthly REAL DEFAULT 0, is_essential INTEGER DEFAULT 0
+                    id INTEGER PRIMARY KEY, name TEXT UNIQUE, icon TEXT DEFAULT '📦', budget_monthly REAL DEFAULT 0
                 );
                 CREATE TABLE IF NOT EXISTS transactions (
                     id INTEGER PRIMARY KEY, date TEXT, description TEXT, amount REAL, category_id INTEGER, type TEXT DEFAULT 'expense', source TEXT DEFAULT 'manual'
@@ -70,10 +70,11 @@ def ensure_database_exists():
                 CREATE TABLE IF NOT EXISTS monthly_budgets (
                     id INTEGER PRIMARY KEY, year INTEGER, month INTEGER, category_id INTEGER, budget_amount REAL
                 );
-                INSERT INTO categories (name, icon, budget_monthly, is_essential) VALUES
-                    ('alimentacao', '🍽️', 4000, 1), ('compras', '🛒', 3500, 0), ('casa', '🏠', 2000, 1),
-                    ('transporte', '🚗', 1500, 1), ('saude', '💊', 1500, 1), ('assinaturas', '📱', 2011, 0),
-                    ('lazer', '🎮', 1500, 0), ('educacao', '📚', 1500, 0), ('taxas', '🏦', 1000, 0);
+                INSERT INTO categories (name, icon, budget_monthly) VALUES
+                    ('alimentacao', '🍔', 3500), ('compras', '🛒', 2500), ('casa', '🏠', 500),
+                    ('transporte', '🚗', 4000), ('saude', '🏥', 4000), ('assinaturas', '💻', 3500),
+                    ('lazer', '🎮', 1500), ('educacao', '📚', 200), ('taxas', '📝', 100),
+                    ('esportes', '🎾', 1500), ('obra', '🏗️', 16500);
             """)
             conn.close()
             print("Minimal database created with correct schema")

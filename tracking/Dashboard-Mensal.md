@@ -49,9 +49,13 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 | Categoria | Ideal | Atual | Status |
 |-----------|-------|-------|--------|
-| Necessidades (50%) | R$ 27.500 | *calcular* | - |
-| Desejos (30%) | R$ 16.500 | *calcular* | - |
+| Necessidades (50%) | R$ 27.500 | R$ 3,900 | OK |
+| Desejos (30%) | R$ 16.500 | R$ 2,866 | OK |
 | Poupanca (20%) | R$ 11.000 | R$ 37,134 | OK |
+
+> **Nota**: Necessidades = alimentacao + transporte + saude + casa + taxas
+> **Nota**: Desejos = assinaturas + compras + lazer + educacao + esportes
+> **Nota**: Obra (R$ 11,100) rastreada separadamente
 
 ---
 
