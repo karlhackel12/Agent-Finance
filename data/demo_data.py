@@ -68,17 +68,17 @@ def create_demo_database(db_path: str = "data/finance.db"):
     """)
 
     # Insert demo categories with icons
-    # Valores atualizados em 2025-12-29
+    # Valores atualizados em 2025-12-30 (revisão baseada em 6 meses de dados reais)
     categories = [
-        ('alimentacao', '🍽️', 4000, 1),
-        ('compras', '🛒', 3500, 0),
-        ('casa', '🏠', 2000, 1),
-        ('transporte', '🚗', 4200, 1),   # Movida 3200 + Combustível 1000
-        ('saude', '💊', 3800, 1),         # Plano 1300 + Tratamento 2500
-        ('assinaturas', '📱', 1300, 0),
+        ('alimentacao', '🍽️', 3500, 1),
+        ('compras', '🛒', 2500, 0),
+        ('casa', '🏠', 500, 1),           # Reduzido (parcelamentos são separados)
+        ('transporte', '🚗', 4000, 1),    # Movida 3200 + Combustível 800
+        ('saude', '💊', 2000, 1),          # Ajustado com base em histórico
+        ('assinaturas', '📱', 3500, 0),   # Aumentado (trabalho + pessoal)
         ('lazer', '🎮', 1500, 0),
-        ('educacao', '📚', 400, 0),
-        ('taxas', '🏦', 300, 0),
+        ('educacao', '📚', 200, 0),
+        ('taxas', '🏦', 100, 0),
         ('esportes', '🎾', 1500, 0),      # Tênis (PIX Thiago Mariotti)
     ]
 
@@ -167,6 +167,34 @@ def create_demo_database(db_path: str = "data/finance.db"):
            VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
         installments
     )
+
+    # Gerar transações de parcelamentos para Janeiro 2026
+    # Isso garante que os parcelamentos "comam" do budget no dashboard
+    from datetime import datetime as dt
+    year, month = 2026, 1
+    target_date = dt(year, month, 1)
+
+    cursor.execute("SELECT * FROM installments WHERE status = 'active'")
+    active_installments = cursor.fetchall()
+
+    for inst in active_installments:
+        inst_id, desc, total_amt, inst_amt, total_inst, current_inst, start_date, end_date, cat_id, status = inst
+
+        start = dt.strptime(start_date, '%Y-%m-%d')
+        end = dt.strptime(end_date, '%Y-%m-%d')
+
+        if start <= target_date <= end:
+            months_elapsed = (target_date.year - start.year) * 12 + (target_date.month - start.month)
+            parcela_num = months_elapsed + 1
+
+            if parcela_num <= total_inst:
+                tx_desc = f"{desc} {parcela_num}/{total_inst}"
+                tx_date = f"{year}-{month:02d}-10"
+
+                cursor.execute('''
+                    INSERT INTO transactions (date, description, amount, category_id, type, source)
+                    VALUES (?, ?, ?, ?, 'expense', 'parcelamento')
+                ''', (tx_date, tx_desc, inst_amt, cat_id))
 
     conn.commit()
     conn.close()
