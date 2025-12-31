@@ -38,7 +38,7 @@ SUBSCRIPTION_KEYWORDS = [
     "cluely", "21st.dev", "taplio", "leapfrog", "of london",
     "float labs", "meetsquad", "anything create", "globo premiere",
     "estadao", "amazon prime", "amazon kindle", "google one",
-    "ifood club", "contabilizei", "movida carro",
+    "ifood club", "contabilizei", "movida carro", "tavus",
 ]
 
 # Combustível -> Transporte
