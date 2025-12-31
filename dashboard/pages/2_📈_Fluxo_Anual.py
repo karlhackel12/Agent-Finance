@@ -13,19 +13,25 @@ import pandas as pd
 SCRIPTS_PATH = Path(__file__).parent.parent.parent / "scripts"
 sys.path.insert(0, str(SCRIPTS_PATH))
 
-from finance_db import get_monthly_summary, get_active_installments
+from finance_db import get_monthly_summary, get_active_installments, get_categories
 
 st.set_page_config(page_title="Fluxo Anual", page_icon="📈", layout="wide")
 
 st.title("📈 Fluxo de Caixa Anual 2026")
 
-# Constants
-RECEITA = 55000
-VARIAVEIS_PROJ = 17800  # Budget variáveis (sem obra) - atualizado 2025-12-30
-FINANCIAMENTO = 7500    # Empréstimo imobiliário (58 meses até Out/2030)
-
 # Categorias excluídas do cálculo de variáveis (obra é separada)
 EXCLUDED_CATEGORIES = ['obra', 'esportes']
+
+# Constants
+RECEITA = 55000
+FINANCIAMENTO = 7500    # Empréstimo imobiliário (58 meses até Out/2030)
+
+# Calcular VARIAVEIS_PROJ dinamicamente do banco (budget mensal excl. obra/esportes)
+categories = get_categories()
+VARIAVEIS_PROJ = sum(
+    c.get('budget_monthly', 0) for c in categories
+    if c.get('name') not in EXCLUDED_CATEGORIES
+)
 
 # Obra projections per month (móveis/construção, NÃO é o empréstimo)
 OBRA_PROJ = {
