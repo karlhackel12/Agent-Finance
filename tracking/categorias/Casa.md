@@ -20,9 +20,9 @@ budget_mensal: 2000.0
 | Marco | - | R$ 2,000 | - | - |
 | Abril | - | R$ 2,000 | - | - |
 | Maio | - | R$ 2,000 | - | - |
-| Junho | - | R$ 2,000 | - | - |
-| Julho | - | R$ 2,000 | - | - |
-| Agosto | - | R$ 2,000 | - | - |
+| Junho | R$ 516 | R$ 2,000 | 26% | OK |
+| Julho | R$ 381 | R$ 2,000 | 19% | OK |
+| Agosto | R$ 435 | R$ 2,000 | 22% | OK |
 | Setembro | - | R$ 2,000 | - | - |
 | Outubro | - | R$ 2,000 | - | - |
 | Novembro | - | R$ 2,000 | - | - |
@@ -34,10 +34,10 @@ budget_mensal: 2000.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 9,500 |
+| Total Gasto | R$ 10,832 |
 | Budget Anual | R$ 24,000 |
-| Media Mensal | R$ 9,500 |
-| % Utilizado | 40% |
+| Media Mensal | R$ 2,708 |
+| % Utilizado | 45% |
 
 ---
 

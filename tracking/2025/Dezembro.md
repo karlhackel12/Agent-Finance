@@ -3,9 +3,9 @@ tipo: mensal
 ano: 2025
 mes: 12
 mes_nome: Dezembro
-total_gasto: 29701.39
-total_transacoes: 120
-atualizado: 2025-12-30 18:33
+total_gasto: 31101.390000000003
+total_transacoes: 121
+atualizado: 2025-12-30 21:49
 ---
 
 # Dezembro 2025 - Detalhamento
@@ -18,8 +18,8 @@ atualizado: 2025-12-30 18:33
 | Metrica | Valor |
 |---------|-------|
 | Receita Liquida | R$ 55.000 |
-| Total Variaveis | R$ 29,701 |
-| Taxa Poupanca | 46.0% |
+| Total Variaveis | R$ 31,101 |
+| Taxa Poupanca | 43.5% |
 
 ---
 
@@ -35,7 +35,7 @@ atualizado: 2025-12-30 18:33
 
 ### 🛒 Compras
 
-**Budget**: R$ 3,500 | **Gasto**: R$ 8,210 | **Status**: CRITICAL
+**Budget**: R$ 3,500 | **Gasto**: R$ 7,882 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -50,26 +50,7 @@ atualizado: 2025-12-30 18:33
 | 2025-12-22 | JIM.COM PADAKA27 PORTO REAL BR | R$ 33.85 |
 | 2025-12-22 | LfQuintanilhaMe BARRA DO PIRA  | R$ 93.65 |
 
-*... e mais 38 transacoes*
-
-### 💻 Assinaturas
-
-**Budget**: R$ 1,300 | **Gasto**: R$ 5,493 | **Status**: CRITICAL
-
-| Data | Descricao | Valor |
-|------|-----------|-------|
-| 2025-12-26 | ANTHROPIC ANTHROPIC.COM CA | R$ 5.00 |
-| 2025-12-24 | ESTADAO *estadao Sao Paulo BR | R$ 19.90 |
-| 2025-12-21 | REPLIT, INC. REPLIT.COM CA | R$ 290.10 |
-| 2025-12-18 | ZOOM.COM 888-799-9666 ZOOM.US  | R$ 77.49 |
-| 2025-12-18 | MEETSQUAD.AI BURNHAM GB | R$ 68.76 |
-| 2025-12-17 | Google One SAO PAULO BR | R$ 12.50 |
-| 2025-12-15 | Contabilizei TecnologiaCuritib | R$ 186.00 |
-| 2025-12-14 | OF London GB | R$ 46.45 |
-| 2025-12-13 | OPENAI OPENAI.COM CA | R$ 56.17 |
-| 2025-12-11 | RECLAIM.AI RECLAIM.AI CA | R$ 68.21 |
-
-*... e mais 14 transacoes*
+*... e mais 37 transacoes*
 
 ### 🍔 Alimentacao
 
@@ -90,17 +71,39 @@ atualizado: 2025-12-30 18:33
 
 *... e mais 27 transacoes*
 
-### 🎮 Lazer
+### 🚗 Transporte
 
-**Budget**: R$ 1,500 | **Gasto**: R$ 619 | **Status**: OK
+**Budget**: R$ 4,200 | **Gasto**: R$ 3,493 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
-| 2025-12-20 | CEGIL HOTEL RESENDE BR | R$ 618.86 |
+| 2025-12-24 | UBER * PENDING SAO PAULO BR | R$ 19.01 |
+| 2025-12-23 | UBER * PENDING SAO PAULO BR | R$ 12.95 |
+| 2025-12-06 | POSTO TRES POCOS LTDA VOLTA RE | R$ 190.95 |
+| 2025-12-04 | MOVIDA CARRO ASSINATURAMOGI DA | R$ 3,270.00 |
+
+### 💻 Assinaturas
+
+**Budget**: R$ 1,300 | **Gasto**: R$ 2,551 | **Status**: CRITICAL
+
+| Data | Descricao | Valor |
+|------|-----------|-------|
+| 2025-12-26 | ANTHROPIC ANTHROPIC.COM CA | R$ 5.00 |
+| 2025-12-24 | ESTADAO *estadao Sao Paulo BR | R$ 19.90 |
+| 2025-12-21 | REPLIT, INC. REPLIT.COM CA | R$ 290.10 |
+| 2025-12-18 | ZOOM.COM 888-799-9666 ZOOM.US  | R$ 77.49 |
+| 2025-12-18 | MEETSQUAD.AI BURNHAM GB | R$ 68.76 |
+| 2025-12-17 | Google One SAO PAULO BR | R$ 12.50 |
+| 2025-12-15 | Contabilizei TecnologiaCuritib | R$ 186.00 |
+| 2025-12-14 | OF London GB | R$ 46.45 |
+| 2025-12-13 | OPENAI OPENAI.COM CA | R$ 56.17 |
+| 2025-12-11 | RECLAIM.AI RECLAIM.AI CA | R$ 68.21 |
+
+*... e mais 14 transacoes*
 
 ### 🏥 Saude
 
-**Budget**: R$ 3,800 | **Gasto**: R$ 567 | **Status**: OK
+**Budget**: R$ 3,800 | **Gasto**: R$ 1,967 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -109,16 +112,15 @@ atualizado: 2025-12-30 18:33
 | 2025-12-20 | RaiaDrogasilSA BARRA MANSA BR | R$ 252.34 |
 | 2025-12-17 | IFD*DROGARIAS PACHECO SBARRA M | R$ 139.76 |
 | 2025-12-12 | DROGARIA ECONOMIZE BARRA MANSA | R$ 76.35 |
+| 2025-12-10 | PICPAY*PLANO SAUDE | R$ 1,400.00 |
 
-### 🚗 Transporte
+### 🎮 Lazer
 
-**Budget**: R$ 4,200 | **Gasto**: R$ 223 | **Status**: OK
+**Budget**: R$ 1,500 | **Gasto**: R$ 619 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
-| 2025-12-24 | UBER * PENDING SAO PAULO BR | R$ 19.01 |
-| 2025-12-23 | UBER * PENDING SAO PAULO BR | R$ 12.95 |
-| 2025-12-06 | POSTO TRES POCOS LTDA VOLTA RE | R$ 190.95 |
+| 2025-12-20 | CEGIL HOTEL RESENDE BR | R$ 618.86 |
 
 ### 📚 Educacao
 
@@ -130,7 +132,7 @@ atualizado: 2025-12-30 18:33
 
 ---
 
-## Todas as Transacoes (120 registros)
+## Todas as Transacoes (121 registros)
 
 | Data | Descricao | Categoria | Valor |
 |------|-----------|-----------|-------|
@@ -185,4 +187,4 @@ atualizado: 2025-12-30 18:33
 | 2025-12-17 | IFD*DROGARIAS PACHECO SBA | saude | R$ 139.76 |
 | 2025-12-17 | Google One SAO PAULO BR | assinaturas | R$ 12.50 |
 
-*... e mais 70 transacoes*
+*... e mais 71 transacoes*

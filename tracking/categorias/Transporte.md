@@ -21,12 +21,12 @@ budget_mensal: 4200.0
 | Abril | - | R$ 4,200 | - | - |
 | Maio | - | R$ 4,200 | - | - |
 | Junho | - | R$ 4,200 | - | - |
-| Julho | R$ 796 | R$ 4,200 | 19% | OK |
-| Agosto | R$ 564 | R$ 4,200 | 13% | OK |
-| Setembro | R$ 822 | R$ 4,200 | 20% | OK |
-| Outubro | R$ 627 | R$ 4,200 | 15% | OK |
-| Novembro | R$ 564 | R$ 4,200 | 13% | OK |
-| Dezembro | R$ 223 | R$ 4,200 | 5% | OK |
+| Julho | R$ 4,066 | R$ 4,200 | 97% | Atencao |
+| Agosto | R$ 3,834 | R$ 4,200 | 91% | Atencao |
+| Setembro | R$ 4,092 | R$ 4,200 | 97% | Atencao |
+| Outubro | R$ 3,897 | R$ 4,200 | 93% | Atencao |
+| Novembro | R$ 3,847 | R$ 4,200 | 92% | Atencao |
+| Dezembro | R$ 3,493 | R$ 4,200 | 83% | OK |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 4200.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 3,597 |
+| Total Gasto | R$ 23,230 |
 | Budget Anual | R$ 50,400 |
-| Media Mensal | R$ 599 |
-| % Utilizado | 7% |
+| Media Mensal | R$ 3,872 |
+| % Utilizado | 46% |
 
 ---
 

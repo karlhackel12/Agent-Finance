@@ -1,7 +1,7 @@
 ---
 tipo: faturamento-pj
 ano: 2025
-atualizado: 2025-12-30 18:33
+atualizado: 2025-12-30 21:49
 ---
 
 # Faturamento PJ 2025

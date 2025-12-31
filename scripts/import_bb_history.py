@@ -70,10 +70,15 @@ TAX_KEYWORDS = [
 IGNORE_PATTERNS = [
     r"PGTO\. CASH",  # Pagamentos de fatura
     r"#PCV",  # Parcelamentos convertidos
-    r"PICPAY\*",  # Transferências PicPay
     r"DEVOLUCAO JUROS",  # Devoluções
     r"PARC\.COMP\.VIST",  # Parcelamento compra à vista
 ]
+
+# PicPay - Pagamentos via cartão (não são transferências)
+# Dia 10 + valor ~R$1400 = Plano de saúde
+# LIGHT, SAAE, AMPLA = Contas de casa
+PICPAY_UTILITIES = ["light", "saae", "ampla", "enel", "cedae", "naturgy"]
+PICPAY_IGNORE = ["karl hackel", "karl alves", "livia miranda"]  # Transferências pessoais
 
 
 def should_ignore(description: str) -> bool:
@@ -81,12 +86,31 @@ def should_ignore(description: str) -> bool:
     for pattern in IGNORE_PATTERNS:
         if re.search(pattern, description, re.IGNORECASE):
             return True
+
+    # PicPay: ignorar transferências pessoais, mas não contas/boletos
+    desc_lower = description.lower()
+    if "picpay*" in desc_lower:
+        # Verificar se é conta de utilidade (não ignorar)
+        for util in PICPAY_UTILITIES:
+            if util in desc_lower:
+                return False
+        # Verificar se é transferência pessoal (ignorar)
+        for ignore in PICPAY_IGNORE:
+            if ignore in desc_lower:
+                return True
+
     return False
 
 
 def get_system_category(bb_category: str, description: str) -> Optional[str]:
     """Mapeia categoria BB para categoria do sistema."""
     desc_lower = description.lower()
+
+    # PicPay: contas de utilidade -> casa
+    if "picpay*" in desc_lower:
+        for util in PICPAY_UTILITIES:
+            if util in desc_lower:
+                return "casa"
 
     # Transporte (carros, locadoras, apps) - verificar antes de assinaturas
     for keyword in TRANSPORT_KEYWORDS:

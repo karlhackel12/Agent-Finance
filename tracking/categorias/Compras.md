@@ -26,7 +26,7 @@ budget_mensal: 3500.0
 | Setembro | R$ 2,256 | R$ 3,500 | 64% | OK |
 | Outubro | R$ 3,803 | R$ 3,500 | 109% | Atencao |
 | Novembro | R$ 2,534 | R$ 3,500 | 72% | OK |
-| Dezembro | R$ 8,210 | R$ 3,500 | 235% | Critico |
+| Dezembro | R$ 7,882 | R$ 3,500 | 225% | Critico |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 3500.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 24,466 |
+| Total Gasto | R$ 24,138 |
 | Budget Anual | R$ 42,000 |
-| Media Mensal | R$ 3,495 |
-| % Utilizado | 58% |
+| Media Mensal | R$ 3,448 |
+| % Utilizado | 57% |
 
 ---
 

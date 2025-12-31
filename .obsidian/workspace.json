@@ -185,17 +185,18 @@
   },
   "active": "5de3e8899b9ea8d1",
   "lastOpenFiles": [
+    "scripts/import_bb_history.py",
+    "data/bb_history_2025.txt",
+    "tracking/categorias/Esportes.md",
+    "scripts/config.py",
+    "data/demo_data.py",
+    "requirements.txt",
     "dashboard/pages/4_📦_Parcelamentos.py",
     "dashboard/pages/3_🤖_Previsões_ML.py",
     "dashboard/pages/2_📈_Fluxo_Anual.py",
     "dashboard/pages/1_📊_Categorias.py",
     "dashboard/app.py",
     "dashboard/pages",
-    "dashboard",
-    "scripts/ml/budget_optimizer.py",
-    "scripts/ml/spending_predictor.py",
-    "scripts/ml/__init__.py",
-    "scripts/ml",
     "tracking/Dashboard-Mensal.md",
     "tracking/Visao-Anual-2026.md",
     "tracking/_Templates/Template-Categoria.md",
@@ -219,7 +220,6 @@
     "tracking/categorias/Assinaturas.md",
     "tracking/categorias/Saude.md",
     "tracking/categorias/Transporte.md",
-    "tracking/categorias/Casa.md",
-    "tracking/categorias/Compras.md"
+    "tracking/categorias/Casa.md"
   ]
 }

@@ -14,16 +14,8 @@
       "category": "compras",
       "icon": "🛒",
       "budget": 3500.0,
-      "total": 8210.3,
-      "percent": 234.6,
-      "status": "critical"
-    },
-    {
-      "category": "assinaturas",
-      "icon": "💻",
-      "budget": 1300.0,
-      "total": 5493.15,
-      "percent": 422.5,
+      "total": 7882.21,
+      "percent": 225.2,
       "status": "critical"
     },
     {
@@ -35,27 +27,35 @@
       "status": "critical"
     },
     {
-      "category": "lazer",
-      "icon": "🎮",
-      "budget": 1500.0,
-      "total": 618.86,
-      "percent": 41.3,
+      "category": "transporte",
+      "icon": "🚗",
+      "budget": 4200.0,
+      "total": 3492.91,
+      "percent": 83.2,
       "status": "ok"
+    },
+    {
+      "category": "assinaturas",
+      "icon": "💻",
+      "budget": 1300.0,
+      "total": 2551.2400000000002,
+      "percent": 196.2,
+      "status": "critical"
     },
     {
       "category": "saude",
       "icon": "🏥",
       "budget": 3800.0,
-      "total": 567.4,
-      "percent": 14.9,
+      "total": 1967.4,
+      "percent": 51.8,
       "status": "ok"
     },
     {
-      "category": "transporte",
-      "icon": "🚗",
-      "budget": 4200.0,
-      "total": 222.91,
-      "percent": 5.3,
+      "category": "lazer",
+      "icon": "🎮",
+      "budget": 1500.0,
+      "total": 618.86,
+      "percent": 41.3,
       "status": "ok"
     },
     {
@@ -83,7 +83,7 @@
       "status": "ok"
     }
   ],
-  "total_spent": 29701.39,
+  "total_spent": 31101.390000000003,
   "total_budget": 22500.0,
-  "savings_rate": 46.0
+  "savings_rate": 43.5
 }
