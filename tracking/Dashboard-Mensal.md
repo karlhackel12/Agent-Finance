@@ -2,7 +2,7 @@
 tipo: dashboard
 ano: 2026
 mes: 1
-atualizado: 2025-12-31 11:09
+atualizado: 2025-12-31 11:15
 ---
 
 # Dashboard Financeiro 2026
@@ -25,7 +25,7 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 | Metrica | Valor | Meta | Status |
 |---------|-------|------|--------|
-| Gastos Variaveis | R$ 20,366 | R$ 19,300 | Acima |
+| Gastos Variaveis | R$ 20,366 | R$ 35,800 | OK |
 | Taxa Poupanca | 63% | 28% | OK |
 | Categorias Criticas | 2 | 0 | Critico |
 
@@ -33,7 +33,7 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
-| 🏗️ Obra | R$ 11,100 | R$ 0 | 0% | OK |
+| 🏗️ Obra | R$ 11,100 | R$ 16,500 | 67% | OK |
 | 🏥 Saude | R$ 4,670 | R$ 2,000 | 234% | Critico |
 | 🛒 Compras | R$ 2,111 | R$ 2,500 | 84% | OK |
 | 🏠 Casa | R$ 1,730 | R$ 500 | 346% | Critico |

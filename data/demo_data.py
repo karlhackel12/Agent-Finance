@@ -80,7 +80,7 @@ def create_demo_database(db_path: str = "data/finance.db"):
         ('educacao', '📚', 200, 0),
         ('taxas', '🏦', 100, 0),
         ('esportes', '🎾', 1500, 0),      # Tênis (PIX Thiago Mariotti)
-        ('obra', '🏗️', 0, 0),             # Construção/móveis - não conta no budget
+        ('obra', '🏗️', 16500, 0),          # Construção/móveis - budget médio mensal
     ]
 
     cursor.executemany(

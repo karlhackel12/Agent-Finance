@@ -5,7 +5,7 @@ mes: 1
 mes_nome: Janeiro
 total_gasto: 20365.58
 total_transacoes: 22
-atualizado: 2025-12-31 11:09
+atualizado: 2025-12-31 11:15
 ---
 
 # Janeiro 2026 - Detalhamento
@@ -27,7 +27,7 @@ atualizado: 2025-12-31 11:09
 
 ### 🏗️ Obra
 
-**Budget**: R$ 0 | **Gasto**: R$ 11,100 | **Status**: OK
+**Budget**: R$ 16,500 | **Gasto**: R$ 11,100 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|

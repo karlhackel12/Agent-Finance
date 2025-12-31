@@ -2,12 +2,12 @@
 tipo: categoria
 nome: obra
 icon: 🏗️
-budget_mensal: 0.0
+budget_mensal: 16500.0
 ---
 
 # 🏗️ Obra
 
-## Budget Mensal: R$ 0
+## Budget Mensal: R$ 16,500
 
 ---
 
@@ -15,18 +15,18 @@ budget_mensal: 0.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | R$ 11,100 | R$ 0 | 0% | OK |
-| Fevereiro | - | R$ 0 | - | - |
-| Marco | - | R$ 0 | - | - |
-| Abril | - | R$ 0 | - | - |
-| Maio | - | R$ 0 | - | - |
-| Junho | - | R$ 0 | - | - |
-| Julho | - | R$ 0 | - | - |
-| Agosto | - | R$ 0 | - | - |
-| Setembro | - | R$ 0 | - | - |
-| Outubro | - | R$ 0 | - | - |
-| Novembro | - | R$ 0 | - | - |
-| Dezembro | - | R$ 0 | - | - |
+| Janeiro | R$ 11,100 | R$ 16,500 | 67% | OK |
+| Fevereiro | - | R$ 16,500 | - | - |
+| Marco | - | R$ 16,500 | - | - |
+| Abril | - | R$ 16,500 | - | - |
+| Maio | - | R$ 16,500 | - | - |
+| Junho | - | R$ 16,500 | - | - |
+| Julho | - | R$ 16,500 | - | - |
+| Agosto | - | R$ 16,500 | - | - |
+| Setembro | - | R$ 16,500 | - | - |
+| Outubro | - | R$ 16,500 | - | - |
+| Novembro | - | R$ 16,500 | - | - |
+| Dezembro | - | R$ 16,500 | - | - |
 
 ---
 
@@ -35,9 +35,9 @@ budget_mensal: 0.0
 | Metrica | Valor |
 |---------|-------|
 | Total Gasto | R$ 11,100 |
-| Budget Anual | R$ 0 |
+| Budget Anual | R$ 198,000 |
 | Media Mensal | R$ 11,100 |
-| % Utilizado | 0% |
+| % Utilizado | 6% |
 
 ---
 

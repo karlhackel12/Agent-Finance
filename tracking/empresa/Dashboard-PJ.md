@@ -1,7 +1,7 @@
 ---
 tipo: dashboard-pj
 ano: 2026
-atualizado: 2025-12-31 11:09
+atualizado: 2025-12-31 11:15
 ---
 
 # Dashboard Empresa (PJ)
