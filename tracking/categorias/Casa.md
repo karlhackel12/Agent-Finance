@@ -15,18 +15,18 @@ budget_mensal: 500.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 500 | - | - |
+| Janeiro | R$ 12,830 | R$ 500 | 2566% | Critico |
 | Fevereiro | - | R$ 500 | - | - |
 | Marco | - | R$ 500 | - | - |
 | Abril | - | R$ 500 | - | - |
 | Maio | - | R$ 500 | - | - |
-| Junho | R$ 516 | R$ 500 | 103% | Atencao |
-| Julho | R$ 381 | R$ 500 | 76% | OK |
-| Agosto | R$ 435 | R$ 500 | 87% | OK |
+| Junho | - | R$ 500 | - | - |
+| Julho | - | R$ 500 | - | - |
+| Agosto | - | R$ 500 | - | - |
 | Setembro | - | R$ 500 | - | - |
 | Outubro | - | R$ 500 | - | - |
 | Novembro | - | R$ 500 | - | - |
-| Dezembro | R$ 9,500 | R$ 500 | 1900% | Critico |
+| Dezembro | - | R$ 500 | - | - |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 500.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 10,832 |
+| Total Gasto | R$ 12,830 |
 | Budget Anual | R$ 6,000 |
-| Media Mensal | R$ 2,708 |
-| % Utilizado | 181% |
+| Media Mensal | R$ 12,830 |
+| % Utilizado | 214% |
 
 ---
 

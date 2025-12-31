@@ -1,15 +1,15 @@
 ---
 tipo: dashboard
-ano: 2025
-mes: 12
-atualizado: 2025-12-30 21:59
+ano: 2026
+mes: 1
+atualizado: 2025-12-30 22:06
 ---
 
-# Dashboard Financeiro 2025
+# Dashboard Financeiro 2026
 
 > Sincronizado automaticamente em: `= this.atualizado`
 
-## Mes Atual: Dezembro 2025
+## Mes Atual: Janeiro 2026
 
 ### KPIs Principais
 
@@ -20,27 +20,27 @@ TABLE WITHOUT ID
   meta as "Meta",
   status as "Status"
 FROM "tracking/data"
-WHERE tipo = "kpi" AND ano = 2025 AND mes = 12
+WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 ```
 
 | Metrica | Valor | Meta | Status |
 |---------|-------|------|--------|
-| Gastos Variaveis | R$ 31,101 | R$ 19,300 | Acima |
-| Taxa Poupanca | 44% | 28% | OK |
-| Categorias Criticas | 3 | 0 | Critico |
+| Gastos Variaveis | R$ 20,366 | R$ 19,300 | Acima |
+| Taxa Poupanca | 63% | 28% | OK |
+| Categorias Criticas | 2 | 0 | Critico |
 
 ### Gastos por Categoria
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
-| 🏠 Casa | R$ 9,500 | R$ 500 | 1900% | Critico |
-| 🛒 Compras | R$ 7,882 | R$ 2,500 | 315% | Critico |
-| 🍔 Alimentacao | R$ 5,049 | R$ 3,500 | 144% | Critico |
-| 🚗 Transporte | R$ 3,493 | R$ 4,000 | 87% | OK |
-| 💻 Assinaturas | R$ 2,551 | R$ 3,500 | 73% | OK |
-| 🏥 Saude | R$ 1,967 | R$ 2,000 | 98% | Atencao |
-| 🎮 Lazer | R$ 619 | R$ 1,500 | 41% | OK |
-| 📚 Educacao | R$ 40 | R$ 200 | 20% | OK |
+| 🏠 Casa | R$ 12,830 | R$ 500 | 2566% | Critico |
+| 🏥 Saude | R$ 4,670 | R$ 2,000 | 234% | Critico |
+| 🛒 Compras | R$ 2,111 | R$ 2,500 | 84% | OK |
+| 💻 Assinaturas | R$ 755 | R$ 3,500 | 22% | OK |
+| 🍔 Alimentacao | R$ 0 | R$ 3,500 | 0% | OK |
+| 🚗 Transporte | R$ 0 | R$ 4,000 | 0% | OK |
+| 🎮 Lazer | R$ 0 | R$ 1,500 | 0% | OK |
+| 📚 Educacao | R$ 0 | R$ 200 | 0% | OK |
 | 📝 Taxas | R$ 0 | R$ 100 | 0% | OK |
 | 🎾 Esportes | R$ 0 | R$ 1,500 | 0% | OK |
 
@@ -50,16 +50,14 @@ WHERE tipo = "kpi" AND ano = 2025 AND mes = 12
 |-----------|-------|-------|--------|
 | Necessidades (50%) | R$ 27.500 | *calcular* | - |
 | Desejos (30%) | R$ 16.500 | *calcular* | - |
-| Poupanca (20%) | R$ 11.000 | R$ 23,899 | OK |
+| Poupanca (20%) | R$ 11.000 | R$ 34,634 | OK |
 
 ---
 
 ## Alertas Ativos
 
-- **CRITICO**: 🏠 Casa excedeu R$ 9,000 (1900% do budget)
-- **CRITICO**: 🛒 Compras excedeu R$ 5,382 (315% do budget)
-- **CRITICO**: 🍔 Alimentacao excedeu R$ 1,549 (144% do budget)
-- **Atencao**: 🏥 Saude em 98% do budget
+- **CRITICO**: 🏠 Casa excedeu R$ 12,330 (2566% do budget)
+- **CRITICO**: 🏥 Saude excedeu R$ 2,670 (234% do budget)
 
 ---
 
@@ -84,7 +82,7 @@ WHERE tipo = "kpi" AND ano = 2025 AND mes = 12
 
 ## Links Rapidos
 
-- [[2026/Dezembro|Detalhamento Dezembro]]
+- [[2026/Janeiro|Detalhamento Janeiro]]
 - [[../obra/Plano-Obra-2026|Plano de Obra]]
 - [[../obra/Checklist-Etapas|Checklist Obra]]
 
@@ -93,7 +91,6 @@ WHERE tipo = "kpi" AND ano = 2025 AND mes = 12
 ## Proximas Acoes
 
 1. [ ] Revisar gastos de Casa
-2. [ ] Revisar gastos de Compras
-3. [ ] Revisar gastos de Alimentacao
-4. [ ] Sincronizar fatura BB
-5. [ ] Atualizar parcelamentos
+2. [ ] Revisar gastos de Saude
+3. [ ] Sincronizar fatura BB
+4. [ ] Atualizar parcelamentos

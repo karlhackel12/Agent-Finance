@@ -15,18 +15,18 @@ budget_mensal: 2000.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | - | R$ 2,000 | - | - |
+| Janeiro | R$ 4,670 | R$ 2,000 | 234% | Critico |
 | Fevereiro | - | R$ 2,000 | - | - |
 | Marco | - | R$ 2,000 | - | - |
 | Abril | - | R$ 2,000 | - | - |
 | Maio | - | R$ 2,000 | - | - |
 | Junho | - | R$ 2,000 | - | - |
-| Julho | R$ 1,818 | R$ 2,000 | 91% | Atencao |
-| Agosto | R$ 2,046 | R$ 2,000 | 102% | Atencao |
-| Setembro | R$ 2,100 | R$ 2,000 | 105% | Atencao |
-| Outubro | R$ 2,096 | R$ 2,000 | 105% | Atencao |
-| Novembro | R$ 1,888 | R$ 2,000 | 94% | Atencao |
-| Dezembro | R$ 1,967 | R$ 2,000 | 98% | Atencao |
+| Julho | - | R$ 2,000 | - | - |
+| Agosto | - | R$ 2,000 | - | - |
+| Setembro | - | R$ 2,000 | - | - |
+| Outubro | - | R$ 2,000 | - | - |
+| Novembro | - | R$ 2,000 | - | - |
+| Dezembro | - | R$ 2,000 | - | - |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 2000.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 11,916 |
+| Total Gasto | R$ 4,670 |
 | Budget Anual | R$ 24,000 |
-| Media Mensal | R$ 1,986 |
-| % Utilizado | 50% |
+| Media Mensal | R$ 4,670 |
+| % Utilizado | 19% |
 
 ---
 

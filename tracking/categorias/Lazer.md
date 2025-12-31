@@ -21,12 +21,12 @@ budget_mensal: 1500.0
 | Abril | - | R$ 1,500 | - | - |
 | Maio | - | R$ 1,500 | - | - |
 | Junho | - | R$ 1,500 | - | - |
-| Julho | R$ 144 | R$ 1,500 | 10% | OK |
+| Julho | - | R$ 1,500 | - | - |
 | Agosto | - | R$ 1,500 | - | - |
-| Setembro | R$ 255 | R$ 1,500 | 17% | OK |
-| Outubro | R$ 268 | R$ 1,500 | 18% | OK |
-| Novembro | R$ 128 | R$ 1,500 | 9% | OK |
-| Dezembro | R$ 619 | R$ 1,500 | 41% | OK |
+| Setembro | - | R$ 1,500 | - | - |
+| Outubro | - | R$ 1,500 | - | - |
+| Novembro | - | R$ 1,500 | - | - |
+| Dezembro | - | R$ 1,500 | - | - |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 1500.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 1,414 |
+| Total Gasto | R$ 0 |
 | Budget Anual | R$ 18,000 |
-| Media Mensal | R$ 283 |
-| % Utilizado | 8% |
+| Media Mensal | R$ 0 |
+| % Utilizado | 0% |
 
 ---
 

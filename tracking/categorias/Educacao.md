@@ -25,8 +25,8 @@ budget_mensal: 200.0
 | Agosto | - | R$ 200 | - | - |
 | Setembro | - | R$ 200 | - | - |
 | Outubro | - | R$ 200 | - | - |
-| Novembro | R$ 2 | R$ 200 | 1% | OK |
-| Dezembro | R$ 40 | R$ 200 | 20% | OK |
+| Novembro | - | R$ 200 | - | - |
+| Dezembro | - | R$ 200 | - | - |
 
 ---
 
@@ -34,10 +34,10 @@ budget_mensal: 200.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 42 |
+| Total Gasto | R$ 0 |
 | Budget Anual | R$ 2,400 |
-| Media Mensal | R$ 21 |
-| % Utilizado | 2% |
+| Media Mensal | R$ 0 |
+| % Utilizado | 0% |
 
 ---
 

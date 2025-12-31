@@ -3,9 +3,41 @@
   "month": 1,
   "categories": [
     {
+      "category": "casa",
+      "icon": "🏠",
+      "budget": 500.0,
+      "total": 12830.24,
+      "percent": 2566.0,
+      "status": "critical"
+    },
+    {
+      "category": "saude",
+      "icon": "🏥",
+      "budget": 2000.0,
+      "total": 4669.66,
+      "percent": 233.5,
+      "status": "critical"
+    },
+    {
+      "category": "compras",
+      "icon": "🛒",
+      "budget": 2500.0,
+      "total": 2110.7400000000002,
+      "percent": 84.4,
+      "status": "ok"
+    },
+    {
+      "category": "assinaturas",
+      "icon": "💻",
+      "budget": 3500.0,
+      "total": 754.94,
+      "percent": 21.6,
+      "status": "ok"
+    },
+    {
       "category": "alimentacao",
       "icon": "🍔",
-      "budget": 4000.0,
+      "budget": 3500.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -13,31 +45,7 @@
     {
       "category": "transporte",
       "icon": "🚗",
-      "budget": 4200.0,
-      "total": 0,
-      "percent": 0.0,
-      "status": "ok"
-    },
-    {
-      "category": "saude",
-      "icon": "🏥",
-      "budget": 3800.0,
-      "total": 0,
-      "percent": 0.0,
-      "status": "ok"
-    },
-    {
-      "category": "assinaturas",
-      "icon": "💻",
-      "budget": 1300.0,
-      "total": 0,
-      "percent": 0.0,
-      "status": "ok"
-    },
-    {
-      "category": "compras",
-      "icon": "🛒",
-      "budget": 3500.0,
+      "budget": 4000.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -53,15 +61,7 @@
     {
       "category": "educacao",
       "icon": "📚",
-      "budget": 400.0,
-      "total": 0,
-      "percent": 0.0,
-      "status": "ok"
-    },
-    {
-      "category": "casa",
-      "icon": "🏠",
-      "budget": 2000.0,
+      "budget": 200.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -69,7 +69,7 @@
     {
       "category": "taxas",
       "icon": "📝",
-      "budget": 300.0,
+      "budget": 100.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -83,7 +83,7 @@
       "status": "ok"
     }
   ],
-  "total_spent": 0,
-  "total_budget": 22500.0,
-  "savings_rate": 100.0
+  "total_spent": 20365.58,
+  "total_budget": 19300.0,
+  "savings_rate": 63.0
 }

@@ -1,7 +1,7 @@
 ---
 tipo: dashboard-pj
-ano: 2025
-atualizado: 2025-12-30 21:59
+ano: 2026
+atualizado: 2025-12-30 22:06
 ---
 
 # Dashboard Empresa (PJ)
@@ -23,13 +23,10 @@ atualizado: 2025-12-30 21:59
 
 ---
 
-## Faturamento 2025
+## Faturamento 2026
 
 | Mes | Faturamento | Simples | Liquido |
 |-----|-------------|---------|---------|
-| Janeiro | R$ 25,977 | R$ 1,927 | R$ 24,050 |
-| Novembro | R$ 0 | R$ 167 | R$ -167 |
-| Dezembro | R$ 36,427 | R$ 0 | R$ 36,427 |
 
 ---
 
@@ -37,8 +34,8 @@ atualizado: 2025-12-30 21:59
 
 | Guia | Competencia | Vencimento | Valor | Status |
 |------|-------------|------------|-------|--------|
-| DARF Unificado | Nov/2025 | 30/12/2025 | R$ 166,98 | Pendente |
-| Simples Nacional | Dez/2025 | 20/01/2026 | A calcular | Futuro |
+| DARF Unificado | Nov/2026 | 30/12/2026 | R$ 166,98 | Pendente |
+| Simples Nacional | Dez/2026 | 20/01/2027 | A calcular | Futuro |
 
 ---
 
@@ -52,12 +49,12 @@ atualizado: 2025-12-30 21:59
 
 ---
 
-## Resumo Anual 2025
+## Resumo Anual 2026
 
 | Metrica | Valor |
 |---------|-------|
 | Faturamento Total | R$ 0 |
-| Impostos Total | R$ 2,094 |
+| Impostos Total | R$ 0 |
 | Taxa Efetiva | 0.0% |
 
 ---
@@ -66,5 +63,5 @@ atualizado: 2025-12-30 21:59
 
 - [[../Dashboard-Mensal|Dashboard Pessoal]]
 - [[../_Index|Home]]
-- [[Faturamento-2025|Historico Faturamento]]
-- [[Impostos-2025|Historico Impostos]]
+- [[Faturamento-2026|Historico Faturamento]]
+- [[Impostos-2026|Historico Impostos]]

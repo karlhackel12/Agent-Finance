@@ -19,7 +19,8 @@ try:
         get_active_installments,
         get_pj_monthly_summary,
         get_pj_yearly_summary,
-        get_consolidated_summary
+        get_consolidated_summary,
+        generate_installment_transactions
     )
     from scripts.sync_excel import sync_dashboard as sync_excel_dashboard
 except ImportError:
@@ -30,7 +31,8 @@ except ImportError:
         get_active_installments,
         get_pj_monthly_summary,
         get_pj_yearly_summary,
-        get_consolidated_summary
+        get_consolidated_summary,
+        generate_installment_transactions
     )
     try:
         from sync_excel import sync_dashboard as sync_excel_dashboard
@@ -629,16 +631,21 @@ def sync_all(year: int, month: int):
     print(f"SINCRONIZACAO COMPLETA - {MONTH_NAMES[month]} {year}")
     print(f"{'='*50}\n")
 
+    # 0. Gerar transacoes de parcelamentos para o mes
+    print("[0/4] Gerando transacoes de parcelamentos...")
+    inst_result = generate_installment_transactions(year, month)
+    print(f"  Parcelamentos: {inst_result['created']} criados, {inst_result['skipped']} ja existentes")
+
     # 1. Sync Obsidian PF
-    print("[1/3] Sincronizando Obsidian (PF)...")
+    print("\n[1/4] Sincronizando Obsidian (PF)...")
     summary = sync_to_obsidian(year, month)
 
     # 2. Sync PJ
-    print("\n[2/3] Sincronizando Obsidian (PJ)...")
+    print("\n[2/4] Sincronizando Obsidian (PJ)...")
     sync_pj(year)
 
     # 3. Sync Excel
-    print("\n[3/3] Sincronizando Excel...")
+    print("\n[3/4] Sincronizando Excel...")
     if sync_excel_dashboard:
         sync_excel_dashboard(year, month)
     else:

@@ -339,6 +339,68 @@ def get_active_installments() -> List[Dict]:
     return [dict(row) for row in rows]
 
 
+def generate_installment_transactions(year: int, month: int) -> Dict:
+    """
+    Gera transações para parcelamentos ativos em um mês específico.
+    Isso garante que os parcelamentos "comam" do budget mensal.
+    """
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    results = {"created": 0, "skipped": 0, "errors": 0}
+
+    # Buscar parcelamentos ativos
+    installments = get_active_installments()
+
+    for inst in installments:
+        try:
+            start_date = datetime.strptime(inst['start_date'], '%Y-%m-%d')
+            end_date = datetime.strptime(inst['end_date'], '%Y-%m-%d')
+            target_date = datetime(year, month, 1)
+
+            # Verificar se o mês está dentro do período do parcelamento
+            if start_date <= target_date <= end_date:
+                # Calcular número da parcela para este mês
+                months_elapsed = (target_date.year - start_date.year) * 12 + (target_date.month - start_date.month)
+                parcela_num = months_elapsed + 1  # Parcelas começam em 1
+
+                if parcela_num > inst['total_installments']:
+                    continue
+
+                # Descrição da transação
+                description = f"{inst['description']} {parcela_num}/{inst['total_installments']}"
+
+                # Data da transação (dia 10 do mês)
+                tx_date = f"{year}-{month:02d}-10"
+
+                # Hash para evitar duplicatas
+                tx_hash = generate_hash(tx_date, description, inst['installment_amount'])
+
+                # Verificar se já existe
+                cursor.execute("SELECT id FROM transactions WHERE hash = ?", (tx_hash,))
+                if cursor.fetchone():
+                    results["skipped"] += 1
+                    continue
+
+                # Inserir transação
+                cursor.execute('''
+                    INSERT INTO transactions
+                    (date, description, amount, category_id, type, source, hash)
+                    VALUES (?, ?, ?, ?, 'expense', 'parcelamento', ?)
+                ''', (tx_date, description, inst['installment_amount'], inst['category_id'], tx_hash))
+
+                results["created"] += 1
+
+        except Exception as e:
+            print(f"Erro ao processar parcelamento {inst['description']}: {e}")
+            results["errors"] += 1
+
+    conn.commit()
+    conn.close()
+
+    return results
+
+
 # ==================== REPORTS ====================
 
 def generate_monthly_report(year: int, month: int) -> str:
