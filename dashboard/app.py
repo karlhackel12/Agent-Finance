@@ -88,7 +88,32 @@ st.title(f"📊 Dashboard - {month_names[selected_month-1]} {selected_year}")
 # Load data
 summary = get_monthly_summary(selected_year, selected_month)
 categories = get_categories()
-installments = get_active_installments()
+all_installments = get_active_installments()
+
+# Filtrar parcelamentos ativos NO MÊS selecionado
+def filter_installments_by_month(installments, year, month):
+    """Retorna apenas parcelamentos ativos no mês/ano especificado."""
+    filtered = []
+    for inst in installments:
+        start = inst.get('start_date', '')
+        end = inst.get('end_date', '')
+        if not start or not end:
+            continue
+
+        start_y, start_m = int(start[:4]), int(start[5:7])
+        end_y, end_m = int(end[:4]), int(end[5:7])
+
+        # Verificar se o mês está dentro do período do parcelamento
+        target = (year, month)
+        start_tuple = (start_y, start_m)
+        end_tuple = (end_y, end_m)
+
+        if start_tuple <= target <= end_tuple:
+            filtered.append(inst)
+
+    return filtered
+
+installments = filter_installments_by_month(all_installments, selected_year, selected_month)
 
 # Categorias excluídas do cálculo de budget (obra é separada)
 EXCLUDED_CATEGORIES = ['obra', 'esportes']
@@ -141,7 +166,7 @@ with col4:
     st.metric(
         label="📦 Parcelamentos",
         value=f"R$ {total_installments:,.0f}",
-        delta=f"{len(installments)} ativos"
+        delta=f"{len(installments)} no mês"
     )
 
 with col5:
@@ -220,9 +245,9 @@ with col_left:
         st.info("Sem dados de gastos para este mês")
 
 with col_right:
-    st.markdown("### 📦 Parcelamentos Ativos")
+    st.markdown(f"### 📦 Parcelamentos ({month_names[selected_month-1]})")
 
-    # Top installments
+    # Top installments do mês selecionado
     sorted_inst = sorted(installments, key=lambda x: x.get('installment_amount', 0), reverse=True)
 
     for inst in sorted_inst[:8]:
