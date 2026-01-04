@@ -129,35 +129,68 @@ def create_demo_database(db_path: str = "data/finance.db"):
         transactions
     )
 
-    # Insert real installments data
+    # Insert real installments data - ATUALIZADO com fatura Dez/2025
+    # Formato: (desc, total, parcela, num_parcelas, current_in_dec, start, end, cat)
+    # current_installment = parcela que aparece em Dezembro (XX de XX/YY)
     installments = [
-        # Grandes - Obra/Móveis (categoria obra - não conta no budget)
-        ('MOVEIS PLANEJADOS', 95000, 9500, 10, 2, '2025-12-01', '2026-10-01', cat_map['obra']),
+        # ============================================
+        # OBRA/MÓVEIS (não conta no budget variáveis)
+        # ============================================
+        # Móveis Planejados - pagamento separado (não no cartão)
+        ('MOVEIS PLANEJADOS', 95000, 9500, 10, 1, '2025-12-01', '2026-09-01', cat_map['obra']),
+        # Futuros
         ('MESA E CADEIRAS', 16000, 1600, 10, 0, '2026-03-01', '2026-12-01', cat_map['obra']),
         ('ELETRODOMESTICOS', 15000, 2500, 6, 0, '2026-04-01', '2026-09-01', cat_map['obra']),
-        # Saúde
-        ('DROGARIAS PACHECO', 5540, 1846.72, 3, 2, '2025-12-01', '2026-02-01', cat_map['saude']),
-        ('DROGARIA MODERNA', 476, 237.94, 2, 1, '2026-01-01', '2026-02-01', cat_map['saude']),
-        # Compras
-        ('AMAZON MARKETPLACE', 8352, 835.2, 10, 3, '2025-11-01', '2026-08-01', cat_map['compras']),
-        ('AREDES', 5363, 670.36, 8, 7, '2025-07-01', '2026-02-01', cat_map['compras']),
-        ('MAGALU', 4482, 448.25, 10, 1, '2026-01-01', '2026-10-01', cat_map['compras']),
-        ('ALFATEC COMERCIO', 8689, 413.76, 21, 16, '2024-10-01', '2026-06-01', cat_map['compras']),
-        ('VINDI BROIL', 3590, 359.01, 10, 3, '2025-11-01', '2026-08-01', cat_map['compras']),
-        ('SHOPEE FIDCO', 2322, 193.47, 12, 3, '2025-11-01', '2026-10-01', cat_map['compras']),
-        ('LOVABLE', 614, 153.43, 4, 3, '2025-11-01', '2026-02-01', cat_map['compras']),
-        ('MACOPIL', 639, 127.81, 5, 1, '2026-01-01', '2026-05-01', cat_map['compras']),
-        ('SHOPEE MEUPUXADOR', 588, 117.56, 5, 1, '2026-01-01', '2026-05-01', cat_map['compras']),
-        ('MARIA LUIZA', 410, 102.5, 4, 3, '2025-11-01', '2026-02-01', cat_map['compras']),
-        ('OTIQUE', 850, 85, 10, 8, '2025-06-01', '2026-03-01', cat_map['compras']),
-        # Casa
-        ('CASA CHIESSE 2X', 1098, 549, 2, 1, '2026-01-01', '2026-02-01', cat_map['casa']),
-        ('CASA CHIESSE 5X', 815, 163.07, 5, 1, '2026-01-01', '2026-05-01', cat_map['casa']),
-        ('FIRE VERBO', 440, 220, 2, 1, '2026-01-01', '2026-02-01', cat_map['casa']),
-        ('TAVUS', 362, 72.36, 5, 1, '2026-01-01', '2026-05-01', cat_map['compras']),
-        ('FLOWITH.IO', 305, 61.05, 5, 1, '2026-01-01', '2026-05-01', cat_map['assinaturas']),
-        # Assinaturas
-        ('OPENAI CHATGPT', 1309, 109.09, 12, 3, '2025-11-01', '2026-10-01', cat_map['assinaturas']),
+
+        # ============================================
+        # SAÚDE
+        # ============================================
+        # DROGARIAS PACHECO - Dez=02/03, termina Jan/26
+        ('DROGARIAS PACHECO', 5540.16, 1846.72, 3, 2, '2025-11-01', '2026-01-01', cat_map['saude']),
+        # DROGARIA MODERNA - Dez=01/02, termina Jan/26
+        ('DROGARIA MODERNA', 475.88, 237.94, 2, 1, '2025-12-01', '2026-01-01', cat_map['saude']),
+
+        # ============================================
+        # COMPRAS
+        # ============================================
+        # AMAZON MARKETPLACE - Dez=03/10, termina Jul/26
+        ('AMAZON MARKETPLACE', 8352, 835.20, 10, 3, '2025-10-01', '2026-07-01', cat_map['compras']),
+        # MAGALU - Dez=01/10, termina Set/26
+        ('MAGALU', 4482.50, 448.25, 10, 1, '2025-12-01', '2026-09-01', cat_map['compras']),
+        # SHOPEE FIDCO - Dez=03/12, termina Set/26
+        ('SHOPEE FIDCO', 2321.64, 193.47, 12, 3, '2025-10-01', '2026-09-01', cat_map['compras']),
+        # VINDI BROIL - Dez=03/10, termina Jul/26
+        ('VINDI BROIL', 3590.10, 359.01, 10, 3, '2025-10-01', '2026-07-01', cat_map['compras']),
+        # AREDES - Dez=07/08, termina Jan/26
+        ('AREDES', 5362.88, 670.36, 8, 7, '2025-06-01', '2026-01-01', cat_map['compras']),
+        # OTIQUE - Dez=08/10, termina Fev/26
+        ('OTIQUE', 850, 85, 10, 8, '2025-05-01', '2026-02-01', cat_map['compras']),
+        # LOVABLE - Dez=03/04, termina Jan/26
+        ('LOVABLE', 613.72, 153.43, 4, 3, '2025-10-01', '2026-01-01', cat_map['assinaturas']),
+        # MACOPIL - Dez=01/05, termina Abr/26
+        ('MACOPIL', 639.05, 127.81, 5, 1, '2025-12-01', '2026-04-01', cat_map['compras']),
+        # SHOPEE MEUPUXADOR - Dez=01/05, termina Abr/26
+        ('SHOPEE MEUPUXADOR', 587.80, 117.56, 5, 1, '2025-12-01', '2026-04-01', cat_map['compras']),
+
+        # ============================================
+        # CASA
+        # ============================================
+        # CASA CHIESSE 2X - Dez=01/02, termina Jan/26
+        ('CASA CHIESSE 2X', 1098, 549, 2, 1, '2025-12-01', '2026-01-01', cat_map['casa']),
+        # CASA CHIESSE 5X - Dez=01/05, termina Abr/26
+        ('CASA CHIESSE 5X', 815.35, 163.07, 5, 1, '2025-12-01', '2026-04-01', cat_map['casa']),
+        # FIRE VERBO - Dez=01/02, termina Jan/26
+        ('FIRE VERBO', 440, 220, 2, 1, '2025-12-01', '2026-01-01', cat_map['casa']),
+
+        # ============================================
+        # ASSINATURAS
+        # ============================================
+        # OPENAI CHATGPT - Dez=03/12, termina Set/26
+        ('OPENAI CHATGPT', 1308.08, 109.09, 12, 3, '2025-10-01', '2026-09-01', cat_map['assinaturas']),
+        # FLOWITH.IO - Dez=01/05, termina Abr/26
+        ('FLOWITH.IO', 305.25, 61.05, 5, 1, '2025-12-01', '2026-04-01', cat_map['assinaturas']),
+        # TAVUS - Dez=01/05, termina Abr/26
+        ('TAVUS', 361.80, 72.36, 5, 1, '2025-12-01', '2026-04-01', cat_map['assinaturas']),
     ]
 
     cursor.executemany(
