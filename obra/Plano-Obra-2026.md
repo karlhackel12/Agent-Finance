@@ -19,9 +19,9 @@
 | #   | Etapa                    | Periodo               | Duracao Est. | Custo Total    | Status          |
 | --- | ------------------------ | --------------------- | ------------ | -------------- | --------------- |
 | 1   | Eletrica 2 Quartos       | Janeiro               | 3-4 dias     | R$ 3.590       | Em andamento |
-| 2   | Piso 80m2                | Janeiro-Fevereiro     | 7-10 dias    | R$ 6.000       | Em andamento |
-| 3   | Acabamentos Internos     | Fevereiro-Marco       | 15-20 dias   | R$ 13.000      | Planejado    |
-|     | **SUBTOTAL INTERNO**     |                       |              | **R$ 22.590**  |                 |
+| 2   | Piso 80m2                | Janeiro-Fevereiro     | 7-10 dias    | R$ 10.400      | Em andamento |
+| 3   | Acabamentos Internos     | Fevereiro-Marco       | 15-20 dias   | R$ 15.900      | Planejado    |
+|     | **SUBTOTAL INTERNO**     |                       |              | **R$ 29.890**  |                 |
 
 ### ETAPAS EXTERNAS (Ao longo do ano)
 
@@ -45,9 +45,9 @@
 
 | Categoria | Valor |
 |-----------|-------|
-| **TOTAL OBRA (Etapas 1-6)** | **R$ 80.940** |
+| **TOTAL OBRA (Etapas 1-6)** | **R$ 88.240** |
 | **TOTAL MOVEIS/ELETROS (Etapas 7-9)** | **R$ 126.000** |
-| **TOTAL GERAL PROJETO** | **R$ 206.940** |
+| **TOTAL GERAL PROJETO** | **R$ 214.240** |
 
 ---
 
@@ -149,11 +149,11 @@ Outubro-Novembro: FINALIZACAO
 
 | Servico | Quantidade | Valor Unit. | Total |
 |---------|------------|-------------|-------|
-| Assentamento | 80m2 | R$ 55/m2 | R$ 4.400 |
+| Assentamento | 80m2 | R$ 110/m2 | R$ 8.800 |
 | Argamassa/Rejunte | 80m2 | R$ 20/m2 | R$ 1.600 |
-| **Total** | | | **R$ 6.000** |
+| **Total** | | | **R$ 10.400** |
 
-### Custo Total Etapa 2: R$ 6.000
+### Custo Total Etapa 2: R$ 10.400
 
 ### Observacoes Tecnicas
 - Verificar nivelamento do contrapiso antes de iniciar
@@ -163,11 +163,12 @@ Outubro-Novembro: FINALIZACAO
 
 ---
 
-## Etapa 3: Acabamentos Internos (NOVO)
+## Etapa 3: Acabamentos Internos (ATUALIZADO)
 
 ### Periodo: Fevereiro-Marco 2026
 
 ### Escopo do Trabalho
+- **Instalacao banheiros**: pias, chuveiros, iluminacao
 - Acabamento banheiros (revestimentos, loucas, metais)
 - Area externa da casa
 - Cantos e arremates internos
@@ -176,7 +177,7 @@ Outubro-Novembro: FINALIZACAO
 
 ### Especificacoes Tecnicas
 
-#### Materiais
+#### Materiais Acabamentos
 
 | Item | Especificacao | Custo Total |
 |------|---------------|-------------|
@@ -184,26 +185,37 @@ Outubro-Novembro: FINALIZACAO
 | Materiais cantos | Cantoneiras, massa, acabamentos | R$ 1.000 |
 | Materiais entrada | Ajustes, acabamentos | R$ 1.000 |
 | Materiais gerais | Diversos acabamentos | R$ 1.500 |
-| **Subtotal Materiais** | | **R$ 5.000** |
+| **Subtotal Materiais Acabamentos** | | **R$ 5.000** |
+
+#### Materiais Instalacao Banheiros (NOVO)
+
+| Item | Especificacao | Custo Total |
+|------|---------------|-------------|
+| Tubulacoes e conexoes | Agua fria/quente, esgoto, registros | R$ 800 |
+| Material eletrico | Luminarias, fiacao, interruptores | R$ 400 |
+| Acessorios fixacao | Parafusos, buchas, suportes | R$ 200 |
+| **Subtotal Materiais Instalacao** | | **R$ 1.400** |
 
 #### Mao de Obra
 
 | Servico | Descricao | Total |
 |---------|-----------|-------|
 | Pedreiro acabamentos | Banheiros, cantos, entrada, gerais | R$ 8.000 |
-| **Subtotal M.O.** | | **R$ 8.000** |
+| Encanador | Instalacao pias e chuveiros (2 banheiros) | R$ 1.200 |
+| Eletricista | Iluminacao banheiros + pontos tomada | R$ 300 |
+| **Subtotal M.O.** | | **R$ 9.500** |
 
-### Custo Total Etapa 3: R$ 13.000
+### Custo Total Etapa 3: R$ 15.900
 
 ### Cronograma de Pagamento (Parcelado)
 
 | Parcela | Mes | Valor |
 |---------|-----|-------|
-| 1/4 | Fevereiro | R$ 3.250 |
-| 2/4 | Marco | R$ 3.250 |
-| 3/4 | Abril | R$ 3.250 |
-| 4/4 | Maio | R$ 3.250 |
-| **TOTAL** | | **R$ 13.000** |
+| 1/4 | Fevereiro | R$ 3.975 |
+| 2/4 | Marco | R$ 3.975 |
+| 3/4 | Abril | R$ 3.975 |
+| 4/4 | Maio | R$ 3.975 |
+| **TOTAL** | | **R$ 15.900** |
 
 ### Observacoes
 - Prioridade alta: deve estar pronto para mudanca em Junho
@@ -229,20 +241,22 @@ Outubro-Novembro: FINALIZACAO
 ### Escopo do Trabalho
 - Pintura completa da fachada externa
 - Preparacao de superficie (lixamento, massa corrida externa)
-- Aplicacao de selador e tinta acrilica premium
+- Aplicacao de selador e **tinta emborrachada Suvinil**
 - 2 a 3 demaos conforme necessidade
 
 ### Especificacoes Tecnicas
 
-#### Materiais
+#### Materiais (PRECISAM SER COMPRADOS)
 
 | Item | Quantidade | Especificacao | Custo Total |
 |------|------------|---------------|-------------|
-| Tinta fachada premium | ~80L | Acrilica premium, cor a definir | R$ 12.000 |
-| Selador | ~20L | Selador acrilico | R$ 1.500 |
+| Tinta emborrachada | ~80L | **Suvinil Emborrachada**, cor a definir | R$ 12.000 |
+| Selador | ~20L | Selador acrilico Suvinil | R$ 1.500 |
 | Massa corrida externa | ~40kg | Para reparos | R$ 800 |
 | Lixa/Materiais auxiliares | 1 conj | Lixa, fita, lona | R$ 700 |
 | **Subtotal Materiais** | | | **R$ 15.000** |
+
+> **NOTA**: Tintas ainda nao foram compradas. Planeja-se parcelar em 6x.
 
 #### Mao de Obra
 
@@ -440,60 +454,70 @@ Outubro-Novembro: FINALIZACAO
 | Etapa | Materiais | Mao de Obra | Total |
 |-------|-----------|-------------|-------|
 | 1. Eletrica | R$ 1.790 | R$ 1.800 | R$ 3.590 |
-| 2. Piso 80m2 | R$ 1.600 | R$ 4.400 | R$ 6.000 |
-| 3. Acabamentos Internos | R$ 5.000 | R$ 8.000 | R$ 13.000 |
-| **SUBTOTAL INTERNO** | **R$ 8.390** | **R$ 14.200** | **R$ 22.590** |
-| 4. Pintura | R$ 15.000 | R$ 9.500 | R$ 24.500 |
+| 2. Piso 80m2 | R$ 1.600 | R$ 8.800 | R$ 10.400 |
+| 3. Acabamentos Internos | R$ 6.400 | R$ 9.500 | R$ 15.900 |
+| **SUBTOTAL INTERNO** | **R$ 9.790** | **R$ 20.100** | **R$ 29.890** |
+| 4. Pintura (Suvinil Emborrachada) | R$ 15.000 | R$ 9.500 | R$ 24.500 |
 | 5. Acabamento Externo | R$ 18.000 | R$ 10.000 | R$ 28.000 |
 | 6. Deck | R$ 4.500 | R$ 1.350 | R$ 5.850 |
 | **SUBTOTAL EXTERNO** | **R$ 37.500** | **R$ 20.850** | **R$ 58.350** |
-| **TOTAL OBRA** | **R$ 45.890** | **R$ 35.050** | **R$ 80.940** |
+| **TOTAL OBRA** | **R$ 47.290** | **R$ 40.950** | **R$ 88.240** |
 | 7. Moveis Planejados | R$ 95.000 | - | R$ 95.000 |
 | 8. Mesa + Cadeiras | R$ 16.000 | - | R$ 16.000 |
 | 9. Eletrodomesticos | R$ 15.000 | - | R$ 15.000 |
 | **SUBTOTAL MOVEIS/ELETROS** | **R$ 126.000** | **-** | **R$ 126.000** |
-| **TOTAL GERAL** | **R$ 171.890** | **R$ 35.050** | **R$ 206.940** |
+| **TOTAL GERAL** | **R$ 173.290** | **R$ 40.950** | **R$ 214.240** |
 
-### Comparativo com Versao Anterior
+### Comparativo com Versao Anterior (v4.0 -> v5.0)
 
-| Item | Antes | Depois | Diferenca |
-|------|-------|--------|-----------|
-| Obra (Etapas 1-4) | R$ 38.440 | R$ 80.940 | +R$ 42.500 |
+| Item | v4.0 | v5.0 | Diferenca |
+|------|------|------|-----------|
+| Obra (Etapas 1-6) | R$ 80.940 | R$ 88.240 | +R$ 7.300 |
 | Moveis + Eletros | R$ 126.000 | R$ 126.000 | - |
-| **TOTAL** | **R$ 164.440** | **R$ 206.940** | **+R$ 42.500** |
+| **TOTAL** | **R$ 206.940** | **R$ 214.240** | **+R$ 7.300** |
 
-### Detalhamento do Aumento
+### Detalhamento do Aumento (v5.0)
 
 | Alteracao | Impacto |
 |-----------|---------|
-| Piso 60m2 -> 80m2 | +R$ 1.500 |
-| Nova Etapa 3 (Acabamentos Internos) | +R$ 13.000 |
-| Nova Etapa 5 (Acabamento Externo) | +R$ 28.000 |
-| **Total Adicional** | **+R$ 42.500** |
+| Assentamento piso R$ 55 -> R$ 110/m2 (80m2) | +R$ 4.400 |
+| Instalacao banheiros (pias, chuveiros, iluminacao) | +R$ 2.900 |
+| **Total Adicional v5.0** | **+R$ 7.300** |
+
+### Materiais Ja Adquiridos vs Pendentes
+
+| Item | Status | Observacao |
+|------|--------|------------|
+| Piso ceramico/porcelanato 80m2 | ✅ Comprado | Proprietario ja possui |
+| Tintas (Suvinil Emborrachada) | ❌ Pendente | Parcelar em 6x (Mar-Ago) |
+| Materiais banheiros | ❌ Pendente | Comprar em Fevereiro |
 
 ### Cronograma de Desembolso 2026
 
 | Mes | Obra | Moveis* | Mesa | Eletros | Total Mes | Acumulado |
 |-----|------|---------|------|---------|-----------|-----------|
 | Dezembro/2025 | - | R$ 9.500 | - | - | R$ 9.500 | R$ 9.500 |
-| Janeiro/2026 | R$ 9.590 | R$ 9.500 | R$ 1.600 | - | R$ 20.690 | R$ 30.190 |
-| Fevereiro/2026 | R$ 3.250 | R$ 9.500 | R$ 1.600 | - | R$ 14.350 | R$ 44.540 |
-| Marco/2026 | R$ 5.750 | R$ 9.500 | R$ 1.600 | - | R$ 16.850 | R$ 61.390 |
-| Abril/2026 | R$ 5.750 | R$ 9.500 | R$ 1.600 | - | R$ 16.850 | R$ 78.240 |
-| Maio/2026 | R$ 5.750 | R$ 9.500 | R$ 1.600 | - | R$ 16.850 | R$ 95.090 |
-| Junho/2026 | R$ 15.250 | R$ 9.500 | R$ 1.600 | - | R$ 26.350 | R$ 121.440 |
-| Julho/2026 | R$ 9.500 | R$ 9.500 | R$ 1.600 | - | R$ 20.600 | R$ 142.040 |
-| Agosto/2026 | R$ 9.500 | R$ 9.500 | R$ 1.600 | - | R$ 20.600 | R$ 162.640 |
-| Setembro/2026 | R$ 7.000 | R$ 9.500 | R$ 1.600 | R$ 2.500 | R$ 20.600 | R$ 183.240 |
-| Outubro/2026 | R$ 7.000 | - | R$ 1.600 | R$ 2.500 | R$ 11.100 | R$ 194.340 |
-| Novembro/2026 | R$ 5.850 | - | - | R$ 2.500 | R$ 8.350 | R$ 202.690 |
-| Dezembro/2026 | - | - | - | R$ 2.500 | R$ 2.500 | R$ 205.190 |
-| Janeiro/2027 | - | - | - | R$ 2.500 | R$ 2.500 | R$ 207.690 |
-| Fevereiro/2027 | - | - | - | R$ 2.500 | R$ 2.500 | R$ 210.190 |
+| Janeiro/2026 | R$ 13.990 | R$ 9.500 | R$ 1.600 | - | R$ 25.090 | R$ 34.590 |
+| Fevereiro/2026 | R$ 3.975 | R$ 9.500 | R$ 1.600 | - | R$ 15.075 | R$ 49.665 |
+| Marco/2026 | R$ 6.475 | R$ 9.500 | R$ 1.600 | - | R$ 17.575 | R$ 67.240 |
+| Abril/2026 | R$ 6.475 | R$ 9.500 | R$ 1.600 | - | R$ 17.575 | R$ 84.815 |
+| Maio/2026 | R$ 6.475 | R$ 9.500 | R$ 1.600 | - | R$ 17.575 | R$ 102.390 |
+| Junho/2026 | R$ 12.000 | R$ 9.500 | R$ 1.600 | - | R$ 23.100 | R$ 125.490 |
+| Julho/2026 | R$ 9.500 | R$ 9.500 | R$ 1.600 | - | R$ 20.600 | R$ 146.090 |
+| Agosto/2026 | R$ 9.500 | R$ 9.500 | R$ 1.600 | - | R$ 20.600 | R$ 166.690 |
+| Setembro/2026 | R$ 7.000 | R$ 9.500 | R$ 1.600 | R$ 2.500 | R$ 20.600 | R$ 187.290 |
+| Outubro/2026 | R$ 7.000 | - | R$ 1.600 | R$ 2.500 | R$ 11.100 | R$ 198.390 |
+| Novembro/2026 | R$ 5.850 | - | - | R$ 2.500 | R$ 8.350 | R$ 206.740 |
+| Dezembro/2026 | - | - | - | R$ 2.500 | R$ 2.500 | R$ 209.240 |
+| Janeiro/2027 | - | - | - | R$ 2.500 | R$ 2.500 | R$ 211.740 |
+| Fevereiro/2027 | - | - | - | R$ 2.500 | R$ 2.500 | R$ 214.240 |
 
 *Moveis Planejados: 1a parcela paga em Dez/2025
 
-**Nota**: Alguns valores podem ter pequenas variacoes devido a arredondamentos nas parcelas mensais.
+**Alteracoes v5.0**:
+- Janeiro: +R$ 4.400 (assentamento R$ 110/m2)
+- Fev-Mai: +R$ 725/mes (instalacao banheiros)
+- **Total Adicional**: +R$ 7.300
 
 ---
 
@@ -537,8 +561,9 @@ Outubro-Novembro: FINALIZACAO
 | 28/12/2025 | 2.0 | Adicionado Mesa + Cadeiras (R$ 16k), atualizado Moveis para R$ 95k |
 | 28/12/2025 | 3.0 | Piso 60m2->80m2 (+R$1.500), Nova Etapa 3 Acabamentos Internos (R$13k), Nova Etapa 5 Acabamento Externo (R$28k), Timeline para mudanca Junho 2026 |
 | 28/12/2025 | 4.0 | Correcao datas MOVEIS (inicio Dez/25), status parcelas atualizado, sincronizacao com banco de dados |
+| 04/01/2026 | 5.0 | Assentamento R$55->R$110/m2 (+R$4.400), Instalacao banheiros: pias, chuveiros, iluminacao (+R$2.900), Tinta especificada: Suvinil Emborrachada, Materiais status: pisos OK, tintas pendentes |
 
 ---
 
 *Documento gerado automaticamente a partir do planejamento financeiro 2026.*
-*Ultima atualizacao: 28/12/2025 18:50*
+*Ultima atualizacao: 04/01/2026 16:40*
