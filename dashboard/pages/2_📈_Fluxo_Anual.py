@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
 Fluxo Anual - Annual cash flow projection page
+
+SIMPLIFICADO: Parcelamentos já estão incluídos nas transações por categoria.
+Não precisam ser contados separadamente.
 """
 
 import streamlit as st
@@ -13,7 +16,7 @@ import pandas as pd
 SCRIPTS_PATH = Path(__file__).parent.parent.parent / "scripts"
 sys.path.insert(0, str(SCRIPTS_PATH))
 
-from finance_db import get_monthly_summary, get_active_installments, get_categories
+from finance_db import get_monthly_summary, get_categories
 
 st.set_page_config(page_title="Fluxo Anual", page_icon="📈", layout="wide")
 
@@ -26,51 +29,27 @@ EXCLUDED_CATEGORIES = ['obra', 'esportes']
 RECEITA = 55000
 FINANCIAMENTO = 7500    # Empréstimo imobiliário (58 meses até Out/2030)
 
-# Calcular VARIAVEIS_PROJ dinamicamente do banco (budget mensal excl. obra/esportes)
+# Calcular budgets dinamicamente do banco
 categories = get_categories()
-VARIAVEIS_PROJ = sum(
+
+# Budget de variáveis (excl. obra/esportes) - R$ 19,800
+VARIAVEIS_BUDGET = sum(
     c.get('budget_monthly', 0) for c in categories
     if c.get('name') not in EXCLUDED_CATEGORIES
 )
 
-# Obra projections per month (móveis/construção, NÃO é o empréstimo)
-OBRA_PROJ = {
-    1: 9590, 2: 6250, 3: 7333, 4: 7333, 5: 7333, 6: 19083,
-    7: 7084, 8: 7084, 9: 7000, 10: 7000, 11: 5850, 12: 0
-}
-
-# Get installments
-installments = get_active_installments()
-
-# Calculate monthly installment totals
-def get_monthly_installments():
-    monthly = {m: 0 for m in range(1, 13)}
-    for inst in installments:
-        start = inst['start_date']
-        end = inst['end_date']
-        amount = inst['installment_amount']
-
-        start_year, start_month = int(start[:4]), int(start[5:7])
-        end_year, end_month = int(end[:4]), int(end[5:7])
-
-        for month in range(1, 13):
-            month_start = (2026, month)
-            inst_start = (start_year, start_month)
-            inst_end = (end_year, end_month)
-
-            if inst_start <= month_start <= inst_end:
-                monthly[month] += amount
-
-    return monthly
-
-monthly_inst = get_monthly_installments()
+# Budget de obra - R$ 16,500/mês médio
+OBRA_BUDGET = sum(
+    c.get('budget_monthly', 0) for c in categories
+    if c.get('name') == 'obra'
+)
 
 # Build data
 months = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
 
 data = []
 for m in range(1, 13):
-    # Get real data
+    # Get real data from transactions (parcelamentos já incluídos nas categorias)
     summary = get_monthly_summary(2026, m)
 
     # Separar variáveis de obra
@@ -78,11 +57,10 @@ for m in range(1, 13):
     var_real = sum(c.get('total', 0) for c in cats if c.get('category') not in EXCLUDED_CATEGORIES)
     obra_real = sum(c.get('total', 0) for c in cats if c.get('category') == 'obra')
 
-    parc_real = 0  # Parcelamentos já estão em var_real/obra_real
-    financ_real = FINANCIAMENTO if m == 1 else 0  # Assume pago
-
-    saida_proj = VARIAVEIS_PROJ + monthly_inst[m] + OBRA_PROJ[m] + FINANCIAMENTO
-    saida_real = var_real + obra_real + financ_real
+    # Projetado: Budget mensal (teto de gastos)
+    # Real: Soma das transações por categoria (já inclui parcelamentos)
+    saida_proj = VARIAVEIS_BUDGET + OBRA_BUDGET + FINANCIAMENTO
+    saida_real = var_real + obra_real + FINANCIAMENTO
     poup_proj = RECEITA - saida_proj
     poup_real = RECEITA - saida_real if (var_real > 0 or obra_real > 0) else 0
 
@@ -90,11 +68,9 @@ for m in range(1, 13):
         'Mês': months[m-1],
         'Receita': RECEITA,
         'Financiam (P)': FINANCIAMENTO,
-        'Variáveis (P)': VARIAVEIS_PROJ,
+        'Variáveis (P)': VARIAVEIS_BUDGET,
         'Variáveis (R)': var_real,
-        'Parcelam (P)': monthly_inst[m],
-        'Parcelam (R)': parc_real,
-        'Obra (P)': OBRA_PROJ[m],
+        'Obra (P)': OBRA_BUDGET,
         'Obra (R)': obra_real,
         'Saída (P)': saida_proj,
         'Saída (R)': saida_real,
@@ -159,6 +135,7 @@ st.markdown("---")
 
 # Table
 st.markdown("### Dados Mensais Detalhados")
+st.caption("💡 Parcelamentos já incluídos nas categorias (Variáveis e Obra)")
 
 # Format and display
 display_cols = ['Mês', 'Receita', 'Financiam (P)', 'Variáveis (P)', 'Variáveis (R)',

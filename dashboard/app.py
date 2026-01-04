@@ -109,13 +109,6 @@ total_installments = sum(i.get('installment_amount', 0) for i in installments)
 # Constants
 RECEITA = 55000
 
-# Projeção de obra por mês (móveis/construção)
-OBRA_PROJ = {
-    1: 9590, 2: 6250, 3: 7333, 4: 7333, 5: 7333, 6: 19083,
-    7: 7084, 8: 7084, 9: 7000, 10: 7000, 11: 5850, 12: 0
-}
-OBRA_PROJETADO = OBRA_PROJ.get(selected_month, 0)
-
 # KPIs Row
 st.markdown("### 📈 Resumo do Mês")
 
@@ -253,20 +246,25 @@ st.markdown("---")
 
 # Footer
 st.markdown("### 📋 Fluxo de Caixa")
+st.caption("💡 Parcelamentos já incluídos em Variáveis e Obra")
 
-# Simple cash flow visualization
+# Budget de obra do banco
+obra_budget = sum(c.get('budget_monthly', 0) for c in categories if c.get('name') == 'obra')
+
+# Fluxo de caixa simplificado (parcelamentos já nas categorias)
 flow_data = {
-    'Tipo': ['Receita', 'Gastos Variáveis', 'Parcelamentos', 'Obra', 'Poupança'],
-    'Projetado': [RECEITA, total_budget, total_installments, OBRA_PROJETADO,
-                  RECEITA - total_budget - total_installments - OBRA_PROJETADO],
-    'Real': [RECEITA, total_spent, 9500, 0, poupanca]  # Hardcoded real for now
+    'Tipo': ['Receita', 'Variáveis', 'Obra', 'Poupança'],
+    'Budget': [RECEITA, total_budget, obra_budget,
+               RECEITA - total_budget - obra_budget],
+    'Real': [RECEITA, total_spent, obra_spent,
+             RECEITA - total_spent - obra_spent]
 }
 
 import pandas as pd
 df_flow = pd.DataFrame(flow_data)
 
 fig2 = go.Figure()
-fig2.add_trace(go.Bar(name='Projetado', x=df_flow['Tipo'], y=df_flow['Projetado'], marker_color='lightblue'))
+fig2.add_trace(go.Bar(name='Budget', x=df_flow['Tipo'], y=df_flow['Budget'], marker_color='lightblue'))
 fig2.add_trace(go.Bar(name='Real', x=df_flow['Tipo'], y=df_flow['Real'], marker_color='coral'))
 fig2.update_layout(barmode='group', height=300, margin=dict(t=20, b=20))
 
