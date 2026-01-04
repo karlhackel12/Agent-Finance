@@ -133,7 +133,7 @@ def create_demo_database(db_path: str = "data/finance.db"):
     installments = [
         # Grandes - Obra/Móveis (categoria obra - não conta no budget)
         ('MOVEIS PLANEJADOS', 95000, 9500, 10, 2, '2025-12-01', '2026-10-01', cat_map['obra']),
-        ('MESA E CADEIRAS', 16000, 1600, 10, 1, '2026-01-01', '2026-10-01', cat_map['obra']),
+        ('MESA E CADEIRAS', 16000, 1600, 10, 0, '2026-03-01', '2026-12-01', cat_map['obra']),
         ('ELETRODOMESTICOS', 15000, 2500, 6, 0, '2026-04-01', '2026-09-01', cat_map['obra']),
         # Saúde
         ('DROGARIAS PACHECO', 5540, 1846.72, 3, 2, '2025-12-01', '2026-02-01', cat_map['saude']),
