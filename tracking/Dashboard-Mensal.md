@@ -2,7 +2,7 @@
 tipo: dashboard
 ano: 2026
 mes: 1
-atualizado: 2026-01-10 12:41
+atualizado: 2026-01-10 12:59
 ---
 
 # Dashboard Financeiro 2026
@@ -33,10 +33,10 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
-| 🏗️ Obra | R$ 11,010 | R$ 16,500 | 67% | OK |
-| 💻 Assinaturas | R$ 3,544 | R$ 3,500 | 101% | Atencao |
+| 🏗️ Obra | R$ 11,369 | R$ 16,500 | 69% | OK |
 | 🏥 Saude | R$ 3,382 | R$ 4,000 | 85% | OK |
 | 🚗 Transporte | R$ 3,370 | R$ 4,000 | 84% | OK |
+| 💻 Assinaturas | R$ 3,185 | R$ 3,500 | 91% | Atencao |
 | 🛒 Compras | R$ 2,576 | R$ 2,500 | 103% | Atencao |
 | 🍔 Alimentacao | R$ 1,310 | R$ 3,500 | 37% | OK |
 | 🎮 Lazer | R$ 1,026 | R$ 1,500 | 68% | OK |
@@ -58,7 +58,7 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 ## Alertas Ativos
 
 - **CRITICO**: 📝 Taxas excedeu R$ 46 (146% do budget)
-- **Atencao**: 💻 Assinaturas em 101% do budget
+- **Atencao**: 💻 Assinaturas em 91% do budget
 - **Atencao**: 🛒 Compras em 103% do budget
 
 ---

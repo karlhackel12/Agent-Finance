@@ -6,17 +6,9 @@
       "category": "obra",
       "icon": "🏗️",
       "budget": 16500.0,
-      "total": 11010.24,
-      "percent": 66.7,
+      "total": 11369.25,
+      "percent": 68.9,
       "status": "ok"
-    },
-    {
-      "category": "assinaturas",
-      "icon": "💻",
-      "budget": 3500.0,
-      "total": 3543.69,
-      "percent": 101.2,
-      "status": "warning"
     },
     {
       "category": "saude",
@@ -33,6 +25,14 @@
       "total": 3370.0,
       "percent": 84.2,
       "status": "ok"
+    },
+    {
+      "category": "assinaturas",
+      "icon": "💻",
+      "budget": 3500.0,
+      "total": 3184.68,
+      "percent": 91.0,
+      "status": "warning"
     },
     {
       "category": "compras",

@@ -5,7 +5,7 @@ mes: 1
 mes_nome: Janeiro
 total_gasto: 26757.840000000004
 total_transacoes: 71
-atualizado: 2026-01-10 12:41
+atualizado: 2026-01-10 12:59
 ---
 
 # Janeiro 2026 - Detalhamento
@@ -27,7 +27,7 @@ atualizado: 2026-01-10 12:41
 
 ### 🏗️ Obra
 
-**Budget**: R$ 16,500 | **Gasto**: R$ 11,010 | **Status**: OK
+**Budget**: R$ 16,500 | **Gasto**: R$ 11,369 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -35,26 +35,8 @@ atualizado: 2026-01-10 12:41
 | 2026-01-10 | AREDES 7/8 | R$ 670.36 |
 | 2026-01-10 | CASA CHIESSE 5X 1/5 | R$ 163.07 |
 | 2026-01-10 | MACOPIL 1/5 | R$ 127.81 |
-| 2026-01-10 | MOVEIS PLANEJADOS 2/10 | R$ 9,500.00 |
-
-### 💻 Assinaturas
-
-**Budget**: R$ 3,500 | **Gasto**: R$ 3,544 | **Status**: WARNING
-
-| Data | Descricao | Valor |
-|------|-----------|-------|
-| 2026-01-10 | LOVABLE 3/4 | R$ 153.43 |
-| 2026-01-10 | FLOWITH.IO 1/5 | R$ 61.05 |
-| 2026-01-10 | TAVUS 1/5 | R$ 72.36 |
 | 2026-01-10 | VINDI BROIL 3/10 | R$ 359.01 |
-| 2026-01-10 | OPENAI CHATGPT 3/12 | R$ 109.09 |
-| 2026-01-09 | JUSBRASIL | R$ 39.90 |
-| 2026-01-08 | EVOSTARTER | R$ 112.26 |
-| 2026-01-08 | Amazon Prime Canais | R$ 44.90 |
-| 2026-01-08 | CLOUDFLARE | R$ 28.02 |
-| 2026-01-08 | CLAUDE.AI | R$ 641.07 |
-
-*... e mais 15 transacoes*
+| 2026-01-10 | MOVEIS PLANEJADOS 2/10 | R$ 9,500.00 |
 
 ### 🏥 Saude
 
@@ -77,6 +59,25 @@ atualizado: 2026-01-10 12:41
 |------|-----------|-------|
 | 2026-01-06 | MOVIDA CARRO ASSINATURA | R$ 3,270.00 |
 | 2026-01-05 | POSTO NACOES UNIDAS | R$ 100.00 |
+
+### 💻 Assinaturas
+
+**Budget**: R$ 3,500 | **Gasto**: R$ 3,185 | **Status**: WARNING
+
+| Data | Descricao | Valor |
+|------|-----------|-------|
+| 2026-01-10 | LOVABLE 3/4 | R$ 153.43 |
+| 2026-01-10 | FLOWITH.IO 1/5 | R$ 61.05 |
+| 2026-01-10 | TAVUS 1/5 | R$ 72.36 |
+| 2026-01-10 | OPENAI CHATGPT 3/12 | R$ 109.09 |
+| 2026-01-09 | JUSBRASIL | R$ 39.90 |
+| 2026-01-08 | EVOSTARTER | R$ 112.26 |
+| 2026-01-08 | Amazon Prime Canais | R$ 44.90 |
+| 2026-01-08 | CLOUDFLARE | R$ 28.02 |
+| 2026-01-08 | CLAUDE.AI | R$ 641.07 |
+| 2026-01-08 | ANTHROPIC | R$ 50.00 |
+
+*... e mais 14 transacoes*
 
 ### 🛒 Compras
 
@@ -165,7 +166,7 @@ atualizado: 2026-01-10 12:41
 | 2026-01-10 | MACOPIL 1/5 | obra | R$ 127.81 |
 | 2026-01-10 | ALFATEC COMERCIO 16/21 | compras | R$ 413.76 |
 | 2026-01-10 | AMAZON MARKETPLACE 3/10 | compras | R$ 835.20 |
-| 2026-01-10 | VINDI BROIL 3/10 | assinaturas | R$ 359.01 |
+| 2026-01-10 | VINDI BROIL 3/10 | obra | R$ 359.01 |
 | 2026-01-10 | MOVEIS PLANEJADOS 2/10 | obra | R$ 9,500.00 |
 | 2026-01-10 | OPENAI CHATGPT 3/12 | assinaturas | R$ 109.09 |
 | 2026-01-10 | SHOPEE FIDCO 3/12 | compras | R$ 193.47 |

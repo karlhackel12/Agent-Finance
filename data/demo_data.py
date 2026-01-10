@@ -162,7 +162,7 @@ def create_demo_database(db_path: str = "data/finance.db"):
         # SHOPEE FIDCO - Dez=03/12, termina Set/26
         ('SHOPEE FIDCO', 2321.64, 193.47, 12, 3, '2025-10-01', '2026-09-01', cat_map['compras']),
         # VINDI BROIL - Dez=03/10, termina Jul/26
-        ('VINDI BROIL', 3590.10, 359.01, 10, 3, '2025-10-01', '2026-07-01', cat_map['compras']),
+        ('VINDI BROIL', 3590.10, 359.01, 10, 3, '2025-10-01', '2026-07-01', cat_map['obra']),
         # AREDES - Dez=07/08, termina Jan/26
         ('AREDES', 5362.88, 670.36, 8, 7, '2025-06-01', '2026-01-01', cat_map['obra']),
         # OTIQUE - Dez=08/10, termina Fev/26
