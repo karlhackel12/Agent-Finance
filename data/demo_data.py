@@ -105,15 +105,17 @@ def create_demo_database(db_path: str = "data/finance.db"):
     cursor.execute("SELECT id, name FROM categories")
     cat_map = {name: id for id, name in cursor.fetchall()}
 
-    # Generate transactions for last 6 months
-    today = datetime.now()
+    # Generate demo transactions for months BEFORE Janeiro 2026
+    # Janeiro 2026 has real transactions added separately
     transactions = []
 
-    for month_offset in range(6):
-        month_date = today - timedelta(days=30 * month_offset)
-        year = month_date.year
-        month = month_date.month
+    # Generate for Jul-Dez 2025 (6 months before Jan 2026)
+    demo_months = [
+        (2025, 7), (2025, 8), (2025, 9),
+        (2025, 10), (2025, 11), (2025, 12)
+    ]
 
+    for year, month in demo_months:
         for cat_name, descriptions, amount_range in transaction_templates:
             # Generate 3-8 transactions per category per month
             num_transactions = random.randint(3, 8)
@@ -162,13 +164,13 @@ def create_demo_database(db_path: str = "data/finance.db"):
         # VINDI BROIL - Dez=03/10, termina Jul/26
         ('VINDI BROIL', 3590.10, 359.01, 10, 3, '2025-10-01', '2026-07-01', cat_map['compras']),
         # AREDES - Dez=07/08, termina Jan/26
-        ('AREDES', 5362.88, 670.36, 8, 7, '2025-06-01', '2026-01-01', cat_map['compras']),
+        ('AREDES', 5362.88, 670.36, 8, 7, '2025-06-01', '2026-01-01', cat_map['obra']),
         # OTIQUE - Dez=08/10, termina Fev/26
         ('OTIQUE', 850, 85, 10, 8, '2025-05-01', '2026-02-01', cat_map['compras']),
         # LOVABLE - Dez=03/04, termina Jan/26
         ('LOVABLE', 613.72, 153.43, 4, 3, '2025-10-01', '2026-01-01', cat_map['assinaturas']),
         # MACOPIL - Dez=01/05, termina Abr/26
-        ('MACOPIL', 639.05, 127.81, 5, 1, '2025-12-01', '2026-04-01', cat_map['compras']),
+        ('MACOPIL', 639.05, 127.81, 5, 1, '2025-12-01', '2026-04-01', cat_map['obra']),
         # SHOPEE MEUPUXADOR - Dez=01/05, termina Abr/26
         ('SHOPEE MEUPUXADOR', 587.80, 117.56, 5, 1, '2025-12-01', '2026-04-01', cat_map['compras']),
 
@@ -176,11 +178,11 @@ def create_demo_database(db_path: str = "data/finance.db"):
         # CASA
         # ============================================
         # CASA CHIESSE 2X - Dez=01/02, termina Jan/26
-        ('CASA CHIESSE 2X', 1098, 549, 2, 1, '2025-12-01', '2026-01-01', cat_map['casa']),
+        ('CASA CHIESSE 2X', 1098, 549, 2, 1, '2025-12-01', '2026-01-01', cat_map['obra']),
         # CASA CHIESSE 5X - Dez=01/05, termina Abr/26
-        ('CASA CHIESSE 5X', 815.35, 163.07, 5, 1, '2025-12-01', '2026-04-01', cat_map['casa']),
+        ('CASA CHIESSE 5X', 815.35, 163.07, 5, 1, '2025-12-01', '2026-04-01', cat_map['obra']),
         # FIRE VERBO - Dez=01/02, termina Jan/26
-        ('FIRE VERBO', 440, 220, 2, 1, '2025-12-01', '2026-01-01', cat_map['casa']),
+        ('FIRE VERBO', 440, 220, 2, 1, '2025-12-01', '2026-01-01', cat_map['lazer']),
 
         # ============================================
         # ASSINATURAS
@@ -228,6 +230,81 @@ def create_demo_database(db_path: str = "data/finance.db"):
                     INSERT INTO transactions (date, description, amount, category_id, type, source)
                     VALUES (?, ?, ?, ?, 'expense', 'parcelamento')
                 ''', (tx_date, tx_desc, inst_amt, cat_id))
+
+    # Adicionar transações reais de Janeiro 2026 (à vista)
+    jan_2026_transactions = [
+        # Alimentação
+        ('2026-01-02', 'COSECHAS BM', 48.30, cat_map['alimentacao']),
+        ('2026-01-02', 'NATANAEL PESCADOS', 263.20, cat_map['alimentacao']),
+        ('2026-01-05', 'SUPERMERCADO 365', 146.12, cat_map['alimentacao']),
+        ('2026-01-05', 'Pix Karl (reembolso)', 282.00, cat_map['alimentacao']),
+        ('2026-01-05', 'KIOSQUE DO ALEMO', 34.70, cat_map['alimentacao']),
+        ('2026-01-05', 'IFD*BR (iFood)', 164.66, cat_map['alimentacao']),
+        ('2026-01-06', 'IFD*BR (iFood)', 7.95, cat_map['alimentacao']),
+        ('2026-01-08', 'A F PEREIRA MERCEARIA', 48.80, cat_map['alimentacao']),
+        ('2026-01-08', 'PASTA A MANO', 90.48, cat_map['alimentacao']),
+        ('2026-01-09', 'A F PEREIRA MERCEARIA', 49.00, cat_map['alimentacao']),
+        ('2026-01-09', 'PANIFICADORA ACHILES', 94.25, cat_map['alimentacao']),
+        ('2026-01-09', 'RESTAURANTE DA LUZIA', 25.00, cat_map['alimentacao']),
+        ('2026-01-09', '016 HAMBURGUERIA', 50.00, cat_map['alimentacao']),
+        ('2026-01-10', 'iFood', 5.95, cat_map['alimentacao']),
+
+        # Transporte
+        ('2026-01-05', 'POSTO NACOES UNIDAS', 100.00, cat_map['transporte']),
+        ('2026-01-06', 'MOVIDA CARRO', 3270.00, cat_map['transporte']),
+
+        # Saúde
+        ('2026-01-02', 'FARMASOUZA', 129.88, cat_map['saude']),
+        ('2026-01-06', 'RAIA4154', 152.83, cat_map['saude']),
+        ('2026-01-06', 'RAIA311 (1/2)', 929.71, cat_map['saude']),
+
+        # Assinaturas
+        ('2026-01-01', 'PPRO *MICROSOFT', 60.00, cat_map['assinaturas']),
+        ('2026-01-01', 'REPLIT', 289.39, cat_map['assinaturas']),
+        ('2026-01-05', 'Google Clash Royale', 57.90, cat_map['assinaturas']),
+        ('2026-01-05', 'Amazon Prime Canais', 14.99, cat_map['assinaturas']),
+        ('2026-01-06', 'AQUA VOICE', 56.47, cat_map['assinaturas']),
+        ('2026-01-06', 'NOTION LABS', 135.71, cat_map['assinaturas']),
+        ('2026-01-06', '21ST.DEV', 113.05, cat_map['assinaturas']),
+        ('2026-01-06', 'AMAZON SERVICOS', 19.90, cat_map['assinaturas']),
+        ('2026-01-06', 'FLOAT LABS', 101.75, cat_map['assinaturas']),
+        ('2026-01-07', 'CLAUDE.AI', 550.00, cat_map['assinaturas']),
+        ('2026-01-07', 'PADDLE.NET N8N', 150.00, cat_map['assinaturas']),
+        ('2026-01-07', 'Google Clash Royale', 45.90, cat_map['assinaturas']),
+        ('2026-01-08', 'EVOSTARTER', 112.26, cat_map['assinaturas']),
+        ('2026-01-08', 'Amazon Prime Canais', 44.90, cat_map['assinaturas']),
+        ('2026-01-08', 'CLOUDFLARE', 28.02, cat_map['assinaturas']),
+        ('2026-01-08', 'CLAUDE.AI', 641.07, cat_map['assinaturas']),
+        ('2026-01-08', 'ANTHROPIC', 50.00, cat_map['assinaturas']),
+        ('2026-01-08', 'REPLIT', 137.45, cat_map['assinaturas']),
+        ('2026-01-08', 'REPLIT', 140.09, cat_map['assinaturas']),
+        ('2026-01-09', 'JUSBRASIL', 39.90, cat_map['assinaturas']),
+
+        # Compras
+        ('2026-01-05', 'AMAZON BR', 141.00, cat_map['compras']),
+        ('2026-01-05', 'AMAZON BOOKWIRE', 73.38, cat_map['compras']),
+        ('2026-01-06', 'AMAZON MARKETPLACE', 250.90, cat_map['compras']),
+
+        # Lazer
+        ('2026-01-05', 'FIRE VERBO', 240.00, cat_map['lazer']),
+        ('2026-01-05', 'Pix MATHAUS', 283.00, cat_map['lazer']),
+        ('2026-01-05', 'Pix THOMAS', 283.00, cat_map['lazer']),
+
+        # Casa
+        ('2026-01-06', 'MY PET BARRA', 273.00, cat_map['casa']),
+        ('2026-01-10', 'CONTA VIVO', 120.00, cat_map['casa']),
+
+        # Taxas
+        ('2026-01-07', 'IOF compras exterior', 31.30, cat_map['taxas']),
+        ('2026-01-07', 'IOF saque Pix', 16.62, cat_map['taxas']),
+        ('2026-01-07', 'Juros saque Pix', 98.48, cat_map['taxas']),
+        ('2026-01-05', 'Devolução juros', -43.16, cat_map['taxas']),
+    ]
+
+    cursor.executemany(
+        "INSERT INTO transactions (date, description, amount, category_id, source) VALUES (?, ?, ?, ?, 'real_jan2026')",
+        jan_2026_transactions
+    )
 
     conn.commit()
     conn.close()
