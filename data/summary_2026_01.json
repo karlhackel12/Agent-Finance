@@ -6,78 +6,78 @@
       "category": "obra",
       "icon": "🏗️",
       "budget": 16500.0,
-      "total": 11100.0,
-      "percent": 67.3,
+      "total": 11010.24,
+      "percent": 66.7,
       "status": "ok"
-    },
-    {
-      "category": "saude",
-      "icon": "🏥",
-      "budget": 4000.0,
-      "total": 2169.66,
-      "percent": 54.2,
-      "status": "ok"
-    },
-    {
-      "category": "compras",
-      "icon": "🛒",
-      "budget": 2500.0,
-      "total": 2110.7400000000002,
-      "percent": 84.4,
-      "status": "ok"
-    },
-    {
-      "category": "casa",
-      "icon": "🏠",
-      "budget": 500.0,
-      "total": 1730.24,
-      "percent": 346.0,
-      "status": "critical"
     },
     {
       "category": "assinaturas",
       "icon": "💻",
       "budget": 3500.0,
-      "total": 754.94,
-      "percent": 21.6,
-      "status": "ok"
+      "total": 3543.69,
+      "percent": 101.2,
+      "status": "warning"
     },
     {
-      "category": "alimentacao",
-      "icon": "🍔",
-      "budget": 3500.0,
-      "total": 0,
-      "percent": 0.0,
+      "category": "saude",
+      "icon": "🏥",
+      "budget": 4000.0,
+      "total": 3382.08,
+      "percent": 84.6,
       "status": "ok"
     },
     {
       "category": "transporte",
       "icon": "🚗",
       "budget": 4000.0,
-      "total": 0,
-      "percent": 0.0,
+      "total": 3370.0,
+      "percent": 84.2,
+      "status": "ok"
+    },
+    {
+      "category": "compras",
+      "icon": "🛒",
+      "budget": 2500.0,
+      "total": 2576.02,
+      "percent": 103.0,
+      "status": "warning"
+    },
+    {
+      "category": "alimentacao",
+      "icon": "🍔",
+      "budget": 3500.0,
+      "total": 1310.41,
+      "percent": 37.4,
       "status": "ok"
     },
     {
       "category": "lazer",
       "icon": "🎮",
       "budget": 1500.0,
-      "total": 0,
-      "percent": 0.0,
+      "total": 1026.0,
+      "percent": 68.4,
       "status": "ok"
     },
     {
-      "category": "educacao",
-      "icon": "📚",
-      "budget": 200.0,
-      "total": 0,
-      "percent": 0.0,
+      "category": "casa",
+      "icon": "🏠",
+      "budget": 500.0,
+      "total": 393.0,
+      "percent": 78.6,
       "status": "ok"
     },
     {
       "category": "taxas",
       "icon": "📝",
       "budget": 100.0,
+      "total": 146.4,
+      "percent": 146.4,
+      "status": "critical"
+    },
+    {
+      "category": "educacao",
+      "icon": "📚",
+      "budget": 200.0,
       "total": 0,
       "percent": 0.0,
       "status": "ok"
@@ -91,7 +91,7 @@
       "status": "ok"
     }
   ],
-  "total_spent": 17865.579999999998,
+  "total_spent": 26757.840000000004,
   "total_budget": 37800.0,
-  "savings_rate": 67.5
+  "savings_rate": 51.3
 }

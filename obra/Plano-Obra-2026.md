@@ -56,12 +56,13 @@
 ```
 Janeiro-Fevereiro: INFRAESTRUTURA INTERNA
     [x] Eletrica 2 quartos (3-4 dias)
+    [ ] Ajuste entrada principal 1
     [ ] Piso 80m2 (7-10 dias)
 
 Fevereiro-Marco: ACABAMENTOS INTERNOS
     [ ] Banheiros
     [ ] Cantos e arremates
-    [ ] Ajuste entrada principal
+    [ ] Ajuste entrada principal 2
     [ ] Acabamentos gerais
 
 Marco-Maio: PINTURA EXTERNA

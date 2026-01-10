@@ -2,7 +2,7 @@
 tipo: dashboard
 ano: 2026
 mes: 1
-atualizado: 2025-12-31 11:23
+atualizado: 2026-01-10 12:41
 ---
 
 # Dashboard Financeiro 2026
@@ -25,43 +25,41 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 | Metrica | Valor | Meta | Status |
 |---------|-------|------|--------|
-| Gastos Variaveis | R$ 17,866 | R$ 37,800 | OK |
-| Taxa Poupanca | 68% | 28% | OK |
+| Gastos Variaveis | R$ 26,758 | R$ 37,800 | OK |
+| Taxa Poupanca | 51% | 28% | OK |
 | Categorias Criticas | 1 | 0 | Critico |
 
 ### Gastos por Categoria
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
-| 🏗️ Obra | R$ 11,100 | R$ 16,500 | 67% | OK |
-| 🏥 Saude | R$ 2,170 | R$ 4,000 | 54% | OK |
-| 🛒 Compras | R$ 2,111 | R$ 2,500 | 84% | OK |
-| 🏠 Casa | R$ 1,730 | R$ 500 | 346% | Critico |
-| 💻 Assinaturas | R$ 755 | R$ 3,500 | 22% | OK |
-| 🍔 Alimentacao | R$ 0 | R$ 3,500 | 0% | OK |
-| 🚗 Transporte | R$ 0 | R$ 4,000 | 0% | OK |
-| 🎮 Lazer | R$ 0 | R$ 1,500 | 0% | OK |
+| 🏗️ Obra | R$ 11,010 | R$ 16,500 | 67% | OK |
+| 💻 Assinaturas | R$ 3,544 | R$ 3,500 | 101% | Atencao |
+| 🏥 Saude | R$ 3,382 | R$ 4,000 | 85% | OK |
+| 🚗 Transporte | R$ 3,370 | R$ 4,000 | 84% | OK |
+| 🛒 Compras | R$ 2,576 | R$ 2,500 | 103% | Atencao |
+| 🍔 Alimentacao | R$ 1,310 | R$ 3,500 | 37% | OK |
+| 🎮 Lazer | R$ 1,026 | R$ 1,500 | 68% | OK |
+| 🏠 Casa | R$ 393 | R$ 500 | 79% | OK |
+| 📝 Taxas | R$ 146 | R$ 100 | 146% | Critico |
 | 📚 Educacao | R$ 0 | R$ 200 | 0% | OK |
-| 📝 Taxas | R$ 0 | R$ 100 | 0% | OK |
 | 🎾 Esportes | R$ 0 | R$ 1,500 | 0% | OK |
 
 ### Distribuicao 50/30/20
 
 | Categoria | Ideal | Atual | Status |
 |-----------|-------|-------|--------|
-| Necessidades (50%) | R$ 27.500 | R$ 3,900 | OK |
-| Desejos (30%) | R$ 16.500 | R$ 2,866 | OK |
-| Poupanca (20%) | R$ 11.000 | R$ 37,134 | OK |
-
-> **Nota**: Necessidades = alimentacao + transporte + saude + casa + taxas
-> **Nota**: Desejos = assinaturas + compras + lazer + educacao + esportes
-> **Nota**: Obra (R$ 11,100) rastreada separadamente
+| Necessidades (50%) | R$ 27.500 | *calcular* | - |
+| Desejos (30%) | R$ 16.500 | *calcular* | - |
+| Poupanca (20%) | R$ 11.000 | R$ 28,242 | OK |
 
 ---
 
 ## Alertas Ativos
 
-- **CRITICO**: 🏠 Casa excedeu R$ 1,230 (346% do budget)
+- **CRITICO**: 📝 Taxas excedeu R$ 46 (146% do budget)
+- **Atencao**: 💻 Assinaturas em 101% do budget
+- **Atencao**: 🛒 Compras em 103% do budget
 
 ---
 
@@ -94,6 +92,6 @@ WHERE tipo = "kpi" AND ano = 2026 AND mes = 1
 
 ## Proximas Acoes
 
-1. [ ] Revisar gastos de Casa
+1. [ ] Revisar gastos de Taxas
 2. [ ] Sincronizar fatura BB
 3. [ ] Atualizar parcelamentos
