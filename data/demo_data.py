@@ -184,6 +184,18 @@ def create_demo_database(db_path: str = "data/finance.db"):
         # FIRE VERBO - Dez=01/02, termina Jan/26
         ('FIRE VERBO', 440, 220, 2, 1, '2025-12-01', '2026-01-01', cat_map['lazer']),
 
+        # RAIA311 - Jan=01/02, termina Fev/26
+        ('RAIA311', 1859.42, 929.71, 2, 1, '2026-01-01', '2026-02-01', cat_map['saude']),
+
+        # PICPAY Karl Obra - Jan=01/02
+        ('PICPAY OBRA', 1971.26, 985.63, 2, 1, '2026-01-01', '2026-02-01', cat_map['obra']),
+
+        # PICPAY Móveis - Jan=01/02
+        ('PICPAY MOVEIS', 10475.86, 5237.93, 2, 1, '2026-01-01', '2026-02-01', cat_map['obra']),
+
+        # EDZCOLLAB4TEA - Jan=01/12
+        ('EDZCOLLAB4TEA', 1188.48, 99.04, 12, 1, '2026-01-01', '2026-12-01', cat_map['educacao']),
+
         # ============================================
         # ASSINATURAS
         # ============================================
@@ -232,8 +244,11 @@ def create_demo_database(db_path: str = "data/finance.db"):
                 ''', (tx_date, tx_desc, inst_amt, cat_id))
 
     # Adicionar transações reais de Janeiro 2026 (à vista)
+    # Atualizado 2026-01-17 com fatura completa 28/12-16/01
     jan_2026_transactions = [
-        # Alimentação
+        # ============================================
+        # ALIMENTAÇÃO
+        # ============================================
         ('2026-01-02', 'COSECHAS BM', 48.30, cat_map['alimentacao']),
         ('2026-01-02', 'NATANAEL PESCADOS', 263.20, cat_map['alimentacao']),
         ('2026-01-05', 'SUPERMERCADO 365', 146.12, cat_map['alimentacao']),
@@ -243,25 +258,42 @@ def create_demo_database(db_path: str = "data/finance.db"):
         ('2026-01-06', 'IFD*BR (iFood)', 7.95, cat_map['alimentacao']),
         ('2026-01-08', 'A F PEREIRA MERCEARIA', 48.80, cat_map['alimentacao']),
         ('2026-01-08', 'PASTA A MANO', 90.48, cat_map['alimentacao']),
+        ('2026-01-08', 'NAGUMO', 338.85, cat_map['alimentacao']),
         ('2026-01-09', 'A F PEREIRA MERCEARIA', 49.00, cat_map['alimentacao']),
         ('2026-01-09', 'PANIFICADORA ACHILES', 94.25, cat_map['alimentacao']),
         ('2026-01-09', 'RESTAURANTE DA LUZIA', 25.00, cat_map['alimentacao']),
         ('2026-01-09', '016 HAMBURGUERIA', 50.00, cat_map['alimentacao']),
         ('2026-01-10', 'iFood', 5.95, cat_map['alimentacao']),
+        ('2026-01-10', 'RESTAURANTE DA LUZIA', 75.00, cat_map['alimentacao']),
+        ('2026-01-11', 'LANCHONETE DINOSSAUROS', 12.00, cat_map['alimentacao']),
+        ('2026-01-12', 'CODEV COMERCIO ALIM', 32.80, cat_map['alimentacao']),
+        ('2026-01-14', 'A F PEREIRA MERCEARIA', 24.00, cat_map['alimentacao']),
+        ('2026-01-15', 'JIM.COM PADAKA27', 14.00, cat_map['alimentacao']),
+        ('2026-01-15', 'RESTAURANTE DA LUZIA', 58.00, cat_map['alimentacao']),
+        ('2026-01-16', 'OZIEL BATISTA ALVES', 35.00, cat_map['alimentacao']),
+        ('2026-01-16', 'RESTAURANTE DA LUZIA', 65.00, cat_map['alimentacao']),
 
-        # Transporte
+        # ============================================
+        # TRANSPORTE
+        # ============================================
         ('2026-01-05', 'POSTO NACOES UNIDAS', 100.00, cat_map['transporte']),
         ('2026-01-06', 'MOVIDA CARRO', 3270.00, cat_map['transporte']),
 
-        # Saúde
+        # ============================================
+        # SAÚDE
+        # ============================================
         ('2026-01-02', 'FARMASOUZA', 129.88, cat_map['saude']),
         ('2026-01-06', 'RAIA4154', 152.83, cat_map['saude']),
         ('2026-01-06', 'RAIA311 (1/2)', 929.71, cat_map['saude']),
+        ('2026-01-13', 'TAINARA (salão)', 105.00, cat_map['saude']),
+        ('2026-01-15', 'DROGARIAS ECONOMIZE', 26.58, cat_map['saude']),
+        ('2026-01-15', 'PICPAY*UNIMEDSEGU', 1430.91, cat_map['saude']),
 
-        # Assinaturas
+        # ============================================
+        # ASSINATURAS
+        # ============================================
         ('2026-01-01', 'PPRO *MICROSOFT', 60.00, cat_map['assinaturas']),
         ('2026-01-01', 'REPLIT', 289.39, cat_map['assinaturas']),
-        ('2026-01-05', 'Google Clash Royale', 57.90, cat_map['assinaturas']),
         ('2026-01-05', 'Amazon Prime Canais', 14.99, cat_map['assinaturas']),
         ('2026-01-06', 'AQUA VOICE', 56.47, cat_map['assinaturas']),
         ('2026-01-06', 'NOTION LABS', 135.71, cat_map['assinaturas']),
@@ -270,7 +302,6 @@ def create_demo_database(db_path: str = "data/finance.db"):
         ('2026-01-06', 'FLOAT LABS', 101.75, cat_map['assinaturas']),
         ('2026-01-07', 'CLAUDE.AI', 550.00, cat_map['assinaturas']),
         ('2026-01-07', 'PADDLE.NET N8N', 150.00, cat_map['assinaturas']),
-        ('2026-01-07', 'Google Clash Royale', 45.90, cat_map['assinaturas']),
         ('2026-01-08', 'EVOSTARTER', 112.26, cat_map['assinaturas']),
         ('2026-01-08', 'Amazon Prime Canais', 44.90, cat_map['assinaturas']),
         ('2026-01-08', 'CLOUDFLARE', 28.02, cat_map['assinaturas']),
@@ -279,27 +310,108 @@ def create_demo_database(db_path: str = "data/finance.db"):
         ('2026-01-08', 'REPLIT', 137.45, cat_map['assinaturas']),
         ('2026-01-08', 'REPLIT', 140.09, cat_map['assinaturas']),
         ('2026-01-09', 'JUSBRASIL', 39.90, cat_map['assinaturas']),
+        ('2026-01-10', 'VERCEL', 111.71, cat_map['assinaturas']),
+        ('2026-01-10', 'CURSOR AI', 111.71, cat_map['assinaturas']),
+        ('2026-01-11', 'RECLAIM.AI', 67.03, cat_map['assinaturas']),
+        ('2026-01-12', 'Amazon Prime Canais', 16.90, cat_map['assinaturas']),
+        ('2026-01-13', 'Google YouTube Member', 4.99, cat_map['assinaturas']),
+        ('2026-01-14', 'Amazon Prime Canais', 19.90, cat_map['assinaturas']),
+        ('2026-01-15', 'DOANYTHINGMACHINE', 111.83, cat_map['assinaturas']),
+        ('2026-01-15', 'Z-API.IO', 99.99, cat_map['assinaturas']),
+        ('2026-01-15', 'Globo Premiere', 59.90, cat_map['assinaturas']),
+        ('2026-01-15', 'Amazon Prime Canais', 34.90, cat_map['assinaturas']),
+        ('2026-01-15', 'Contabilizei', 369.00, cat_map['assinaturas']),
+        ('2026-01-16', 'Contabilizei', 178.43, cat_map['assinaturas']),
+        ('2026-01-16', 'Amazon Kindle Unltd', 24.90, cat_map['assinaturas']),
 
-        # Compras
+        # ============================================
+        # COMPRAS
+        # ============================================
         ('2026-01-05', 'AMAZON BR', 141.00, cat_map['compras']),
         ('2026-01-05', 'AMAZON BOOKWIRE', 73.38, cat_map['compras']),
         ('2026-01-06', 'AMAZON MARKETPLACE', 250.90, cat_map['compras']),
+        ('2026-01-08', 'EVOSTARTER', 112.26, cat_map['compras']),
+        ('2026-01-12', 'ShoppingParkSul', 16.00, cat_map['compras']),
 
-        # Lazer
-        ('2026-01-05', 'FIRE VERBO', 240.00, cat_map['lazer']),
+        # ============================================
+        # LAZER (inclui Clash Royale)
+        # ============================================
         ('2026-01-05', 'Pix MATHAUS', 283.00, cat_map['lazer']),
         ('2026-01-05', 'Pix THOMAS', 283.00, cat_map['lazer']),
+        ('2026-01-05', 'Google Clash Royale', 57.90, cat_map['lazer']),
+        ('2026-01-07', 'Google Clash Royale', 45.90, cat_map['lazer']),
+        ('2026-01-11', 'THAURUS INDUSTRIA', 619.09, cat_map['lazer']),
+        ('2026-01-12', 'Google Clash Royale', 24.90, cat_map['lazer']),
+        ('2026-01-14', 'Google Clash Royale', 29.90, cat_map['lazer']),
+        ('2026-01-14', 'OF London', 46.24, cat_map['lazer']),
+        ('2026-01-15', 'Google Clash Royale', 59.90, cat_map['lazer']),
+        ('2026-01-15', 'Google Clash Royale', 18.50, cat_map['lazer']),
+        ('2026-01-15', 'Google Clash Royale', 18.50, cat_map['lazer']),
+        ('2026-01-15', 'Google Clash Royale', 18.50, cat_map['lazer']),
+        ('2026-01-16', 'Google Clash Royale', 18.50, cat_map['lazer']),
+        ('2026-01-16', 'Google Clash Royale', 18.50, cat_map['lazer']),
+        ('2026-01-16', 'Google Clash Royale', 18.50, cat_map['lazer']),
+        ('2026-01-16', 'Google Clash Royale', 18.50, cat_map['lazer']),
 
-        # Casa
+        # ============================================
+        # CASA
+        # ============================================
         ('2026-01-06', 'MY PET BARRA', 273.00, cat_map['casa']),
         ('2026-01-10', 'CONTA VIVO', 120.00, cat_map['casa']),
 
-        # Taxas
+        # ============================================
+        # TAXAS
+        # ============================================
         ('2026-01-07', 'IOF compras exterior', 31.30, cat_map['taxas']),
         ('2026-01-07', 'IOF saque Pix', 16.62, cat_map['taxas']),
         ('2026-01-07', 'Juros saque Pix', 98.48, cat_map['taxas']),
         ('2026-01-05', 'Devolução juros', -43.16, cat_map['taxas']),
+        ('2026-01-09', 'IOF compras exterior', 3.35, cat_map['taxas']),
+        ('2026-01-12', 'IOF compras exterior', 3.17, cat_map['taxas']),
+        ('2026-01-14', 'IOF PIX CHOK', 7.50, cat_map['taxas']),
+        ('2026-01-14', 'Juros saque Pix', 38.45, cat_map['taxas']),
+        ('2026-01-15', 'IOF compras exterior', 1.73, cat_map['taxas']),
+        ('2026-01-16', 'Receita Federal', 435.34, cat_map['taxas']),
+        ('2026-01-29', 'Serasa Experian', 23.90, cat_map['taxas']),
+
+        # ============================================
+        # OBRA (PIX eletricista + parcelamentos móveis)
+        # ============================================
+        ('2026-01-14', 'PIX CHOK ELETRIC', 1240.00, cat_map['obra']),
+        ('2026-01-12', 'PICPAY*Karl A (obra)', 985.63, cat_map['obra']),
+        ('2026-01-14', 'PICPAY*Karl A (móveis 1/2)', 5237.93, cat_map['obra']),
+
+        # ============================================
+        # EDUCAÇÃO
+        # ============================================
+        ('2026-01-11', 'EDZCOLLAB4TEA (1/12)', 99.04, cat_map['educacao']),
     ]
+
+    # Transações de Dezembro 2025 (data da transação, não do pagamento)
+    dez_2025_transactions = [
+        # Alimentação
+        ('2025-12-28', 'A F PEREIRA MERCEARIA', 28.00, cat_map['alimentacao']),
+        ('2025-12-29', 'IFD*BR (iFood)', 250.49, cat_map['alimentacao']),
+        ('2025-12-30', 'SUPERMERCADO PEROLA', 307.36, cat_map['alimentacao']),
+        ('2025-12-31', 'POSTO NACOES UNIDAS', 50.00, cat_map['transporte']),
+        ('2025-12-31', 'IFD*BR (iFood)', 184.88, cat_map['alimentacao']),
+        ('2025-12-31', 'RESTAURANTE PIEMONTE', 38.15, cat_map['alimentacao']),
+
+        # Assinaturas
+        ('2025-12-28', 'Google Clash Royale', 18.50, cat_map['lazer']),
+        ('2025-12-28', 'Google Clash Royale', 18.50, cat_map['lazer']),
+        ('2025-12-29', 'Amazon Prime Aluguel', 29.90, cat_map['assinaturas']),
+        ('2025-12-30', 'FLOWITH.IO', 289.27, cat_map['assinaturas']),
+        ('2025-12-29', 'RIVERSIDEFM', 167.13, cat_map['assinaturas']),
+
+        # Taxas
+        ('2025-12-30', 'IOF compras exterior', 4.01, cat_map['taxas']),
+    ]
+
+    cursor.executemany(
+        "INSERT INTO transactions (date, description, amount, category_id, source) VALUES (?, ?, ?, ?, 'real_dez2025')",
+        dez_2025_transactions
+    )
 
     cursor.executemany(
         "INSERT INTO transactions (date, description, amount, category_id, source) VALUES (?, ?, ?, ?, 'real_jan2026')",

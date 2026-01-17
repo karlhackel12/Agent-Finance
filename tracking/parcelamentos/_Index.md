@@ -1,89 +1,116 @@
 ---
 tipo: index
 area: parcelamentos
-atualizado: 2025-12-28
+atualizado: 2026-01-17
 ---
 
 # Parcelamentos Ativos
 
 > Controle de todos os parcelamentos em andamento
+> Atualizado após fechamento Janeiro 2026
 
 ---
 
-## Grandes Compromissos (Casa)
+## Grandes Compromissos (Obra/Móveis)
 
 | Descricao | Total | Parcela | Valor/Mes | Inicio | Termino | Status |
 |-----------|-------|---------|-----------|--------|---------|--------|
-| [[Moveis-Planejados]] | R$ 95,000 | 2/10 | R$ 9,500 | Dez/25 | Out/26 | ✅ 2a em Jan |
-| [[Mesa-Cadeiras]] | R$ 16,000 | 1/10 | R$ 1,600 | Jan/26 | Out/26 | 🟡 Novo |
-| [[Eletrodomesticos]] | R$ 15,000 | 0/6 | R$ 2,500 | Set/26 | Fev/27 | ⏳ Futuro |
+| [[Moveis-Planejados]] | R$ 95.000 | 2/10 | R$ 9.500 | Dez/25 | Set/26 | ✅ Em dia |
+| PICPAY Móveis | R$ 10.476 | 1/2 | R$ 5.238 | Jan/26 | Fev/26 | ✅ Novo |
+| [[Mesa-Cadeiras]] | R$ 16.000 | 0/10 | R$ 1.600 | Mar/26 | Dez/26 | ⏳ Futuro |
+| [[Eletrodomesticos]] | R$ 15.000 | 0/6 | R$ 2.500 | Set/26 | Fev/27 | ⏳ Futuro |
 
-**Subtotal Moveis + Eletros: R$ 126,000**
+**Subtotal Móveis/Eletros: R$ 136.476**
+
+---
+
+## Parcelamentos Obra (Jan/26)
+
+| Descricao | Parcela | Valor/Mes | Categoria | Termino | Status |
+|-----------|---------|-----------|-----------|---------|--------|
+| MOVEIS PLANEJADOS | 2/10 | R$ 9.500 | Obra | Set/26 | ✅ |
+| PICPAY Móveis | 1/2 | R$ 5.238 | Obra | Fev/26 | ✅ |
+| PICPAY Obra | 1/2 | R$ 986 | Obra | Fev/26 | ✅ |
+| AREDES | 8/8 | R$ 670 | Obra | Jan/26 | ✅ ÚLTIMA |
+| CASA CHIESSE 2X | 2/2 | R$ 549 | Obra | Jan/26 | ✅ ÚLTIMA |
+| VINDI BROIL | 4/10 | R$ 359 | Obra | Jul/26 | ✅ |
+| CASA CHIESSE 5X | 2/5 | R$ 163 | Obra | Abr/26 | ✅ |
+| MACOPIL | 2/5 | R$ 128 | Obra | Abr/26 | ✅ |
+
+**Subtotal Obra Jan/26: R$ 17.593**
 
 ---
 
 ## Outros Parcelamentos (Jan/26)
 
-| Descricao | Parcela | Valor/Mes | Termino |
-|-----------|---------|-----------|---------|
-| DROGARIAS PACHECO | 2/3 | R$ 1.846 | Fev/26 |
-| AMAZON MARKETPLACE | 3/10 | R$ 835 | Ago/26 |
-| AREDES | 7/8 | R$ 670 | Fev/26 |
-| CASA CHIESSE 2X | 1/2 | R$ 549 | Fev/26 |
-| MAGALU | 1/10 | R$ 448 | Out/26 |
-| ALFATEC COMERCIO | 16/21 | R$ 413 | Jun/26 |
-| VINDI BROIL | 3/10 | R$ 359 | Ago/26 |
-| DROGARIA MODERNA | 1/2 | R$ 237 | Fev/26 |
-| FIRE VERBO | 1/2 | R$ 220 | Fev/26 |
-| SHOPEE FIDCO | 3/12 | R$ 193 | Out/26 |
-| CASA CHIESSE 5X | 1/5 | R$ 163 | Mai/26 |
-| LOVABLE | 3/4 | R$ 153 | Fev/26 |
-| MACOPIL | 1/5 | R$ 127 | Mai/26 |
-| SHOPEE MEUPUXADOR | 1/5 | R$ 117 | Mai/26 |
-| OPENAI CHATGPT | 3/12 | R$ 109 | Out/26 |
-| MARIA LUIZA | 3/4 | R$ 102 | Fev/26 |
-| OTIQUE | 8/10 | R$ 85 | Mar/26 |
-| TAVUS | 1/5 | R$ 72 | Mai/26 |
-| FLOWITH.IO | 1/5 | R$ 61 | Mai/26 |
+| Descricao | Parcela | Valor/Mes | Categoria | Termino | Status |
+|-----------|---------|-----------|-----------|---------|--------|
+| DROGARIAS PACHECO | 3/3 | R$ 1.847 | Saúde | Jan/26 | ✅ ÚLTIMA |
+| RAIA311 | 1/2 | R$ 930 | Saúde | Fev/26 | ✅ Novo |
+| AMAZON MARKETPLACE | 4/10 | R$ 835 | Compras | Jul/26 | ✅ |
+| MAGALU | 2/10 | R$ 448 | Compras | Set/26 | ✅ |
+| DROGARIA MODERNA | 2/2 | R$ 238 | Saúde | Jan/26 | ✅ ÚLTIMA |
+| FIRE VERBO | 2/2 | R$ 220 | Lazer | Jan/26 | ✅ ÚLTIMA |
+| SHOPEE FIDCO | 4/12 | R$ 193 | Compras | Set/26 | ✅ |
+| LOVABLE | 4/4 | R$ 153 | Assinaturas | Jan/26 | ✅ ÚLTIMA |
+| SHOPEE MEUPUXADOR | 2/5 | R$ 118 | Compras | Abr/26 | ✅ |
+| OPENAI CHATGPT | 4/12 | R$ 109 | Assinaturas | Set/26 | ✅ |
+| EDZCOLLAB4TEA | 1/12 | R$ 99 | Educação | Dez/26 | ✅ Novo |
+| OTIQUE | 9/10 | R$ 85 | Compras | Fev/26 | ✅ |
+| TAVUS | 2/5 | R$ 72 | Assinaturas | Abr/26 | ✅ |
+| FLOWITH.IO | 2/5 | R$ 61 | Assinaturas | Abr/26 | ✅ |
 
-**Subtotal Outros Jan/26: R$ 6.766**
+**Subtotal Outros Jan/26: R$ 5.408**
 
 ---
 
-## Resumo Mensal de Parcelamentos
+## Parcelamentos que Terminam em Janeiro
 
-| Mes | Moveis | Mesa | Outros | Total |
-|-----|--------|------|--------|-------|
-| Jan/26 | R$ 9.500 | R$ 1.600 | R$ 6.766 | **R$ 17.866** |
-| Fev/26 | R$ 9.500 | R$ 1.600 | R$ 6.766 | **R$ 17.866** |
-| Mar/26 | R$ 9.500 | R$ 1.600 | R$ 2.985 | **R$ 14.085** |
-| Abr/26 | R$ 9.500 | R$ 1.600 | R$ 2.900 | **R$ 14.000** |
-| Mai/26 | R$ 9.500 | R$ 1.600 | R$ 2.900 | **R$ 14.000** |
-| Jun/26 | R$ 9.500 | R$ 1.600 | R$ 2.358 | **R$ 13.458** |
-| Jul/26 | R$ 9.500 | R$ 1.600 | R$ 1.945 | **R$ 13.045** |
-| Ago/26 | R$ 9.500 | R$ 1.600 | R$ 1.945 | **R$ 13.045** |
-| Set/26 | R$ 9.500 + R$ 2.500 | R$ 1.600 | R$ 750 | **R$ 14.350** |
-| Out/26 | R$ 9.500 + R$ 2.500 | R$ 1.600 | R$ 750 | **R$ 14.350** |
+| Descricao | Valor | Economia a partir de Fev/26 |
+|-----------|-------|----------------------------|
+| DROGARIAS PACHECO | R$ 1.847 | ✅ |
+| AREDES | R$ 670 | ✅ |
+| CASA CHIESSE 2X | R$ 549 | ✅ |
+| DROGARIA MODERNA | R$ 238 | ✅ |
+| FIRE VERBO | R$ 220 | ✅ |
+| LOVABLE | R$ 153 | ✅ |
+| **TOTAL** | **R$ 3.677** | 🎉 Liberado em Fev |
 
 ---
 
-## Cronograma de Quitacao
+## Resumo Mensal de Parcelamentos 2026
+
+| Mês | Obra | Variáveis | Total |
+|-----|------|-----------|-------|
+| **Jan/26** | R$ 17.593 | R$ 5.408 | **R$ 23.001** |
+| Fev/26 | R$ 16.374 | R$ 3.140 | **R$ 19.514** |
+| Mar/26 | R$ 10.150 | R$ 3.055 | **R$ 13.205** |
+| Abr/26 | R$ 10.150 | R$ 2.697 | **R$ 12.847** |
+| Mai/26 | R$ 9.859 | R$ 1.476 | **R$ 11.335** |
+| Jun/26 | R$ 9.859 | R$ 1.476 | **R$ 11.335** |
+| Jul/26 | R$ 9.859 | R$ 641 | **R$ 10.500** |
+| Ago/26 | R$ 9.500 | R$ 641 | **R$ 10.141** |
+| Set/26 | R$ 12.000 | R$ 302 | **R$ 12.302** |
+| Out/26 | R$ 2.500 | R$ 193 | **R$ 2.693** |
+
+---
+
+## Cronograma de Quitação
 
 ```
-Dez/25 ████████████████████ 1a parcela Moveis PAGA
-Jan/26 ████████████████████ Inicio Mesa+Cadeiras
-...
-Jul/26 ████████████████     Termina TOK STOK
-Ago/26 ███████████████      Termina CASAS BAHIA
-Set/26 ██████████████       Termina LEROY + Inicio Eletros
-Out/26 █████████████        Termina KABUM + Moveis + Mesa
-Nov/26 ████████████         Termina MERCADO LIVRE
-Fev/27 ████                 Termina Eletrodomesticos
+Jan/26 ████████████████████ AREDES, PACHECO, CHIESSE2X, FIRE VERBO, LOVABLE terminam
+Fev/26 ███████████████████  OTIQUE, DROGARIA MODERNA, RAIA311, PICPAY terminam
+Mar/26 ██████████████████   Mesa+Cadeiras inicia
+Abr/26 █████████████████    CHIESSE5X, MACOPIL, MEUPUXADOR, TAVUS, FLOWITH terminam
+Jul/26 ████████████████     AMAZON MARKETPLACE, VINDI BROIL terminam
+Set/26 ██████████████       MAGALU, FIDCO, OPENAI, Móveis terminam + Eletros inicia
+Dez/26 ████████████         Mesa+Cadeiras, EDZCOLLAB terminam
+Fev/27 ████                 Eletrodomésticos termina
 ```
 
 ---
 
-## Links Rapidos
+## Links Rápidos
 
 - [[../Dashboard-Mensal|Dashboard Mensal]]
 - [[../../obra/Plano-Obra-2026|Plano de Obra]]

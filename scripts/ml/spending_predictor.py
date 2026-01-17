@@ -22,6 +22,15 @@ except ImportError:
 
 DB_PATH = Path(__file__).parent.parent.parent / "data" / "finance.db"
 
+# Gastos fixos mínimos por categoria (valores mensais garantidos)
+# Usado para ajustar previsões que não podem ficar abaixo destes valores
+MINIMUM_CATEGORY_SPENDING = {
+    'transporte': 3370,    # Movida R$ 3,270 + combustível ~R$ 100
+    'saude': 1430,         # Unimed plano de saúde
+    'assinaturas': 1000,   # Trabalho + streaming + SaaS essenciais
+    'casa': 120,           # Conta Vivo fixa
+}
+
 # Import finance_db to ensure database exists with correct schema
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -194,6 +203,17 @@ class SpendingPredictor:
         """
         if category not in self.models:
             if not self.train_model(category):
+                # Check if category has minimum spending defined
+                min_spending = MINIMUM_CATEGORY_SPENDING.get(category, 0)
+                if min_spending > 0:
+                    return {
+                        'predicted': min_spending,
+                        'confidence': 0.9,  # High confidence for fixed costs
+                        'lower_bound': min_spending,
+                        'upper_bound': min_spending * 1.2,
+                        'minimum_applied': True,
+                        'note': f'Baseado em gasto fixo mínimo de R$ {min_spending:,.0f}'
+                    }
                 return {
                     'predicted': 0,
                     'confidence': 0,
@@ -212,6 +232,13 @@ class SpendingPredictor:
             model = self.models[category]
             predicted = model['slope'] * next_idx + model['intercept']
 
+        # Apply minimum spending floor if defined for this category
+        min_spending = MINIMUM_CATEGORY_SPENDING.get(category, 0)
+        minimum_applied = False
+        if min_spending > 0 and predicted < min_spending:
+            predicted = min_spending
+            minimum_applied = True
+
         # Calculate confidence based on data variance
         stats = self.category_stats.get(category, {})
         std = stats.get('std', 0)
@@ -224,11 +251,15 @@ class SpendingPredictor:
         else:
             confidence = 0.5
 
-        # Bounds: +/- 1.5 standard deviations
-        lower_bound = max(0, predicted - 1.5 * std)
+        # Boost confidence if minimum was applied (fixed costs are predictable)
+        if minimum_applied:
+            confidence = max(confidence, 0.85)
+
+        # Bounds: +/- 1.5 standard deviations, but never below minimum
+        lower_bound = max(min_spending, predicted - 1.5 * std)
         upper_bound = predicted + 1.5 * std
 
-        return {
+        result = {
             'predicted': round(predicted, 2),
             'confidence': round(confidence, 2),
             'lower_bound': round(lower_bound, 2),
@@ -236,6 +267,12 @@ class SpendingPredictor:
             'historical_mean': round(mean, 2),
             'historical_std': round(std, 2)
         }
+
+        if minimum_applied:
+            result['minimum_applied'] = True
+            result['minimum_value'] = min_spending
+
+        return result
 
     def predict_all_categories(self) -> Dict[str, Dict]:
         """
