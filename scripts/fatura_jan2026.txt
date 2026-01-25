@@ -1,0 +1,264 @@
+Data    Transações    País    Moeda    Valor
+
+     1-KARL ALVES
+
+     SALDO FATURA ANTERIOR     BR     R$     43.397,20
+
+     Pagamentos
+05/01     PGTO. CASH AG. 0469 000046900 200     100     R$     -43.397,20
+
+     Compras a vista
+     Compras Diversas
+28/12     Google Clash Royale SAO PAULO     BR     R$     18,50
+29/12     Serasa Experian Sao Paulo     BR     R$     23,90
+28/12     Google Clash Royale SAO PAULO     BR     R$     18,50
+29/12     A F PEREIRA MERCEARIA BARRA MANSA     BR     R$     28,00
+30/12     FLOWITH.IO FLOWITH.IO     CO     R$     289,27
+29/12     RIVERSIDEFM, INC. PALO ALTO     NL     R$     167,13
+30/12     IOF - COMPRA NO EXTERIOR          R$     1,83
+30/12     SUPERMERCADO PEROLA DA BARRA MANSA     BR     R$     307,36
+29/12     Amazon Prime Aluguel SAO PAULO     BR     R$     29,90
+31/12     POSTO NACOES UNIDAS LT BARRA MANSA     BR     R$     50,00
+01/01     PPRO *MICROSOFT SAO PAULO     BR     R$     60,00
+01/01     REPLIT, INC. REPLIT.COM     CA     R$     289,39
+02/01     IOF - COMPRA NO EXTERIOR          R$     3,18
+05/01     Google Clash Royale SAO PAULO     BR     R$     57,90
+05/01     Amazon Prime Canais SAO PAULO     BR     R$     14,99
+06/01     AQUA VOICE AQUAVOICE.COM     CA     R$     56,47
+06/01     NOTION LABS, INC. NOTION.SO     CA     R$     135,71
+06/01     RAIA4154 BARRA MANSA     BR     R$     152,83
+06/01     MY PET BARRA BARRA MANSA     BR     R$     273,00
+06/01     21ST.DEV 21ST.DEV     DE     R$     113,05
+07/01     IOF - COMPRA NO EXTERIOR          R$     1,24
+07/01     CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM     CA     R$     550,00
+06/01     FLOAT LABS (SUPERCUT) ST ALBANS     GB     R$     101,75
+07/01     IOF - COMPRA NO EXTERIOR          R$     1,11
+07/01     PADDLE.NET* N8N CLOUD1 LONDON     GB     R$     150,00
+06/01     AMAZON SERVICOS DE VARESAO PAULO     BR     R$     19,90
+06/01     AMAZON MARKETPLACE SAO PAULO     BR     R$     250,90
+08/01     EVOSTARTER BELO HORIZONT     BR     R$     112,26
+08/01     Amazon Prime Canais SAO PAULO     BR     R$     44,90
+07/01     Google Clash Royale SAO PAULO     BR     R$     45,90
+08/01     A F PEREIRA MERCEARIA BARRA MANSA     BR     R$     48,80
+08/01     NAGUMO VOLTA REDONDA VOLTA REDONDA     BR     R$     338,85
+08/01     CLOUDFLARE CLOUDFLARE.CO     CA     R$     28,02
+09/01     IOF - COMPRA NO EXTERIOR          R$     0,30
+08/01     CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM     CA     R$     641,07
+08/01     ANTHROPIC ANTHROPIC.COM     CA     R$     50,00
+08/01     REPLIT, INC. REPLIT.COM     CA     R$     137,45
+09/01     IOF - COMPRA NO EXTERIOR          R$     1,51
+08/01     REPLIT, INC. REPLIT.COM     CA     R$     140,09
+09/01     IOF - COMPRA NO EXTERIOR          R$     1,54
+09/01     PANIFICADORA ACHILES PORTO REAL     BR     R$     94,25
+09/01     RESTAURANTE DA LUZIA BARRA MANSA     BR     R$     25,00
+09/01     A F PEREIRA MERCEARIA BARRA MANSA     BR     R$     49,00
+10/01     JUSBRASIL SALVADOR     BR     R$     39,90
+10/01     RESTAURANTE DA LUZIA BARRA MANSA     BR     R$     75,00
+10/01     CONTA VIVO SAO PAULO     BR     R$     120,00
+10/01     VERCEL INC. VERCEL.COM     CA     R$     111,71
+12/01     IOF - COMPRA NO EXTERIOR          R$     1,22
+10/01     CURSOR, AI POWERED IDE CURSOR.COM     NY     R$     111,71
+12/01     IOF - COMPRA NO EXTERIOR          R$     1,22
+11/01     THAURUS INDUSTRIA E CO BARRA MANSA     BR     R$     619,09
+11/01     RECLAIM.AI RECLAIM.AI     CA     R$     67,03
+12/01     IOF - COMPRA NO EXTERIOR          R$     0,73
+12/01     ShoppingParkSul SAO PAULO     BR     R$     16,00
+12/01     Amazon Prime Canais SAO PAULO     BR     R$     16,90
+12/01     Google Clash Royale SAO PAULO     BR     R$     24,90
+13/01     Google YouTube Member SAO PAULO     BR     R$     4,99
+14/01     A F PEREIRA MERCEARIA BARRA MANSA     BR     R$     24,00
+14/01     Amazon Prime Canais SAO PAULO     BR     R$     19,90
+15/01     DOANYTHINGMACHINE WWW.DOANYTHIN     TX     R$     111,83
+15/01     JIM.COM PADAKA27 PORTO REAL     BR     R$     14,00
+15/01     RESTAURANTE DA LUZIA BARRA MANSA     BR     R$     58,00
+15/01     DROGARIAS ECONOMIZE LO BARRA MANSA     BR     R$     26,58
+15/01     Z-API.IO MARINGA     BR     R$     99,99
+15/01     PICPAY*UNIMEDSEGU SAO PAULO     BR     R$     1.430,91
+15/01     Google Clash Royale SAO PAULO     BR     R$     59,90
+15/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+14/01     Google Clash Royale SAO PAULO     BR     R$     29,90
+15/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+15/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+14/01     Amazon Prime Canais SAO PAULO     BR     R$     29,90
+16/01     RESTAURANTE DA LUZIA BARRA MANSA     BR     R$     65,00
+15/01     Amazon Prime Canais SAO PAULO     BR     R$     34,90
+16/01     Amazon Kindle Unltd SAO PAULO     BR     R$     24,90
+16/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+16/01     Contabilizei TecnologiaCuritiba     BR     R$     178,43
+16/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+16/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+16/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+17/01     POSTO NACOES UNIDAS LT BARRA MANSA     BR     R$     161,82
+17/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+17/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+17/01     A F PEREIRA MERCEARIA BARRA MANSA     BR     R$     106,00
+17/01     A F PEREIRA MERCEARIA BARRA MANSA     BR     R$     22,00
+17/01     MANUS AI SINGAPORE     SG     R$     111,70
+18/01     ACOUGUE N SR FATIMA BARRA MANSA     BR     R$     237,73
+18/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+18/01     Amazon Prime Canais SAO PAULO     BR     R$     27,90
+18/01     ZOOM.COM 888-799-9666 ZOOM.US     CA     R$     77,49
+18/01     MEETSQUAD.AI BURNHAM     GB     R$     67,14
+19/01     IOF - COMPRA NO EXTERIOR          R$     0,73
+19/01     RESTAURANTE DA LUZIA BARRA MANSA     BR     R$     50,00
+19/01     PANIFICADORA ACHILES PORTO REAL     BR     R$     15,00
+19/01     SUPERMERCADO PEROLA DA BARRA MANSA     BR     R$     255,13
+17/01     Google One SAO PAULO     BR     R$     12,50
+19/01     FIRE VERBO BARRA MANSA     BR     R$     354,00
+15/01     Globo Premiere RIO DE JANEIR     BR     R$     59,90
+20/01     AmazonPrimeBR SAO PAULO     BR     R$     19,90
+20/01     OLA RETIRO DA MANTIQUE LAVRINHAS     BR     R$     172,82
+20/01     CONCESSIONARIA DO SIST SANTA ISABEL     BR     R$     14,50
+20/01     CONCESSIONARIA DO SIST SANTA ISABEL     BR     R$     16,90
+20/01     DEPILAR VOLTA REDONDA     BR     R$     60,00
+20/01     GUARAREMA ITAQUAQUECETU     BR     R$     5,40
+20/01     ITAQUAQUECETUBA ITAQUAQUECETU     BR     R$     5,70
+20/01     ECOPISTA FPAY Itaquaquecetu     BR     R$     5,40
+21/01     VX CASE SAO PAULO     BR     R$     150,00
+21/01     HOPE VILA OLIMPIA SAO PAULO     BR     R$     209,90
+21/01     BAKEBUN BAKERY SVO LTD SAO PAULO     BR     R$     84,50
+21/01     PROMOLIVROS COTIA     BR     R$     224,70
+22/01     Shokiti SAO PAULO     BR     R$     92,65
+22/01     BANCA DA VILA SAO PAULO     BR     R$     45,00
+21/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+21/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+21/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+21/01     Google Clash Royale SAO PAULO     BR     R$     18,50
+22/01     BANCA SHOP COMERCIO SAO PAULO     BR     R$     160,00
+22/01     CONCESSIONARIA DO SIST SANTA ISABEL     BR     R$     4,50
+22/01     CONCESSIONARIA DO SIST SANTA ISABEL     BR     R$     4,50
+22/01     CONCESSIONARIA DO SIST SANTA ISABEL     BR     R$     8,10
+22/01     CONCESSIONARIA DO SIST SANTA ISABEL     BR     R$     16,90
+22/01     CONCESSIONARIA DO SIST SANTA ISABEL     BR     R$     14,50
+05/01     AMAZONMKTPLC*BOOKWIREB SAO PAULO     BR     R$     73,38
+     Restaurantes
+29/12     IFD*BR OSASCO     BR     R$     250,49
+31/12     IFD*BR OSASCO     BR     R$     184,88
+31/12     RESTAURANTE PIEMONTE - POSTO REAL     BR     R$     38,15
+05/01     IFD*BR OSASCO     BR     R$     5,97
+05/01     IFD*BR OSASCO     BR     R$     158,69
+06/01     IFD*BR OSASCO     BR     R$     7,95
+08/01     PASTA A MANO VOLTA REDONDA     BR     R$     90,48
+09/01     016 HAMBURGUERIA BARRA MANSA     BR     R$     50,00
+11/01     LANCHONETE DINOSSAUROS BARRA MANSA     BR     R$     12,00
+12/01     CODEV COMERCIO DE ALIM VOLTA REDONDA     BR     R$     32,80
+17/01     TERRA NOSTRA PORTO REAL     BR     R$     187,66
+19/01     IFD*BR OSASCO     BR     R$     151,79
+21/01     FRANGARIA VILA OLIMPIA SAO PAULO     BR     R$     140,58
+20/01     IFD*BR OSASCO     BR     R$     184,29
+22/01     OLGARI COMPRA SAO PAULO     BR     R$     90,90
+     Aluguel de carros
+06/01     MOVIDA CARRO ASSINATURAMOGI DAS CRUZ     BR     R$     3.270,00
+     Compras por mala direta/telefone/web
+05/01     AMAZON BR SAO PAULO     BR     R$     141,00
+10/01     iFood Osasco     BR     R$     5,95
+13/01     TAINARA BARRA MANSA     BR     R$     105,00
+14/01     OF London     GB     R$     46,24
+15/01     IOF - COMPRA NO EXTERIOR          R$     0,50
+15/01     Contabilizei TecnologiaCuritiba     BR     R$     369,00
+16/01     OZIEL BATISTA ALVES PORTO REAL     BR     R$     35,00
+     Agências de Viagens
+19/01     AIRBNB * HMF9WWPQ8J SAO PAULO     BR     R$     860,07
+
+     Compras/Pagamento de contas parceladas
+     Compras Diversas
+02/10     OPENAI *CHATG PARC 04/12 ENAI.COM     CA     R$     109,09
+17/10     LOVABLE PARC 04/04 VABLE.DEV     DE     R$     153,43
+30/11     FLOWITH.IO PARC 02/05 OWITH.IO     CO     R$     61,05
+02/12     TAVUS PARC 02/05 VUS.IO     CA     R$     72,36
+04/12     SHOPEE *MEUPU PARC 02/05 RCA     BR     R$     117,56
+04/12     CASA CHIESSE PARC 02/05 RRA MANSA     BR     R$     163,07
+05/12     Macopil PARC 02/05 RTO REAL     BR     R$     127,81
+02/11     DROGARIAS PAC PARC 03/03 BARRA MANSA     BR     R$     1.846,72
+02/10     AMAZONMKTPLC* PARC 04/10 BARUERI     BR     R$     835,20
+03/12     MLP*Magalu Xc PARC 02/10 SERRA     BR     R$     448,22
+04/10     SHOPEE *FIDCO PARC 04/12 EXTREMA     BR     R$     193,47
+06/01     RAIA311 PARC 01/02 BARRA MANSA     BR     R$     929,71
+09/12     FIRE VERBO PARC 02/02 BARRA MANSA     BR     R$     220,00
+11/01     EDZCOLLAB4TEA PARC 01/12 OSASCO     BR     R$     99,04
+11/06     AREDES PARC 08/08 PORTO REAL     BR     R$     670,36
+11/12     CASA CHIESSE PARC 02/02 BARRA MANSA     BR     R$     549,00
+13/10     Vindi *Broil PARC 04/10 Itajai     BR     R$     359,01
+12/01     PICPAY*Karl A PARC 01/02 SAO PAULO     BR     R$     985,63
+14/01     PICPAY*Karl A PARC 01/02 SAO PAULO     BR     R$     5.237,93
+21/01     LOJAS RENNER PARC 01/02 SAO PAULO     BR     R$     180,95
+     Hospitais
+25/04     OTIQUE PARC 09/10 BARRA MANSA     BR     R$     85,00
+     Compras por mala direta/telefone/web
+31/10     AMAZON MARKET PARC 02/02 SAO PAULO     BR     R$     1.399,76
+
+     Débitos diversos
+20/01     PIX - KARL ALVES HACKEL CONSULT     BR     R$     150,00
+20/01     IOF DIARIO SAQUE PIX     BR     R$     0,25
+20/01     IOF ADICIONAL SAQUE PIX     BR     R$     0,57
+07/01     PIX - Karl Alves Hackel     BR     R$     861,00
+07/01     IOF DIARIO SAQUE PIX     BR     R$     2,41
+07/01     IOF ADICIONAL SAQUE PIX     BR     R$     3,29
+07/01     PIX - KARL ALVES HACKEL     BR     R$     950,00
+07/01     IOF ADICIONAL SAQUE PIX     BR     R$     3,63
+07/01     IOF DIARIO SAQUE PIX     BR     R$     2,66
+19/01     PIX - THIAGO ADAUTO DA ROCHA MA     BR     R$     1.180,00
+19/01     IOF ADICIONAL SAQUE PIX     BR     R$     4,50
+19/01     IOF DIARIO SAQUE PIX     BR     R$     2,14
+07/01     PIX - KARL ALVES HACKEL     BR     R$     700,00
+07/01     IOF ADICIONAL SAQUE PIX     BR     R$     2,67
+07/01     IOF DIARIO SAQUE PIX     BR     R$     1,96
+16/01     PIX - RECEITA FEDERAL     BR     R$     435,34
+16/01     IOF DIARIO SAQUE PIX     BR     R$     0,89
+16/01     IOF ADICIONAL SAQUE PIX     BR     R$     1,66
+14/01     PIX - CHOK ELETRIC     BR     R$     1.240,00
+14/01     IOF DIARIO SAQUE PIX     BR     R$     2,76
+14/01     IOF ADICIONAL SAQUE PIX     BR     R$     4,74
+30/12     IOF - COMPRA NO EXTERIOR          R$     3,18
+06/01     IOF - COMPRA NO EXTERIOR          R$     0,62
+06/01     IOF - COMPRA NO EXTERIOR          R$     1,49
+07/01     IOF - COMPRA NO EXTERIOR          R$     6,05
+07/01     IOF - COMPRA NO EXTERIOR          R$     1,65
+09/01     IOF - COMPRA NO EXTERIOR          R$     7,05
+09/01     IOF - COMPRA NO EXTERIOR          R$     0,55
+15/01     IOF - COMPRA NO EXTERIOR          R$     1,23
+19/01     IOF - COMPRA NO EXTERIOR          R$     1,22
+19/01     IOF - COMPRA NO EXTERIOR          R$     0,85
+
+     Encargos
+20/01     JUROS SAQUE PIX     BR     R$     3,60
+07/01     JUROS SAQUE PIX     BR     R$     33,77
+07/01     JUROS SAQUE PIX     BR     R$     37,26
+19/01     JUROS SAQUE PIX     BR     R$     29,71
+07/01     JUROS SAQUE PIX     BR     R$     27,45
+16/01     JUROS SAQUE PIX     BR     R$     12,48
+14/01     JUROS SAQUE PIX     BR     R$     38,45
+05/01     DEVOLUCAO JUROS SAQUE PIX     BR     R$     -3,63
+05/01     DEVOLUCAO JUROS SAQUE PIX     BR     R$     -2,04
+05/01     DEVOLUCAO JUROS SAQUE PIX     BR     R$     -9,09
+05/01     DEVOLUCAO JUROS SAQUE PIX     BR     R$     -1,14
+05/01     DEVOLUCAO JUROS SAQUE PIX     BR     R$     -17,12
+05/01     DEVOLUCAO JUROS SAQUE PIX     BR     R$     -2,77
+05/01     DEVOLUCAO JUROS SAQUE PIX     BR     R$     -7,94
+05/01     DEVOLUCAO JUROS SAQUE PIX     BR     R$     -6,43
+
+CARTAO SECUNDARIO
+Data    Transações    País    Moeda    Valor
+
+     1-KARL ALVES
+
+     SALDO FATURA ANTERIOR     BR     R$     719,65
+
+     Pagamentos
+07/01     PGTO. CASH AG. 0469 000046900 200     100     R$     -719,65
+
+     Compras a vista
+     Compras Diversas
+07/01     Google YouTubePremium SAO PAULO     BR     R$     53,90
+10/01     NETFLIX.COM SAO PAULO     BR     R$     20,90
+10/01     Google YouTube Member SAO PAULO     BR     R$     6,99
+14/01     TOKIO MARINE*AUTO SAO PAULO     BR     R$     291,78
+15/01     IORCLASS BALNEARIO CAM     BR     R$     65,00
+20/01     FEIRA VOLANTE BARRA MANSA     BR     R$     122,00
+     Compras por mala direta/telefone/web
+21/01     iFood Osasco     BR     R$     7,95
+
+     Compras/Pagamento de contas parceladas
+     Compras Diversas
+26/09     MARIA LUIZA B PARC 04/04 BARRA MANSA     BR     R$     102,50
+29/08     ALFATEC COMER PARC 17/21 VOLTA REDOND     BR     R$     413,76

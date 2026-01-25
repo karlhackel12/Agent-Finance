@@ -3,9 +3,9 @@ tipo: mensal
 ano: 2026
 mes: 1
 mes_nome: Janeiro
-total_gasto: 87576.33
-total_transacoes: 296
-atualizado: 2026-01-25 10:30
+total_gasto: 71537.56000000001
+total_transacoes: 270
+atualizado: 2026-01-25 11:00
 ---
 
 # Janeiro 2026 - Detalhamento
@@ -18,8 +18,8 @@ atualizado: 2026-01-25 10:30
 | Metrica | Valor |
 |---------|-------|
 | Receita Liquida | R$ 55.000 |
-| Total Variaveis | R$ 87,576 |
-| Taxa Poupanca | -59.2% |
+| Total Variaveis | R$ 71,538 |
+| Taxa Poupanca | -30.1% |
 
 ---
 
@@ -27,7 +27,7 @@ atualizado: 2026-01-25 10:30
 
 ### 🏗️ Obra
 
-**Budget**: R$ 16,500 | **Gasto**: R$ 38,320 | **Status**: CRITICAL
+**Budget**: R$ 16,500 | **Gasto**: R$ 26,950 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -42,11 +42,11 @@ atualizado: 2026-01-25 10:30
 | 2026-01-10 | AREDES 8/8 | R$ 670.36 |
 | 2026-01-10 | MACOPIL 2/5 | R$ 127.81 |
 
-*... e mais 10 transacoes*
+*... e mais 4 transacoes*
 
 ### 🛒 Compras
 
-**Budget**: R$ 2,500 | **Gasto**: R$ 11,710 | **Status**: CRITICAL
+**Budget**: R$ 2,500 | **Gasto**: R$ 9,872 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -59,32 +59,13 @@ atualizado: 2026-01-25 10:30
 | 2026-01-20 | GUARAREMA ITAQUAQUECETU | R$ 5.40 |
 | 2026-01-20 | ITAQUAQUECETUBA ITAQUAQUECETU | R$ 5.70 |
 | 2026-01-15 | JIM.COM PADAKA27 PORTO REAL | R$ 14.00 |
-| 2026-01-14 | OF London | R$ 46.24 |
+| 2026-01-14 | PICPAY*Karl A PARC 01/02 SAO P | R$ 5,237.93 |
 
-*... e mais 21 transacoes*
-
-### 🏥 Saude
-
-**Budget**: R$ 4,000 | **Gasto**: R$ 9,484 | **Status**: CRITICAL
-
-| Data | Descricao | Valor |
-|------|-----------|-------|
-| 2026-01-15 | DROGARIAS ECONOMIZE | R$ 26.58 |
-| 2026-01-15 | PICPAY*UNIMEDSEGU | R$ 1,430.91 |
-| 2026-01-15 | DROGARIAS ECONOMIZE LO BARRA M | R$ 26.58 |
-| 2026-01-15 | PICPAY*UNIMEDSEGU SAO PAULO | R$ 1,430.91 |
-| 2026-01-13 | TAINARA (salão) | R$ 105.00 |
-| 2026-01-10 | DROGARIAS PACHECO 3/3 | R$ 1,846.72 |
-| 2026-01-10 | DROGARIA MODERNA 2/2 | R$ 237.94 |
-| 2026-01-10 | DROGARIAS PACHECO 3/3 | R$ 1,846.72 |
-| 2026-01-10 | DROGARIA MODERNA 2/2 | R$ 237.94 |
-| 2026-01-10 | RAIA311 1/2 | R$ 929.71 |
-
-*... e mais 4 transacoes*
+*... e mais 14 transacoes*
 
 ### 💻 Assinaturas
 
-**Budget**: R$ 3,500 | **Gasto**: R$ 8,253 | **Status**: CRITICAL
+**Budget**: R$ 3,500 | **Gasto**: R$ 7,857 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -99,7 +80,26 @@ atualizado: 2026-01-25 10:30
 | 2026-01-15 | Z-API.IO | R$ 99.99 |
 | 2026-01-15 | Globo Premiere | R$ 59.90 |
 
-*... e mais 63 transacoes*
+*... e mais 59 transacoes*
+
+### 🏥 Saude
+
+**Budget**: R$ 4,000 | **Gasto**: R$ 7,400 | **Status**: CRITICAL
+
+| Data | Descricao | Valor |
+|------|-----------|-------|
+| 2026-01-15 | DROGARIAS ECONOMIZE | R$ 26.58 |
+| 2026-01-15 | PICPAY*UNIMEDSEGU | R$ 1,430.91 |
+| 2026-01-15 | DROGARIAS ECONOMIZE LO BARRA M | R$ 26.58 |
+| 2026-01-15 | PICPAY*UNIMEDSEGU SAO PAULO | R$ 1,430.91 |
+| 2026-01-13 | TAINARA (salão) | R$ 105.00 |
+| 2026-01-10 | DROGARIAS PACHECO 3/3 | R$ 1,846.72 |
+| 2026-01-10 | DROGARIA MODERNA 2/2 | R$ 237.94 |
+| 2026-01-10 | RAIA311 1/2 | R$ 929.71 |
+| 2026-01-06 | RAIA4154 | R$ 152.83 |
+| 2026-01-06 | RAIA311 (1/2) | R$ 929.71 |
+
+*... e mais 2 transacoes*
 
 ### 🚗 Transporte
 
@@ -141,7 +141,7 @@ atualizado: 2026-01-25 10:30
 
 ### 🎮 Lazer
 
-**Budget**: R$ 1,500 | **Gasto**: R$ 3,423 | **Status**: CRITICAL
+**Budget**: R$ 1,500 | **Gasto**: R$ 3,110 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -151,16 +151,16 @@ atualizado: 2026-01-25 10:30
 | 2026-01-18 | Google Clash Royale SAO PAULO | R$ 18.50 |
 | 2026-01-17 | Google Clash Royale SAO PAULO | R$ 18.50 |
 | 2026-01-16 | Google Clash Royale | R$ 18.50 |
-| 2026-01-16 | Google Clash Royale | R$ 18.50 |
-| 2026-01-16 | Google Clash Royale | R$ 18.50 |
-| 2026-01-16 | Google Clash Royale | R$ 18.50 |
 | 2026-01-16 | Google Clash Royale SAO PAULO | R$ 18.50 |
+| 2026-01-15 | Google Clash Royale | R$ 59.90 |
+| 2026-01-15 | Google Clash Royale | R$ 18.50 |
+| 2026-01-15 | Google Clash Royale SAO PAULO | R$ 59.90 |
 
-*... e mais 22 transacoes*
+*... e mais 16 transacoes*
 
 ### 📝 Taxas
 
-**Budget**: R$ 100 | **Gasto**: R$ 2,195 | **Status**: CRITICAL
+**Budget**: R$ 100 | **Gasto**: R$ 2,157 | **Status**: CRITICAL
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -175,7 +175,7 @@ atualizado: 2026-01-25 10:30
 | 2026-01-16 | PIX - RECEITA FEDERAL | R$ 435.34 |
 | 2026-01-16 | JUROS SAQUE PIX | R$ 12.48 |
 
-*... e mais 35 transacoes*
+*... e mais 34 transacoes*
 
 ### 🎾 Esportes
 
@@ -209,7 +209,7 @@ atualizado: 2026-01-25 10:30
 
 ---
 
-## Todas as Transacoes (296 registros)
+## Todas as Transacoes (270 registros)
 
 | Data | Descricao | Categoria | Valor |
 |------|-----------|-----------|-------|
@@ -264,4 +264,4 @@ atualizado: 2026-01-25 10:30
 | 2026-01-17 | MANUS AI SINGAPORE | assinaturas | R$ 111.70 |
 | 2026-01-17 | Google One SAO PAULO | assinaturas | R$ 12.50 |
 
-*... e mais 246 transacoes*
+*... e mais 220 transacoes*

@@ -51,18 +51,20 @@ MONTH_NAMES = [
 
 
 def generate_dashboard(year: int, month: int) -> str:
-    """Gera dashboard principal com dados do banco."""
-    summary = get_monthly_summary(year, month)
+    """Gera dashboard principal com dados do banco separando variáveis de excluídas."""
+    # Usar nova versão que separa categorias
+    from finance_db import get_monthly_summary_v2
+    summary = get_monthly_summary_v2(year, month)
     installments = get_active_installments()
 
-    # Calcular totais
-    total_spent = summary["total_spent"]
-    total_budget = summary["total_budget"]
+    # Extrair dados
+    variables = summary["variables"]
+    excluded = summary["excluded"]
     savings_rate = summary["savings_rate"]
 
-    # Categorias criticas
-    critical = [c for c in summary["categories"] if c["status"] == "critical"]
-    warning = [c for c in summary["categories"] if c["status"] == "warning"]
+    # Categorias criticas (apenas variáveis)
+    critical = [c for c in variables["categories"] if c["status"] == "critical"]
+    warning = [c for c in variables["categories"] if c["status"] == "warning"]
 
     dashboard = f"""---
 tipo: dashboard
@@ -79,63 +81,82 @@ atualizado: {datetime.now().strftime("%Y-%m-%d %H:%M")}
 
 ### KPIs Principais
 
-```dataview
-TABLE WITHOUT ID
-  metrica as "Metrica",
-  valor as "Valor",
-  meta as "Meta",
-  status as "Status"
-FROM "tracking/data"
-WHERE tipo = "kpi" AND ano = {year} AND mes = {month}
-```
-
 | Metrica | Valor | Meta | Status |
 |---------|-------|------|--------|
-| Gastos Variaveis | R$ {total_spent:,.0f} | R$ {total_budget:,.0f} | {"OK" if total_spent <= total_budget else "Acima"} |
-| Taxa Poupanca | {savings_rate:.0f}% | 28% | {"OK" if savings_rate >= 25 else "Atencao"} |
-| Categorias Criticas | {len(critical)} | 0 | {"OK" if len(critical) == 0 else "Critico"} |
+| **Gastos Variaveis** | R$ {variables['total']:,.0f} | R$ {variables['budget']:,.0f} | {"✅ OK" if variables['total'] <= variables['budget'] else "🔴 Acima"} |
+| Gastos Obra/Esportes | R$ {excluded['total']:,.0f} | R$ {excluded['budget']:,.0f} | {"✅ OK" if excluded['total'] <= excluded['budget'] else "🔴 Acima"} |
+| **Saldo Mensal** | R$ {55000 - variables['total']:,.0f} | R$ 11.000+ | {"✅ OK" if savings_rate >= 20 else "⚠️  Atencao"} |
+| **Taxa Poupanca** | {savings_rate:.1f}% | 35% | {"✅ OK" if savings_rate >= 25 else "⚠️  Atencao"} |
+| Categorias Criticas | {len(critical)} | 0 | {"✅ OK" if len(critical) == 0 else "🔴 Critico"} |
 
-### Gastos por Categoria
+---
+
+### Gastos Variáveis (Budget: R$ 19.800)
+
+> **Total Variáveis**: R$ {variables['total']:,.0f} ({variables['total']/variables['budget']*100:.0f}% do budget)
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
 """
 
-    for cat in summary["categories"]:
+    for cat in variables["categories"]:
         icon = cat["icon"]
         name = cat["category"].title()
         spent = cat["total"]
         budget = cat["budget"]
         pct = cat["percent"]
-        status_icon = "OK" if cat["status"] == "ok" else ("Atencao" if cat["status"] == "warning" else "Critico")
+        status_icon = "✅" if cat["status"] == "ok" else ("⚠️ " if cat["status"] == "warning" else "🔴")
         dashboard += f"| {icon} {name} | R$ {spent:,.0f} | R$ {budget:,.0f} | {pct:.0f}% | {status_icon} |\n"
 
     dashboard += f"""
-### Distribuicao 50/30/20
+---
+
+### Gastos Excluídos (Tracking Separado)
+
+> **Total Obra/Esportes**: R$ {excluded['total']:,.0f}
+> Estes gastos são rastreados separadamente e NÃO contam no budget mensal.
+
+| Categoria | Gasto | Budget | % | Status |
+|-----------|-------|--------|---|--------|
+"""
+
+    for cat in excluded["categories"]:
+        icon = cat["icon"]
+        name = cat["category"].title()
+        spent = cat["total"]
+        budget = cat["budget"]
+        pct = cat["percent"]
+        status_icon = "✅" if cat["status"] == "ok" else ("⚠️ " if cat["status"] == "warning" else "🔴")
+        dashboard += f"| {icon} {name} | R$ {spent:,.0f} | R$ {budget:,.0f} | {pct:.0f}% | {status_icon} |\n"
+
+    dashboard += f"""
+---
+
+### Distribuição do Orçamento
 
 | Categoria | Ideal | Atual | Status |
 |-----------|-------|-------|--------|
-| Necessidades (50%) | R$ 27.500 | *calcular* | - |
-| Desejos (30%) | R$ 16.500 | *calcular* | - |
-| Poupanca (20%) | R$ 11.000 | R$ {55000 - total_spent:,.0f} | {"OK" if savings_rate >= 20 else "Atencao"} |
+| Gastos Variáveis | R$ 27.500 (50%) | R$ {variables['total']:,.0f} ({variables['total']/55000*100:.1f}%) | {"✅" if variables['total'] <= 27500 else "🔴"} |
+| Poupança | R$ 11.000 (20%) | R$ {55000 - variables['total']:,.0f} ({savings_rate:.1f}%) | {"✅" if savings_rate >= 20 else "⚠️ "} |
+| Obra/Esportes | Tracking separado | R$ {excluded['total']:,.0f} | - |
 
 ---
 
-## Alertas Ativos
+## Alertas Ativos (Variáveis)
 
 """
 
     if critical:
         for c in critical:
             excess = c["total"] - c["budget"]
-            dashboard += f"- **CRITICO**: {c['icon']} {c['category'].title()} excedeu R$ {excess:,.0f} ({c['percent']:.0f}% do budget)\n"
+            dashboard += f"- 🔴 **CRITICO**: {c['icon']} {c['category'].title()} excedeu R$ {excess:,.0f} ({c['percent']:.0f}% do budget)\n"
 
     if warning:
         for c in warning:
-            dashboard += f"- **Atencao**: {c['icon']} {c['category'].title()} em {c['percent']:.0f}% do budget\n"
+            dashboard += f"- ⚠️  **Atencao**: {c['icon']} {c['category'].title()} em {c['percent']:.0f}% do budget\n"
 
     if not critical and not warning:
-        dashboard += "- Nenhum alerta ativo\n"
+        dashboard += "- ✅ Nenhum alerta ativo\n"
 
     dashboard += f"""
 ---

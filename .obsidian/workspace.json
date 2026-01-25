@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tracking/Alertas-Ativos.md",
+                "file": "obra/Plano-Obra-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Alertas-Ativos"
+              "title": "Plano-Obra-2026"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tracking/Alertas-Ativos.md",
+                "file": "tracking/_Templates/Template-Categoria.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Alertas-Ativos"
+              "title": "Backlinks for Template-Categoria"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tracking/Alertas-Ativos.md",
+                "file": "tracking/_Templates/Template-Categoria.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Alertas-Ativos"
+              "title": "Outgoing links from Template-Categoria"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tracking/Alertas-Ativos.md",
+                "file": "tracking/_Templates/Template-Categoria.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Alertas-Ativos"
+              "title": "Outline of Template-Categoria"
             }
           }
         ]
@@ -183,8 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "5de3e8899b9ea8d1",
+  "active": "9c8b205d258af85a",
   "lastOpenFiles": [
+    "tracking/_Templates/Template-Categoria.md",
+    "tracking/Alertas-Ativos.md",
     "tracking/categorias/Obra.md",
     "scripts/import_bb_history.py",
     "data/bb_history_2025.txt",
@@ -199,7 +201,6 @@
     "dashboard/app.py",
     "tracking/Dashboard-Mensal.md",
     "tracking/Visao-Anual-2026.md",
-    "tracking/_Templates/Template-Categoria.md",
     "obra/Plano-Obra-2026.md",
     "tracking/empresa/Impostos-2026.md",
     "tracking/empresa/Faturamento-2026.md",
@@ -219,7 +220,6 @@
     "tracking/categorias/Lazer.md",
     "tracking/categorias/Assinaturas.md",
     "tracking/categorias/Saude.md",
-    "tracking/categorias/Transporte.md",
-    "tracking/categorias/Casa.md"
+    "tracking/categorias/Transporte.md"
   ]
 }

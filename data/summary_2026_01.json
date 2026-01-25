@@ -6,32 +6,32 @@
       "category": "obra",
       "icon": "🏗️",
       "budget": 16500.0,
-      "total": 38319.71,
-      "percent": 232.2,
+      "total": 26950.46,
+      "percent": 163.3,
       "status": "critical"
     },
     {
       "category": "compras",
       "icon": "🛒",
       "budget": 2500.0,
-      "total": 11709.65,
-      "percent": 468.4,
-      "status": "critical"
-    },
-    {
-      "category": "saude",
-      "icon": "🏥",
-      "budget": 4000.0,
-      "total": 9484.26,
-      "percent": 237.1,
+      "total": 9871.67,
+      "percent": 394.9,
       "status": "critical"
     },
     {
       "category": "assinaturas",
       "icon": "💻",
       "budget": 3500.0,
-      "total": 8253.27,
-      "percent": 235.8,
+      "total": 7857.34,
+      "percent": 224.5,
+      "status": "critical"
+    },
+    {
+      "category": "saude",
+      "icon": "🏥",
+      "budget": 4000.0,
+      "total": 7399.6,
+      "percent": 185.0,
       "status": "critical"
     },
     {
@@ -54,16 +54,16 @@
       "category": "lazer",
       "icon": "🎮",
       "budget": 1500.0,
-      "total": 3422.56,
-      "percent": 228.2,
+      "total": 3110.06,
+      "percent": 207.3,
       "status": "critical"
     },
     {
       "category": "taxas",
       "icon": "📝",
       "budget": 100.0,
-      "total": 2195.2999999999997,
-      "percent": 2195.3,
+      "total": 2156.85,
+      "percent": 2156.8,
       "status": "critical"
     },
     {
@@ -91,7 +91,7 @@
       "status": "critical"
     }
   ],
-  "total_spent": 87576.33,
+  "total_spent": 71537.56000000001,
   "total_budget": 37800.0,
-  "savings_rate": -59.2
+  "savings_rate": -30.1
 }

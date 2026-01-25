@@ -89,9 +89,13 @@ def get_connection():
 
 
 def generate_hash(date_str: str, description: str, amount: float) -> str:
-    """Gera hash unico para evitar duplicatas."""
-    # Usa valor absoluto para evitar duplicatas com sinais diferentes
-    content = f"{date_str}|{description}|{abs(amount)}"
+    """Gera hash unico para evitar duplicatas com normalizacao robusta."""
+    # Normalizar descrição: remover espaços extras, lowercase
+    normalized_desc = ' '.join(description.strip().split()).lower()
+    # Formatar valor com 2 casas decimais para consistência
+    amount_str = f"{abs(amount):.2f}"
+    # Usar separador null byte (não aparece em texto normal)
+    content = f"{date_str}\x00{normalized_desc}\x00{amount_str}"
     return hashlib.md5(content.encode()).hexdigest()
 
 
@@ -115,6 +119,45 @@ def get_category_by_name(name: str) -> Optional[Dict]:
     row = cursor.fetchone()
     conn.close()
     return dict(row) if row else None
+
+
+def get_variable_categories() -> List[Dict]:
+    """Retorna apenas categorias variáveis (not excluded).
+
+    Categorias variáveis são aquelas incluídas no budget mensal de R$ 19.800:
+    alimentacao, transporte, saude, assinaturas, compras, lazer, educacao, casa, taxas
+    """
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT id, name, icon, budget_monthly
+        FROM categories
+        WHERE is_excluded = 0
+        ORDER BY name
+    """)
+    rows = cursor.fetchall()
+    conn.close()
+    return [dict(row) for row in rows]
+
+
+def get_excluded_categories() -> List[Dict]:
+    """Retorna apenas categorias excluídas (obra, esportes).
+
+    Categorias excluídas são rastreadas separadamente e não contam no budget mensal:
+    - obra: R$ 16.500/mês (média 2026)
+    - esportes: R$ 1.500/mês
+    """
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT id, name, icon, budget_monthly
+        FROM categories
+        WHERE is_excluded = 1
+        ORDER BY name
+    """)
+    rows = cursor.fetchall()
+    conn.close()
+    return [dict(row) for row in rows]
 
 
 # ==================== TRANSACTIONS ====================
@@ -273,6 +316,100 @@ def get_monthly_summary(year: int, month: int) -> Dict:
     return result
 
 
+def get_monthly_summary_v2(year: int, month: int) -> Dict:
+    """Retorna resumo mensal separando variáveis de excluídas.
+
+    Categorias variáveis (9): alimentacao, transporte, saude, assinaturas,
+                             compras, lazer, educacao, casa, taxas
+    Categorias excluídas (2): obra, esportes
+
+    A taxa de poupança é calculada APENAS sobre as variáveis.
+    """
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    # Buscar variáveis (is_excluded = 0)
+    cursor.execute('''
+        SELECT
+            c.name as category,
+            c.icon,
+            c.budget_monthly as budget,
+            COALESCE(SUM(ABS(t.amount)), 0) as total
+        FROM categories c
+        LEFT JOIN transactions t ON t.category_id = c.id
+            AND strftime('%Y', t.date) = ?
+            AND strftime('%m', t.date) = ?
+            AND t.type = 'expense'
+        WHERE c.is_excluded = 0
+        GROUP BY c.id
+        ORDER BY total DESC
+    ''', (str(year), f"{month:02d}"))
+
+    variable_rows = cursor.fetchall()
+
+    # Buscar excluídas (is_excluded = 1)
+    cursor.execute('''
+        SELECT
+            c.name as category,
+            c.icon,
+            c.budget_monthly as budget,
+            COALESCE(SUM(ABS(t.amount)), 0) as total
+        FROM categories c
+        LEFT JOIN transactions t ON t.category_id = c.id
+            AND strftime('%Y', t.date) = ?
+            AND strftime('%m', t.date) = ?
+            AND t.type = 'expense'
+        WHERE c.is_excluded = 1
+        GROUP BY c.id
+        ORDER BY total DESC
+    ''', (str(year), f"{month:02d}"))
+
+    excluded_rows = cursor.fetchall()
+    conn.close()
+
+    # Processar variáveis
+    variables = {
+        "categories": [],
+        "total": 0,
+        "budget": 0
+    }
+
+    for row in variable_rows:
+        cat_data = dict(row)
+        cat_data["percent"] = round(cat_data["total"] / cat_data["budget"] * 100, 1) if cat_data["budget"] > 0 else 0
+        cat_data["status"] = "ok" if cat_data["percent"] <= 90 else ("warning" if cat_data["percent"] <= 110 else "critical")
+        variables["categories"].append(cat_data)
+        variables["total"] += cat_data["total"]
+        variables["budget"] += cat_data["budget"]
+
+    # Processar excluídas
+    excluded = {
+        "categories": [],
+        "total": 0,
+        "budget": 0
+    }
+
+    for row in excluded_rows:
+        cat_data = dict(row)
+        cat_data["percent"] = round(cat_data["total"] / cat_data["budget"] * 100, 1) if cat_data["budget"] > 0 else 0
+        cat_data["status"] = "ok" if cat_data["percent"] <= 90 else ("warning" if cat_data["percent"] <= 110 else "critical")
+        excluded["categories"].append(cat_data)
+        excluded["total"] += cat_data["total"]
+        excluded["budget"] += cat_data["budget"]
+
+    # Taxa de poupança calculada APENAS sobre variáveis
+    savings_rate = round((55000 - variables["total"]) / 55000 * 100, 1)
+
+    return {
+        "year": year,
+        "month": month,
+        "variables": variables,
+        "excluded": excluded,
+        "savings_rate": savings_rate,
+        "total_spent": variables["total"] + excluded["total"]
+    }
+
+
 # ==================== INSTALLMENTS ====================
 
 def add_installment(
@@ -344,6 +481,9 @@ def generate_installment_transactions(year: int, month: int) -> Dict:
     """
     Gera transações para parcelamentos ativos em um mês específico.
     Isso garante que os parcelamentos "comam" do budget mensal.
+
+    Usa installment_id para prevenir duplicação quando transações
+    são importadas manualmente do cartão de crédito.
     """
     conn = get_connection()
     cursor = conn.cursor()
@@ -368,6 +508,17 @@ def generate_installment_transactions(year: int, month: int) -> Dict:
                 if parcela_num > inst['total_installments']:
                     continue
 
+                # ✅ VERIFICAR SE JÁ EXISTE transação com este installment_id no mês
+                cursor.execute("""
+                    SELECT id FROM transactions
+                    WHERE installment_id = ?
+                    AND strftime('%Y-%m', date) = ?
+                """, (inst['id'], f"{year}-{month:02d}"))
+
+                if cursor.fetchone():
+                    results["skipped"] += 1
+                    continue  # ✅ Já existe, não duplicar
+
                 # Descrição da transação
                 description = f"{inst['description']} {parcela_num}/{inst['total_installments']}"
 
@@ -377,18 +528,14 @@ def generate_installment_transactions(year: int, month: int) -> Dict:
                 # Hash para evitar duplicatas
                 tx_hash = generate_hash(tx_date, description, inst['installment_amount'])
 
-                # Verificar se já existe
-                cursor.execute("SELECT id FROM transactions WHERE hash = ?", (tx_hash,))
-                if cursor.fetchone():
-                    results["skipped"] += 1
-                    continue
-
-                # Inserir transação
+                # Inserir transação com installment_id
                 cursor.execute('''
                     INSERT INTO transactions
-                    (date, description, amount, category_id, type, source, hash)
-                    VALUES (?, ?, ?, ?, 'expense', 'parcelamento', ?)
-                ''', (tx_date, description, inst['installment_amount'], inst['category_id'], tx_hash))
+                    (date, description, amount, category_id, type, source, hash,
+                     installment_id, installment_current, installment_total)
+                    VALUES (?, ?, ?, ?, 'expense', 'parcelamento', ?, ?, ?, ?)
+                ''', (tx_date, description, inst['installment_amount'], inst['category_id'], tx_hash,
+                      inst['id'], parcela_num, inst['total_installments']))
 
                 results["created"] += 1
 
