@@ -50,7 +50,7 @@ atualizado: 2026-01-25
 | RAIA311 | 1/2 | R$ 930 | Saúde | Fev/26 | ✅ Novo |
 | AMAZON MARKETPLACE | 4/10 | R$ 835 | Compras | Jul/26 | ✅ |
 | MAGALU | 2/10 | R$ 448 | Compras | Set/26 | ✅ |
-| ALFATEC COMER | 17/21 | R$ 414 | Compras | Dez/27 | ✅ Novo |
+| ALFATEC COMER | 17/21 | R$ 414 | Compras | Mai/26 | ✅ Novo |
 | DROGARIA MODERNA | 2/2 | R$ 238 | Saúde | Jan/26 | ✅ ÚLTIMA |
 | FIRE VERBO | 2/2 | R$ 220 | Lazer | Jan/26 | ✅ ÚLTIMA |
 | SHOPEE FIDCO | 4/12 | R$ 193 | Compras | Set/26 | ✅ |
@@ -93,11 +93,11 @@ atualizado: 2026-01-25
 | Mar/26 | R$ 10.150 | R$ 3.469 | **R$ 13.619** |
 | Abr/26 | R$ 10.150 | R$ 3.111 | **R$ 13.261** |
 | Mai/26 | R$ 9.859 | R$ 1.890 | **R$ 11.749** |
-| Jun/26 | R$ 9.859 | R$ 1.890 | **R$ 11.749** |
-| Jul/26 | R$ 9.859 | R$ 1.055 | **R$ 10.914** |
-| Ago/26 | R$ 9.500 | R$ 1.055 | **R$ 10.555** |
-| Set/26 | R$ 12.000 | R$ 716 | **R$ 12.716** |
-| Out/26 | R$ 2.500 | R$ 607 | **R$ 3.107** |
+| Jun/26 | R$ 9.859 | R$ 1.476 | **R$ 11.335** |
+| Jul/26 | R$ 9.859 | R$ 641 | **R$ 10.500** |
+| Ago/26 | R$ 9.500 | R$ 641 | **R$ 10.141** |
+| Set/26 | R$ 12.000 | R$ 302 | **R$ 12.302** |
+| Out/26 | R$ 2.500 | R$ 193 | **R$ 2.693** |
 
 ---
 
@@ -108,10 +108,10 @@ Jan/26 ████████████████████ AREDES, PACH
 Fev/26 ███████████████████  OTIQUE, DROGARIA MODERNA, RAIA311, PICPAY, RENNER terminam
 Mar/26 ██████████████████   Mesa+Cadeiras inicia
 Abr/26 █████████████████    CHIESSE5X, MACOPIL, MEUPUXADOR, TAVUS, FLOWITH terminam
+Mai/26 ████████████████     ALFATEC termina
 Jul/26 ████████████████     AMAZON MARKETPLACE, VINDI BROIL terminam
 Set/26 ██████████████       MAGALU, FIDCO, OPENAI, Móveis terminam + Eletros inicia
 Dez/26 ████████████         Mesa+Cadeiras, EDZCOLLAB terminam
-Jan/28 ████                 ALFATEC termina
 Fev/27 ████                 Eletrodomésticos termina
 ```
 
