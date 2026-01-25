@@ -2,7 +2,7 @@
 tipo: dashboard
 ano: 2026
 mes: 1
-atualizado: 2026-01-25 11:29
+atualizado: 2026-01-25 11:44
 ---
 
 # Dashboard Financeiro 2026
@@ -15,17 +15,17 @@ atualizado: 2026-01-25 11:29
 
 | Metrica | Valor | Meta | Status |
 |---------|-------|------|--------|
-| **Gastos Variaveis** | R$ 22,038 | R$ 19,800 | 🔴 Acima |
-| Gastos Obra/Esportes | R$ 26,890 | R$ 18,000 | 🔴 Acima |
-| **Saldo Mensal** | R$ 32,962 | R$ 11.000+ | ✅ OK |
-| **Taxa Poupanca** | 59.9% | 35% | ✅ OK |
-| Categorias Criticas | 4 | 0 | 🔴 Critico |
+| **Gastos Variaveis** | R$ 21,603 | R$ 20,700 | 🔴 Acima |
+| Gastos Obra/Esportes | R$ 11,167 | R$ 18,000 | ✅ OK |
+| **Saldo Mensal** | R$ 33,397 | R$ 11.000+ | ✅ OK |
+| **Taxa Poupanca** | 60.7% | 35% | ✅ OK |
+| Categorias Criticas | 3 | 0 | 🔴 Critico |
 
 ---
 
 ### Gastos Variáveis (Budget: R$ 19.800)
 
-> **Total Variáveis**: R$ 22,038 (111% do budget)
+> **Total Variáveis**: R$ 21,603 (104% do budget)
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
@@ -35,7 +35,7 @@ atualizado: 2026-01-25 11:29
 | 🛒 Compras | R$ 3,167 | R$ 2,500 | 127% | 🔴 |
 | 🍔 Alimentacao | R$ 2,942 | R$ 3,500 | 84% | ✅ |
 | 🎮 Lazer | R$ 1,563 | R$ 1,500 | 104% | ⚠️  |
-| 📝 Taxas | R$ 1,478 | R$ 100 | 1478% | 🔴 |
+| 📝 Taxas | R$ 1,042 | R$ 1,000 | 104% | ⚠️  |
 | 🏠 Casa | R$ 393 | R$ 500 | 79% | ✅ |
 | 📚 Educacao | R$ 164 | R$ 200 | 82% | ✅ |
 
@@ -43,12 +43,12 @@ atualizado: 2026-01-25 11:29
 
 ### Gastos Excluídos (Tracking Separado)
 
-> **Total Obra/Esportes**: R$ 26,890
+> **Total Obra/Esportes**: R$ 11,167
 > Estes gastos são rastreados separadamente e NÃO contam no budget mensal.
 
 | Categoria | Gasto | Budget | % | Status |
 |-----------|-------|--------|---|--------|
-| 🏗️ Obra | R$ 25,710 | R$ 16,500 | 156% | 🔴 |
+| 🏗️ Obra | R$ 9,987 | R$ 16,500 | 60% | ✅ |
 | 🎾 Esportes | R$ 1,180 | R$ 1,500 | 79% | ✅ |
 
 ---
@@ -57,9 +57,9 @@ atualizado: 2026-01-25 11:29
 
 | Categoria | Ideal | Atual | Status |
 |-----------|-------|-------|--------|
-| Gastos Variáveis | R$ 27.500 (50%) | R$ 22,038 (40.1%) | ✅ |
-| Poupança | R$ 11.000 (20%) | R$ 32,962 (59.9%) | ✅ |
-| Obra/Esportes | Tracking separado | R$ 26,890 | - |
+| Gastos Variáveis | R$ 27.500 (50%) | R$ 21,603 (39.3%) | ✅ |
+| Poupança | R$ 11.000 (20%) | R$ 33,397 (60.7%) | ✅ |
+| Obra/Esportes | Tracking separado | R$ 11,167 | - |
 
 ---
 
@@ -68,9 +68,9 @@ atualizado: 2026-01-25 11:29
 - 🔴 **CRITICO**: 🏥 Saude excedeu R$ 625 (116% do budget)
 - 🔴 **CRITICO**: 💻 Assinaturas excedeu R$ 521 (115% do budget)
 - 🔴 **CRITICO**: 🛒 Compras excedeu R$ 667 (127% do budget)
-- 🔴 **CRITICO**: 📝 Taxas excedeu R$ 1,378 (1478% do budget)
 - ⚠️  **Atencao**: 🚗 Transporte em 92% do budget
 - ⚠️  **Atencao**: 🎮 Lazer em 104% do budget
+- ⚠️  **Atencao**: 📝 Taxas em 104% do budget
 
 ---
 
@@ -106,6 +106,5 @@ atualizado: 2026-01-25 11:29
 1. [ ] Revisar gastos de Saude
 2. [ ] Revisar gastos de Assinaturas
 3. [ ] Revisar gastos de Compras
-4. [ ] Revisar gastos de Taxas
-5. [ ] Sincronizar fatura BB
-6. [ ] Atualizar parcelamentos
+4. [ ] Sincronizar fatura BB
+5. [ ] Atualizar parcelamentos

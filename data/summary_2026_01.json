@@ -6,9 +6,9 @@
       "category": "obra",
       "icon": "🏗️",
       "budget": 16500.0,
-      "total": 25710.46,
-      "percent": 155.8,
-      "status": "critical"
+      "total": 9986.9,
+      "percent": 60.5,
+      "status": "ok"
     },
     {
       "category": "saude",
@@ -59,20 +59,20 @@
       "status": "warning"
     },
     {
-      "category": "taxas",
-      "icon": "📝",
-      "budget": 100.0,
-      "total": 1477.75,
-      "percent": 1477.8,
-      "status": "critical"
-    },
-    {
       "category": "esportes",
       "icon": "🎾",
       "budget": 1500.0,
       "total": 1180.0,
       "percent": 78.7,
       "status": "ok"
+    },
+    {
+      "category": "taxas",
+      "icon": "📝",
+      "budget": 1000.0,
+      "total": 1042.41,
+      "percent": 104.2,
+      "status": "warning"
     },
     {
       "category": "casa",
@@ -91,7 +91,7 @@
       "status": "ok"
     }
   ],
-  "total_spent": 48928.64,
-  "total_budget": 37800.0,
-  "savings_rate": 11.0
+  "total_spent": 32769.74,
+  "total_budget": 38700.0,
+  "savings_rate": 40.4
 }

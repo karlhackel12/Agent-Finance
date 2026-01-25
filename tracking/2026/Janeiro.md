@@ -3,9 +3,9 @@ tipo: mensal
 ano: 2026
 mes: 1
 mes_nome: Janeiro
-total_gasto: 48928.64
-total_transacoes: 177
-atualizado: 2026-01-25 11:29
+total_gasto: 32769.74
+total_transacoes: 173
+atualizado: 2026-01-25 11:44
 ---
 
 # Janeiro 2026 - Detalhamento
@@ -18,8 +18,8 @@ atualizado: 2026-01-25 11:29
 | Metrica | Valor |
 |---------|-------|
 | Receita Liquida | R$ 55.000 |
-| Total Variaveis | R$ 48,929 |
-| Taxa Poupanca | 11.0% |
+| Total Variaveis | R$ 32,770 |
+| Taxa Poupanca | 40.4% |
 
 ---
 
@@ -27,7 +27,7 @@ atualizado: 2026-01-25 11:29
 
 ### 🏗️ Obra
 
-**Budget**: R$ 16,500 | **Gasto**: R$ 25,710 | **Status**: CRITICAL
+**Budget**: R$ 16,500 | **Gasto**: R$ 9,987 | **Status**: OK
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -36,13 +36,11 @@ atualizado: 2026-01-25 11:29
 | 2026-01-14 | PIX - CHOK ELETRIC | R$ 1,240.00 |
 | 2026-01-12 | PICPAY*Karl A PARC 01/02 SAO P | R$ 985.63 |
 | 2026-01-11 | THAURUS INDUSTRIA E CO BARRA M | R$ 619.09 |
-| 2026-01-10 | MOVEIS PLANEJADOS 2/10 | R$ 9,500.00 |
 | 2026-01-10 | VINDI BROIL 4/10 | R$ 359.01 |
 | 2026-01-10 | AREDES 8/8 | R$ 670.36 |
 | 2026-01-10 | MACOPIL 2/5 | R$ 127.81 |
 | 2026-01-10 | CASA CHIESSE 2X 2/2 | R$ 549.00 |
-
-*... e mais 3 transacoes*
+| 2026-01-10 | CASA CHIESSE 5X 2/5 | R$ 163.07 |
 
 ### 🏥 Saude
 
@@ -150,9 +148,17 @@ atualizado: 2026-01-25 11:29
 
 *... e mais 4 transacoes*
 
+### 🎾 Esportes
+
+**Budget**: R$ 1,500 | **Gasto**: R$ 1,180 | **Status**: OK
+
+| Data | Descricao | Valor |
+|------|-----------|-------|
+| 2026-01-19 | PIX - THIAGO ADAUTO DA ROCHA M | R$ 1,180.00 |
+
 ### 📝 Taxas
 
-**Budget**: R$ 100 | **Gasto**: R$ 1,478 | **Status**: CRITICAL
+**Budget**: R$ 1,000 | **Gasto**: R$ 1,042 | **Status**: WARNING
 
 | Data | Descricao | Valor |
 |------|-----------|-------|
@@ -163,19 +169,11 @@ atualizado: 2026-01-25 11:29
 | 2026-01-19 | IOF - COMPRA NO EXTERIOR | R$ 0.85 |
 | 2026-01-19 | JUROS SAQUE PIX | R$ 29.71 |
 | 2026-01-16 | Contabilizei TecnologiaCuritib | R$ 178.43 |
-| 2026-01-16 | PIX - RECEITA FEDERAL | R$ 435.34 |
 | 2026-01-16 | JUROS SAQUE PIX | R$ 12.48 |
 | 2026-01-15 | IOF - COMPRA NO EXTERIOR | R$ 0.50 |
+| 2026-01-15 | Contabilizei TecnologiaCuritib | R$ 369.00 |
 
-*... e mais 24 transacoes*
-
-### 🎾 Esportes
-
-**Budget**: R$ 1,500 | **Gasto**: R$ 1,180 | **Status**: OK
-
-| Data | Descricao | Valor |
-|------|-----------|-------|
-| 2026-01-19 | PIX - THIAGO ADAUTO DA ROCHA M | R$ 1,180.00 |
+*... e mais 23 transacoes*
 
 ### 🏠 Casa
 
@@ -198,7 +196,7 @@ atualizado: 2026-01-25 11:29
 
 ---
 
-## Todas as Transacoes (177 registros)
+## Todas as Transacoes (173 registros)
 
 | Data | Descricao | Categoria | Valor |
 |------|-----------|-----------|-------|
@@ -253,4 +251,4 @@ atualizado: 2026-01-25 11:29
 | 2026-01-17 | MANUS AI SINGAPORE | assinaturas | R$ 111.70 |
 | 2026-01-17 | Google One SAO PAULO | assinaturas | R$ 12.50 |
 
-*... e mais 127 transacoes*
+*... e mais 123 transacoes*
