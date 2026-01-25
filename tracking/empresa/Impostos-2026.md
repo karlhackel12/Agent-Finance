@@ -1,7 +1,7 @@
 ---
 tipo: impostos-pj
 ano: 2026
-atualizado: 2026-01-25 11:00
+atualizado: 2026-01-25 11:29
 ---
 
 # Impostos PJ 2026

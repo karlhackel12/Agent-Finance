@@ -15,7 +15,7 @@ budget_mensal: 2500.0
 
 | Mes | Gasto | Budget | % | Status |
 |-----|-------|--------|---|--------|
-| Janeiro | R$ 9,872 | R$ 2,500 | 395% | Critico |
+| Janeiro | R$ 3,167 | R$ 2,500 | 127% | Critico |
 | Fevereiro | - | R$ 2,500 | - | - |
 | Marco | - | R$ 2,500 | - | - |
 | Abril | - | R$ 2,500 | - | - |
@@ -34,10 +34,10 @@ budget_mensal: 2500.0
 
 | Metrica | Valor |
 |---------|-------|
-| Total Gasto | R$ 11,788 |
+| Total Gasto | R$ 5,083 |
 | Budget Anual | R$ 30,000 |
-| Media Mensal | R$ 2,947 |
-| % Utilizado | 39% |
+| Media Mensal | R$ 1,271 |
+| % Utilizado | 17% |
 
 ---
 
