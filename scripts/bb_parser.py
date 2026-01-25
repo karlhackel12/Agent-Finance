@@ -22,41 +22,76 @@ CATEGORY_KEYWORDS = {
         "conveniencia", "mercearia", "peixaria", "panificadora", "lanchone",
         "chopp", "bar ", "boteco", "comercio de alim", "alimentacao",
         "feira", "sacolao", "quitanda", "emporio", "delicatessen",
+        # Adicionados Jan 2026 (estabelecimentos locais)
+        "ifd*br", "luzia", "pereira", "perola", "nagumo", "achiles",
+        "dinossauros", "pasta a mano", "hamburgueria", "terra nostra",
+        "frangaria", "shokiti", "olgari", "codev", "bakebun", "banca da vila",
     ],
     "transporte": [
         "uber", "99", "cabify", "lyft", "taxi", "corrida",
         "shell", "ipiranga", "petrobras", "posto br", "posto", "combustivel",
         "estacionamento", "estapar", "zona azul", "sem parar", "conectcar",
         "pedagio", "autoban", "ecovias", "ccr", "arteris",
+        # Adicionados Jan 2026
+        "movida", "localiza", "unidas", "carro assinatura",
+        "ola retiro", "ecopista", "concessionaria do sist",
+        "nacoes unidas",
     ],
     "saude": [
         "farmacia", "drogaria", "drogasil", "droga raia", "pacheco", "pague menos",
         "clinica", "hospital", "laboratorio", "exame", "consulta", "medico",
         "dentista", "fisioterapia", "psicolog", "nutri", "academia", "smartfit",
         "bio ritmo", "bodytech",
+        # Adicionados Jan 2026
+        "raia", "economize", "otique", "unimed", "plano saude",
+        "fast massagem", "massagem", "terapia",
     ],
     "assinaturas": [
         "netflix", "spotify", "amazon prime", "disney", "hbo", "star+",
         "apple", "icloud", "google", "microsoft", "adobe", "notion",
         "github", "openai", "claude", "chatgpt", "dropbox", "1password",
         "canva", "figma", "slack", "zoom", "twitch",
+        # AI/Dev tools (adicionado Jan 2026)
+        "flowith", "21st.dev", "doanythingmachine", "manus ai",
+        "meetsquad", "aqua voice", "float labs", "supercut",
+        "iorclass", "anthropic", "replit", "n8n", "vercel", "cursor",
+        "reclaim.ai", "cloudflare", "riversidefm", "paddle.net",
     ],
     "compras": [
         "amazon", "mercado livre", "magalu", "magazine luiza", "americanas",
         "submarino", "shopee", "aliexpress", "shein", "casas bahia",
         "ponto frio", "fast shop", "kabum", "pichau", "terabyte",
         "nike", "adidas", "zara", "renner", "riachuelo", "cea",
+        # Adicionados Jan 2026
+        "promolivros", "hope", "vx case", "banca shop",
+        "maria luiza", "alfatec", "lojas renner",
     ],
     "lazer": [
         "cinema", "cinemark", "cinepolis", "uci", "ingresso", "ticket",
         "steam", "playstation", "xbox", "nintendo", "epic games",
         "show", "teatro", "museu", "parque", "viagem", "hotel",
         "airbnb", "booking", "decolar", "latam", "gol", "azul",
+        # Adicionados Jan 2026
+        "clash royale", "chess play", "evostarter", "game", "gaming",
+        "depilar", "estetica", "beleza",
+        "globo premiere", "premiere",
+    ],
+    "taxas": [
+        "iof", "taxa", "tarifa", "anuidade", "seguro", "juros",
+        "multa", "cartorio", "despachante", "detran",
+        # Adicionados Jan 2026
+        "receita federal", "darf", "imposto", "tributo",
+        "tokio marine", "porto seguro", "bradesco seguros",
+        "shopping", "estacion",  # Estacionamento parcial match
+        "devolucao", "contabilizei",  # Serviço contábil
     ],
     "educacao": [
         "udemy", "coursera", "alura", "rocketseat", "origamid",
         "amazon kindle", "livro", "livraria", "saraiva", "cultura",
         "escola", "faculdade", "curso", "certificacao",
+        # Adicionados Jan 2026
+        "jusbrasil", "estadao", "jornal", "revista", "periodico",
+        "edzcollab", "edtech",
     ],
     "casa": [
         "leroy merlin", "telhanorte", "c&c", "ferreira costa",
@@ -64,15 +99,30 @@ CATEGORY_KEYWORDS = {
         "cobasi", "petz", "petlove",
         "eletricista", "encanador", "pedreiro", "pintor",
         "condominio", "iptu", "agua", "luz", "gas", "internet",
+        "vivo", "tim", "claro", "oi", "net", "sky",  # Telecomunicações
+    ],
+    "obra": [
+        # Fornecedores e lojas (adicionado Jan 2026)
+        "casa chiesse", "macopil", "thaurus", "aredes",
+        "vindi broil", "chok eletric", "oziel batista",
+        # Materiais e serviços
+        "materiais construcao", "acabamento", "eletrica", "hidraulica",
+        "moveis planejados", "marcenaria", "serralheria",
     ],
     "taxas": [
         "iof", "taxa", "tarifa", "anuidade", "seguro", "juros",
         "multa", "cartorio", "despachante", "detran",
+        # Adicionados Jan 2026
+        "receita federal", "darf", "imposto", "tributo",
+        "tokio marine", "porto seguro", "bradesco seguros",
+        "shopping", "estacion",  # Estacionamento parcial match
+        "devolucao",
     ],
     "esportes": [
-        "thiago mariotti", "tenis", "quadra", "raquete",
+        "thiago mariotti", "thiago adauto", "tenis", "quadra", "raquete",
         "esporte", "academia esport", "clube esport", "aula tenis",
         "beach tennis", "padel", "squash",
+        "fire verbo", "crossfit",  # Academia CrossFit
     ],
 }
 

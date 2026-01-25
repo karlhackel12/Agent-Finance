@@ -6,92 +6,92 @@
       "category": "obra",
       "icon": "🏗️",
       "budget": 16500.0,
-      "total": 11369.25,
-      "percent": 68.9,
-      "status": "ok"
-    },
-    {
-      "category": "saude",
-      "icon": "🏥",
-      "budget": 4000.0,
-      "total": 3382.08,
-      "percent": 84.6,
-      "status": "ok"
-    },
-    {
-      "category": "transporte",
-      "icon": "🚗",
-      "budget": 4000.0,
-      "total": 3370.0,
-      "percent": 84.2,
-      "status": "ok"
-    },
-    {
-      "category": "assinaturas",
-      "icon": "💻",
-      "budget": 3500.0,
-      "total": 3184.68,
-      "percent": 91.0,
-      "status": "warning"
+      "total": 38319.71,
+      "percent": 232.2,
+      "status": "critical"
     },
     {
       "category": "compras",
       "icon": "🛒",
       "budget": 2500.0,
-      "total": 2576.02,
-      "percent": 103.0,
-      "status": "warning"
+      "total": 11709.65,
+      "percent": 468.4,
+      "status": "critical"
+    },
+    {
+      "category": "saude",
+      "icon": "🏥",
+      "budget": 4000.0,
+      "total": 9484.26,
+      "percent": 237.1,
+      "status": "critical"
+    },
+    {
+      "category": "assinaturas",
+      "icon": "💻",
+      "budget": 3500.0,
+      "total": 8253.27,
+      "percent": 235.8,
+      "status": "critical"
+    },
+    {
+      "category": "transporte",
+      "icon": "🚗",
+      "budget": 4000.0,
+      "total": 7055.44,
+      "percent": 176.4,
+      "status": "critical"
     },
     {
       "category": "alimentacao",
       "icon": "🍔",
       "budget": 3500.0,
-      "total": 1310.41,
-      "percent": 37.4,
-      "status": "ok"
+      "total": 4907.26,
+      "percent": 140.2,
+      "status": "critical"
     },
     {
       "category": "lazer",
       "icon": "🎮",
       "budget": 1500.0,
-      "total": 1026.0,
-      "percent": 68.4,
+      "total": 3422.56,
+      "percent": 228.2,
+      "status": "critical"
+    },
+    {
+      "category": "taxas",
+      "icon": "📝",
+      "budget": 100.0,
+      "total": 2195.2999999999997,
+      "percent": 2195.3,
+      "status": "critical"
+    },
+    {
+      "category": "esportes",
+      "icon": "🎾",
+      "budget": 1500.0,
+      "total": 1180.0,
+      "percent": 78.7,
       "status": "ok"
     },
     {
       "category": "casa",
       "icon": "🏠",
       "budget": 500.0,
-      "total": 393.0,
-      "percent": 78.6,
-      "status": "ok"
-    },
-    {
-      "category": "taxas",
-      "icon": "📝",
-      "budget": 100.0,
-      "total": 146.4,
-      "percent": 146.4,
+      "total": 786.0,
+      "percent": 157.2,
       "status": "critical"
     },
     {
       "category": "educacao",
       "icon": "📚",
       "budget": 200.0,
-      "total": 0,
-      "percent": 0.0,
-      "status": "ok"
-    },
-    {
-      "category": "esportes",
-      "icon": "🎾",
-      "budget": 1500.0,
-      "total": 0,
-      "percent": 0.0,
-      "status": "ok"
+      "total": 262.88,
+      "percent": 131.4,
+      "status": "critical"
     }
   ],
-  "total_spent": 26757.840000000004,
+  "total_spent": 87576.33,
   "total_budget": 37800.0,
-  "savings_rate": 51.3
+  "savings_rate": -59.2
 }
