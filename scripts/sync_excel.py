@@ -124,7 +124,23 @@ def sync_dashboard(year: int = 2026, month: int = 1):
 
     # Update poupanca (row 9)
     receita = 55000
-    poupanca_real = receita - total_real - 9500  # 9500 = moveis parcela
+    # Buscar total de obra/esportes (excluídas)
+    conn_excluded = get_connection()
+    cursor_excluded = conn_excluded.cursor()
+    cursor_excluded.execute('''
+        SELECT COALESCE(SUM(ABS(t.amount)), 0) as total_excluded
+        FROM transactions t
+        JOIN categories c ON t.category_id = c.id
+        WHERE c.is_excluded = 1
+            AND strftime('%Y', t.date) = ?
+            AND strftime('%m', t.date) = ?
+            AND t.type = 'expense'
+    ''', (str(year), f"{month:02d}"))
+    total_excluded = cursor_excluded.fetchone()['total_excluded']
+    conn_excluded.close()
+
+    # Poupança = Receita - Variáveis - Obra/Esportes
+    poupanca_real = receita - total_real - total_excluded
     ws.cell(row=9, column=3, value=poupanca_real)
 
     # Update Mensal sheet

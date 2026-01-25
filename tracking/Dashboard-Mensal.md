@@ -2,7 +2,7 @@
 tipo: dashboard
 ano: 2026
 mes: 1
-atualizado: 2026-01-25 11:44
+atualizado: 2026-01-25 16:59
 ---
 
 # Dashboard Financeiro 2026

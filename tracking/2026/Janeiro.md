@@ -5,7 +5,7 @@ mes: 1
 mes_nome: Janeiro
 total_gasto: 32769.74
 total_transacoes: 173
-atualizado: 2026-01-25 11:44
+atualizado: 2026-01-25 16:59
 ---
 
 # Janeiro 2026 - Detalhamento
